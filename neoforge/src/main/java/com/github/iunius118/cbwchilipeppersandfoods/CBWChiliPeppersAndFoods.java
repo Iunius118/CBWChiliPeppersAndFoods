@@ -1,5 +1,6 @@
 package com.github.iunius118.cbwchilipeppersandfoods;
 
+import com.github.iunius118.cbwchilipeppersandfoods.data.*;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import com.github.iunius118.cbwchilipeppersandfoods.loot.ModLootTables;
 import com.github.iunius118.cbwchilipeppersandfoods.registry.ModRegistries;
@@ -17,6 +18,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.LootTableLoadEvent;
 
 @Mod(Constants.MOD_ID)
@@ -29,6 +31,7 @@ public class CBWChiliPeppersAndFoods {
 
         // Register mod event listeners
         ModRegistries.registerGameObjects(modEventBus);
+        modEventBus.addListener(this::gatherData);
         modEventBus.addListener(this::onCommonSetup);
 
         // Register NeoForge event listeners
@@ -52,5 +55,26 @@ public class CBWChiliPeppersAndFoods {
                     .build();
             event.getTable().addPool(pool);
         }
+    }
+
+    private void gatherData(final GatherDataEvent event) {
+        var dataGenerator = event.getGenerator();
+        var packOutput = dataGenerator.getPackOutput();
+        var lookupProvider = event.getLookupProvider();
+        var existingFileHelper = event.getExistingFileHelper();
+        var blockTagsProvider = new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper);
+
+        // Server
+        final boolean includesServer = event.includeServer();
+        dataGenerator.addProvider(includesServer, blockTagsProvider);
+        dataGenerator.addProvider(includesServer, new ModItemTagsProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+        dataGenerator.addProvider(includesServer, new ModLootTableProvider(packOutput, lookupProvider));
+        dataGenerator.addProvider(includesServer, new ModRecipeProvider(packOutput, lookupProvider));
+
+        // Client
+        final boolean includesClient = event.includeClient();
+        dataGenerator.addProvider(includesClient, new ModLanguageProvider(packOutput));
+        dataGenerator.addProvider(includesClient, new ModBlockStateProvider(packOutput, existingFileHelper));
+        dataGenerator.addProvider(includesClient, new ModItemModelProvider(packOutput, existingFileHelper));
     }
 }

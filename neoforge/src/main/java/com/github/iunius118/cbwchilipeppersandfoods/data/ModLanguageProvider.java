@@ -1,0 +1,45 @@
+package com.github.iunius118.cbwchilipeppersandfoods.data;
+
+import com.github.iunius118.cbwchilipeppersandfoods.Constants;
+import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
+import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
+import net.minecraft.data.PackOutput;
+import net.neoforged.neoforge.common.data.LanguageProvider;
+
+public class ModLanguageProvider extends LanguageProvider {
+
+    public ModLanguageProvider(PackOutput output) {
+        super(output, Constants.CBW_MOD_ID, "en_us");
+    }
+
+    @Override
+    protected void addTranslations() {
+        // Creative mode tabs
+        add("itemGroup.%s.main".formatted(Constants.CBW_MOD_ID), Constants.MOD_NAME);
+
+        // Block
+        add(ModBlocks.CHILI_PEPPER, "Chili Pepper Crops (CBW)");
+        add(ModBlocks.CURVED_CHILI_STRING, "String of Curved Chili Peppers");
+        add(ModBlocks.HOT_SAUCE_BARREL, "Barrel of Hot Chili Sauce");
+
+        // Item.Plants
+        add(ModItems.CHILI_SEEDS, "Chili Pepper Seeds (CBW)");
+        add(ModItems.CURVED_CHILI, "Curved Chili Pepper");
+        add(ModItems.DRIED_CURVED_CHILI, "Dried Curved Chili Pepper");
+        add(ModItems.CURVED_CHILI_SACK, "Sack of Curved Chili Peppers");
+        // Item.Foods
+        add(ModItems.HOT_SAUCE, "Hot Chili Sauce");
+        add(ModItems.CHILI_CHICKEN_SANDWICH, "Chili Chicken Sandwich");
+        add(ModItems.CHILI_FISH_SANDWICH, "Chili Fish Sandwich");
+        add(ModItems.CHILI_MEAT_SANDWICH, "Chili Meat Sandwich");
+        add(ModItems.CHILI_POTATO_SANDWICH, "Chili Potato Sandwich");
+        add(ModItems.HALF_CHILI_CHICKEN_SANDWICH, "Half-sized Chili Chicken Sandwich");
+        add(ModItems.HALF_CHILI_FISH_SANDWICH, "Half-sized Chili Fish Sandwich");
+        add(ModItems.HALF_CHILI_MEAT_SANDWICH, "Half-sized Chili Meat Sandwich");
+        add(ModItems.HALF_CHILI_POTATO_SANDWICH, "Half-sized Chili Potato Sandwich");
+        add(ModItems.PASTA_OIL_AND_CHILI, "Pasta Olio e Peperoncino");
+        add(ModItems.FRIED_CHILI_PEPPER, "Fried Chili Pepper");
+        // Item.Misc.
+        add(ModItems.CAPSAICIN_POWDER, "Capsaicin Powder");
+    }
+}

@@ -48,8 +48,4 @@ loom {
     }
 }
 
-fabricApi {
-    configureDataGeneration {
-        client = true
-    }
-}
+sourceSets.main.resources { srcDir '../common/src/generated/resources' }
