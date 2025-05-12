@@ -1,0 +1,25 @@
+{
+  "values": {
+    "chilibulletweapons:chili_potato_sandwich": {
+      "chance": 0.85
+    },
+    "chilibulletweapons:chili_seeds": {
+      "chance": 0.3
+    },
+    "chilibulletweapons:curved_chili": {
+      "chance": 0.3
+    },
+    "chilibulletweapons:curved_chili_string": {
+      "chance": 0.85
+    },
+    "chilibulletweapons:dried_curved_chili": {
+      "chance": 0.3
+    },
+    "chilibulletweapons:fried_chili_pepper": {
+      "chance": 0.3
+    },
+    "chilibulletweapons:half_chili_potato_sandwich": {
+      "chance": 0.5
+    }
+  }
+}

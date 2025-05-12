@@ -7,10 +7,13 @@ import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ModItems {
     public static final List<Item> ITEMS = new ArrayList<>();
+    public static final Map<Item, Float> COMPOSTABLES = new HashMap<>();
 
     // Plants
     public static final Item CHILI_SEEDS = add(new ItemNameBlockItem(ModBlocks.CHILI_PEPPER, new Item.Properties()));
@@ -39,5 +42,16 @@ public class ModItems {
     private static Item add(Item item) {
         ITEMS.add(item);
         return item;
+    }
+
+    static {
+        // Add compostable items
+        COMPOSTABLES.put(ModItems.CHILI_SEEDS, 0.3F);
+        COMPOSTABLES.put(ModItems.CURVED_CHILI, 0.3F);
+        COMPOSTABLES.put(ModItems.CURVED_CHILI_STRING, 0.85F);
+        COMPOSTABLES.put(ModItems.DRIED_CURVED_CHILI, 0.3F);
+        COMPOSTABLES.put(ModItems.CHILI_POTATO_SANDWICH, 0.85F);
+        COMPOSTABLES.put(ModItems.HALF_CHILI_POTATO_SANDWICH, 0.5F);
+        COMPOSTABLES.put(ModItems.FRIED_CHILI_PEPPER, 0.3F);
     }
 }

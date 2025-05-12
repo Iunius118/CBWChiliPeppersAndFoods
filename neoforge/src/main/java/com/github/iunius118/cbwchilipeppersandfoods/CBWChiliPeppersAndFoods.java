@@ -16,7 +16,6 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCon
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.LootTableLoadEvent;
@@ -32,15 +31,9 @@ public class CBWChiliPeppersAndFoods {
         // Register mod event listeners
         ModRegistries.registerGameObjects(modEventBus);
         modEventBus.addListener(this::gatherData);
-        modEventBus.addListener(this::onCommonSetup);
 
         // Register NeoForge event listeners
         NeoForge.EVENT_BUS.addListener(this::onLootTableLoad);
-    }
-
-    private void onCommonSetup(final FMLCommonSetupEvent event) {
-        // Register compostable items
-        CommonClass.registerCompostableItems();
     }
 
     private void onLootTableLoad(final LootTableLoadEvent event) {
@@ -70,6 +63,7 @@ public class CBWChiliPeppersAndFoods {
         dataGenerator.addProvider(includesServer, new ModItemTagsProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
         dataGenerator.addProvider(includesServer, new ModLootTableProvider(packOutput, lookupProvider));
         dataGenerator.addProvider(includesServer, new ModRecipeProvider(packOutput, lookupProvider));
+        dataGenerator.addProvider(includesServer, new ModDataMapProvider(packOutput, lookupProvider));
 
         // Client
         final boolean includesClient = event.includeClient();

@@ -1,11 +1,9 @@
 package com.github.iunius118.cbwchilipeppersandfoods;
 
-import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import com.github.iunius118.cbwchilipeppersandfoods.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.ComposterBlock;
 
 // This class is part of the common project meaning it is shared between all supported loaders. Code written here can only
 // import and access the vanilla codebase, libraries used by vanilla, and optionally third party libraries that provide
@@ -36,15 +34,5 @@ public class CommonClass {
 
     public static ResourceLocation modCBWLocation(String name) {
         return ResourceLocation.fromNamespaceAndPath(Constants.CBW_MOD_ID, name);
-    }
-
-    public static void registerCompostableItems() {
-        ComposterBlock.COMPOSTABLES.put(ModItems.CHILI_SEEDS, 0.3F);
-        ComposterBlock.COMPOSTABLES.put(ModItems.CURVED_CHILI, 0.3F);
-        ComposterBlock.COMPOSTABLES.put(ModItems.CURVED_CHILI_STRING, 0.85F);
-        ComposterBlock.COMPOSTABLES.put(ModItems.DRIED_CURVED_CHILI, 0.3F);
-        ComposterBlock.COMPOSTABLES.put(ModItems.CHILI_POTATO_SANDWICH, 0.85F);
-        ComposterBlock.COMPOSTABLES.put(ModItems.HALF_CHILI_POTATO_SANDWICH, 0.5F);
-        ComposterBlock.COMPOSTABLES.put(ModItems.FRIED_CHILI_PEPPER, 0.3F);
     }
 }
