@@ -3,7 +3,7 @@ package com.github.iunius118.cbwchilipeppersandfoods;
 import com.github.iunius118.cbwchilipeppersandfoods.data.*;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import com.github.iunius118.cbwchilipeppersandfoods.loot.ModLootTables;
-import com.github.iunius118.cbwchilipeppersandfoods.registry.ModRegistries;
+import com.github.iunius118.cbwchilipeppersandfoods.registry.NeoForgeModRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.registries.VanillaRegistries;
@@ -29,7 +29,7 @@ public class CBWChiliPeppersAndFoods {
         CommonClass.init();
 
         // Register mod event listeners
-        ModRegistries.registerGameObjects(modEventBus);
+        NeoForgeModRegistries.registerGameObjects(modEventBus);
         modEventBus.addListener(this::gatherData);
 
         // Register NeoForge event listeners

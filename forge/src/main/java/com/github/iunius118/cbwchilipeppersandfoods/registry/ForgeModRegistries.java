@@ -9,10 +9,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredRegister;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 
-public class ModRegistries {
+public class ForgeModRegistries {
 
     public static void registerGameObjects(IEventBus modEventBus) {
         registerBlocks(modEventBus);
@@ -22,7 +23,7 @@ public class ModRegistries {
     }
 
     private static void registerBlocks(IEventBus modEventBus) {
-        var blockRegister = DeferredRegister.createBlocks(Constants.CBW_MOD_ID);
+        var blockRegister = DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.CBW_MOD_ID);
 
         blockRegister.register("chili_pepper", () -> ModBlocks.CHILI_PEPPER);
         blockRegister.register("curved_chili_string", () -> ModBlocks.CURVED_CHILI_STRING);
@@ -32,7 +33,7 @@ public class ModRegistries {
     }
 
     private static void registerItems(IEventBus modEventBus) {
-        var itemRegister = DeferredRegister.createItems(Constants.CBW_MOD_ID);
+        var itemRegister = DeferredRegister.create(ForgeRegistries.ITEMS, Constants.CBW_MOD_ID);
 
         // Plants
         itemRegister.register("chili_seeds", () -> ModItems.CHILI_SEEDS);
@@ -60,7 +61,7 @@ public class ModRegistries {
     }
 
     private static void registerSoundEvents(IEventBus modEventBus) {
-        var soundEventRegister = DeferredRegister.create(Registries.SOUND_EVENT, Constants.CBW_MOD_ID);
+        var soundEventRegister = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Constants.CBW_MOD_ID);
 
         soundEventRegister.register("block_chili_pepper_pick_chili_peppers", () -> ModSoundEvents.CHILI_PEPPER_PICK_CHILI_PEPPERS);
 
@@ -70,7 +71,7 @@ public class ModRegistries {
     private static void registerCreativeModeTabs(IEventBus modEventBus) {
         var creativeModeTabRegister = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.CBW_MOD_ID);
 
-        creativeModeTabRegister.register("main", ModRegistries::getMainCreativeModeTab);
+        creativeModeTabRegister.register("main", ForgeModRegistries::getMainCreativeModeTab);
 
         creativeModeTabRegister.register(modEventBus);
     }
