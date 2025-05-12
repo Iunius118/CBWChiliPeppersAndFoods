@@ -20,6 +20,7 @@
       "com.github.iunius118.cbwchilipeppersandfoods.CBWChiliPeppersAndFoods"
     ],
     "client": [
+      "com.github.iunius118.cbwchilipeppersandfoods.CBWChiliPeppersAndFoodsClient"
     ],
     "fabric-datagen": [
     ]
