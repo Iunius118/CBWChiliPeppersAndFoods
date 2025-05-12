@@ -9,7 +9,7 @@ import net.neoforged.neoforge.common.data.LanguageProvider;
 public class ModLanguageProvider extends LanguageProvider {
 
     public ModLanguageProvider(PackOutput output) {
-        super(output, Constants.CBW_MOD_ID, "en_us");
+        super(output, Constants.MOD_ID, "en_us");
     }
 
     @Override
