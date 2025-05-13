@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chilibulletweapons:chili_chocolate_chicken",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_chicken"
+    },
+    {
+      "item": "chilibulletweapons:chili_chocolate"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chilibulletweapons:chili_chocolate_chicken"
+  }
+}
