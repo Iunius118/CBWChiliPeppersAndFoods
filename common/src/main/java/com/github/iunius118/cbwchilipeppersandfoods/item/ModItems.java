@@ -44,6 +44,10 @@ public class ModItems {
     // Misc.
     public static final Item CAPSAICIN_POWDER = add(new Item(new Item.Properties()));
 
+    // Creative tab icon
+    // This will not be added to creative tabs
+    public static final Item ICON_MAIN = new Item(new Item.Properties());
+
     private static Item add(Item item) {
         ITEMS.add(item);
         return item;

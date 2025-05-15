@@ -61,6 +61,8 @@ public class ForgeModRegistries {
         itemRegister.register(Constants.Items.CHILI_CHOCOLATE_CHICKEN.getPath(), () -> ModItems.CHILI_CHOCOLATE_CHICKEN);
         // Misc.
         itemRegister.register(Constants.Items.CAPSAICIN_POWDER.getPath(), () -> ModItems.CAPSAICIN_POWDER);
+        // Creative tab icon
+        itemRegister.register(Constants.Items.ICON_MAIN.getPath(), () -> ModItems.ICON_MAIN);
 
         itemRegister.register(modEventBus);
     }
@@ -84,7 +86,7 @@ public class ForgeModRegistries {
     private static CreativeModeTab getMainCreativeModeTab() {
         return CreativeModeTab.builder()
                 .title(Component.translatable("itemGroup.%s.main".formatted(Constants.CBW_MOD_ID)))
-                .icon(() -> new ItemStack(ModItems.CURVED_CHILI))
+                .icon(() -> new ItemStack(ModItems.ICON_MAIN))
                 .displayItems((params, output) -> {
                     for (Item i : ModItems.ITEMS) {
                         if (i != null) output.accept(i);

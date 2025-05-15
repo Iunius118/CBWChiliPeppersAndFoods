@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-14T22:31:14.2127992	Item Models: chilibulletweapons
+// 1.21.1	2025-05-15T20:05:58.6646638	Item Models: chilibulletweapons
 35b369159dd386d62423ab5935dafca84908a4aa assets/chilibulletweapons/models/item/capsaicin_powder.json
 b724cefcebcb7185e4d09939652fe462c4015789 assets/chilibulletweapons/models/item/chili_chicken_sandwich.json
 adcaf38df1d0cdff954928a96b793eb6cd1adb25 assets/chilibulletweapons/models/item/chili_chocolate.json
@@ -19,5 +19,6 @@ fc177edab7310db57d6d3101f46c1857c039da44 assets/chilibulletweapons/models/item/h
 fb66fdb3215770cad08ed62bab800ee62fd5c2d6 assets/chilibulletweapons/models/item/half_chili_meat_sandwich.json
 85f60790a174850badb91a1d3fa32d2b29e1dd8c assets/chilibulletweapons/models/item/half_chili_potato_sandwich.json
 1497c154918da45abe37d2fbbb8e2998eda27e80 assets/chilibulletweapons/models/item/hot_sauce.json
+8b524af850062d81bc4608ff2dccaf90ba872f74 assets/chilibulletweapons/models/item/icon_main.json
 a351d1b134afb3d6c0990f154fb6803c4f9a59b0 assets/chilibulletweapons/models/item/pasta_oil_and_chili.json
 c280df9418b31cfb882e9a815978c992e2f5e5bd assets/chilibulletweapons/models/item/pickled_green_chili.json

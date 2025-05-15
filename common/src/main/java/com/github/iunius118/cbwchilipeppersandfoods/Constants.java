@@ -46,6 +46,9 @@ public class Constants {
 
         // Misc.
         public static final ResourceLocation CAPSAICIN_POWDER = CommonClass.modCBWLocation("capsaicin_powder");
+
+        // Creative tab icon
+        public static final ResourceLocation ICON_MAIN = CommonClass.modCBWLocation("icon_main");
     }
 
     public static class SoundEvents {

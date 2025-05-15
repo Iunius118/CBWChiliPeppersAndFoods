@@ -42,5 +42,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // Misc.
         basicItem(ModItems.CAPSAICIN_POWDER);
+
+        // Creative mode tab
+        basicItem(ModItems.ICON_MAIN);
     }
 }
