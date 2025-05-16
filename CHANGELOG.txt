@@ -2,6 +2,8 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+
+## [1.0.0]
 ### Added
 - Port chili peppers and foods from Chili Bullet Weapons mod version 1 to 1.21.1.
 - Add curved green chili pepper that can be harvested from chili pepper crop in 7th growth stage.
@@ -12,6 +14,7 @@
 - Add item tags `chilibulletweapons:foods/chili_peppers/red` and `chilibulletweapons:foods/chili_peppers/green`.
 
 ### Changed
+- NeoForge version - require NeoForge 21.1.169.
+- Forge version - require Minecraft Forge 52.1.0.
+- Fabric version - require Fabric Loader 0.16.14 and Fabric API 0.116.0+1.21.1.
 - Rename item tag `chilibulletweapons:foods/chili_pepper` to `chilibulletweapons:foods/chili_peppers`.
-
-## [1.0.0]
