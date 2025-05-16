@@ -2,5 +2,16 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+### Added
+- Port chili peppers and foods from Chili Bullet Weapons mod version 1 to 1.21.1.
+- Add curved green chili pepper that can be harvested from chili pepper crop in 7th growth stage.
+- Add green hot chili sauce.
+- Add pickled green chili pepper.
+- Add chili chocolate.
+- Add chicken with chili chocolate sauce.
+- Add item tags `chilibulletweapons:foods/chili_peppers/red` and `chilibulletweapons:foods/chili_peppers/green`.
+
+### Changed
+- Rename item tag `chilibulletweapons:foods/chili_pepper` to `chilibulletweapons:foods/chili_peppers`.
 
 ## [1.0.0]
