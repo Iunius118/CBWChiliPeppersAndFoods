@@ -25,7 +25,7 @@ public class CBWChiliPeppersAndFoods implements ModInitializer {
     @Override
     public void onInitialize() {
         // Use Fabric to bootstrap the Common mod.
-        Constants.LOG.info("Hello Fabric world!");
+        //Constants.LOG.info("Hello Fabric world!");
         CommonClass.init();
 
         // Register mod game objects

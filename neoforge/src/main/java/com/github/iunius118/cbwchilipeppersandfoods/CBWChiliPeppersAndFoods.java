@@ -25,7 +25,7 @@ public class CBWChiliPeppersAndFoods {
 
     public CBWChiliPeppersAndFoods(IEventBus modEventBus, ModContainer modContainer) {
         // Use NeoForge to bootstrap the Common mod.
-        Constants.LOG.info("Hello NeoForge world!");
+        //Constants.LOG.info("Hello NeoForge world!");
         CommonClass.init();
 
         // Register mod event listeners

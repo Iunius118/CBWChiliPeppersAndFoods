@@ -27,7 +27,7 @@ public class CBWChiliPeppersAndFoods {
         final IEventBus modEventBus = context.getModEventBus();
 
         // Use Forge to bootstrap the Common mod.
-        Constants.LOG.info("Hello Forge world!");
+        //Constants.LOG.info("Hello Forge world!");
         CommonClass.init();
 
         // Register mod event listeners
