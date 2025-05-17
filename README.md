@@ -9,8 +9,8 @@ This mod is required by [Chili Bullet Weapons](https://github.com/Iunius118/Chil
 
 ## Download Mod
 
-- Modrinth
-- CurseForge
+- [Modrinth](https://modrinth.com/mod/cbw-chili-peppers-and-foods)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/cbw-chili-peppers-and-foods)
 
 ## Requirements
 
