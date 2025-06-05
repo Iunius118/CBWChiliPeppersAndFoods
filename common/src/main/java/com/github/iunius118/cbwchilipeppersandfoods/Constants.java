@@ -57,5 +57,9 @@ public class Constants {
 
     public static class CreativeModeTabs {
         public static final ResourceLocation MAIN = CommonClass.modCBWLocation("main");
+
+        // Translation keys
+        public static final String TITLE_MOD_MAIN = "itemGroup.%s.main".formatted(Constants.MOD_ID);
+        public static final String TITLE_CBW_MAIN = "itemGroup.%s.main".formatted(Constants.CBW_MOD_ID);
     }
 }

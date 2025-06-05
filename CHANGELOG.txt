@@ -2,6 +2,8 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+### Fixed
+- Fix title of mod creative mode tab.
 
 ## [1.0.0]
 ### Added

@@ -3,6 +3,7 @@ package com.github.iunius118.cbwchilipeppersandfoods.registry;
 import com.github.iunius118.cbwchilipeppersandfoods.Constants;
 import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
+import com.github.iunius118.cbwchilipeppersandfoods.platform.Services;
 import com.github.iunius118.cbwchilipeppersandfoods.sounds.ModSoundEvents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -84,8 +85,11 @@ public class ForgeModRegistries {
     }
 
     private static CreativeModeTab getMainCreativeModeTab() {
+        // Use different title depending on whether CBW is loaded or not
+        String titleKey = Services.PLATFORM.isModLoaded(Constants.CBW_MOD_ID) ? Constants.CreativeModeTabs.TITLE_CBW_MAIN
+                : Constants.CreativeModeTabs.TITLE_MOD_MAIN;
         return CreativeModeTab.builder()
-                .title(Component.translatable("itemGroup.%s.main".formatted(Constants.CBW_MOD_ID)))
+                .title(Component.translatable(titleKey))
                 .icon(() -> new ItemStack(ModItems.ICON_MAIN))
                 .displayItems((params, output) -> {
                     for (Item i : ModItems.ITEMS) {

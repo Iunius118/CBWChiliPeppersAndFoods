@@ -15,9 +15,9 @@ public class ModLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         // Creative mode tabs
-        add("itemGroup.%s.main".formatted(Constants.CBW_MOD_ID), Constants.MOD_NAME);
+        add(Constants.CreativeModeTabs.TITLE_MOD_MAIN, Constants.MOD_NAME);
 
-        // Block
+        // Blocks
         add(ModBlocks.CHILI_PEPPER, "Chili Pepper Crops (CBW)");
         add(ModBlocks.CURVED_CHILI_STRING, "String of Curved Chili Peppers");
         add(ModBlocks.HOT_SAUCE_BARREL, "Barrel of Hot Chili Sauce");

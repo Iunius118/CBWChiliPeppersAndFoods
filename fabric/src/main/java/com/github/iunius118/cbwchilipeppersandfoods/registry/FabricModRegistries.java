@@ -3,6 +3,7 @@ package com.github.iunius118.cbwchilipeppersandfoods.registry;
 import com.github.iunius118.cbwchilipeppersandfoods.Constants;
 import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
+import com.github.iunius118.cbwchilipeppersandfoods.platform.Services;
 import com.github.iunius118.cbwchilipeppersandfoods.sounds.ModSoundEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
@@ -76,8 +77,11 @@ public class FabricModRegistries {
     }
 
     private static CreativeModeTab getMainCreativeModeTab() {
+        // Use different title depending on whether CBW is loaded or not
+        String titleKey = Services.PLATFORM.isModLoaded(Constants.CBW_MOD_ID) ? Constants.CreativeModeTabs.TITLE_CBW_MAIN
+                : Constants.CreativeModeTabs.TITLE_MOD_MAIN;
         return FabricItemGroup.builder()
-                .title(Component.translatable("itemGroup.%s.main".formatted(Constants.CBW_MOD_ID)))
+                .title(Component.translatable(titleKey))
                 .icon(() -> new ItemStack(ModItems.ICON_MAIN))
                 .displayItems((params, output) -> {
                     for (Item i : ModItems.ITEMS) {
