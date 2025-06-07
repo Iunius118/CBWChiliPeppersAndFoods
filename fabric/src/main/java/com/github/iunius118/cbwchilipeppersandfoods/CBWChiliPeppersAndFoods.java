@@ -6,6 +6,7 @@ import com.github.iunius118.cbwchilipeppersandfoods.registry.FabricModRegistries
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v3.LootTableSource;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -32,8 +33,14 @@ public class CBWChiliPeppersAndFoods implements ModInitializer {
         FabricModRegistries.registerGameObjects();
         // Register compostable items
         ComposterBlock.COMPOSTABLES.putAll(ModItems.COMPOSTABLES);
+        // Register furnace fuel items
+        registerFuelItems();
         // Register loot table event
         LootTableEvents.MODIFY.register(this::onLootTableLoad);
+    }
+
+    private static void registerFuelItems() {
+        ModItems.FURNACE_FUELS.forEach(FuelRegistry.INSTANCE::add);
     }
 
     private void onLootTableLoad(ResourceKey<LootTable> key, LootTable.Builder tableBuilder, LootTableSource source, HolderLookup.Provider registries) {

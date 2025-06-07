@@ -28,6 +28,8 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.CURVED_CHILI, "Curved Chili Pepper");
         add(ModItems.DRIED_CURVED_CHILI, "Dried Curved Chili Pepper");
         add(ModItems.CURVED_CHILI_SACK, "Sack of Curved Chili Peppers");
+        // Item.Fuel
+        add(ModItems.CHILI_BIOFUEL, "Chili Plant Biofuel");
         // Item.Foods
         add(ModItems.HOT_SAUCE, "Hot Chili Sauce");
         add(ModItems.GREEN_HOT_SAUCE, "Green Hot Chili Sauce");

@@ -2,6 +2,9 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+### Added
+- Add chili plant biofuel.
+
 ### Fixed
 - Fix title of mod creative mode tab.
 

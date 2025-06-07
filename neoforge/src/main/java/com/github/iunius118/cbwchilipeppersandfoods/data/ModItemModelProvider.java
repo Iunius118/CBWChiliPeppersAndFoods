@@ -22,6 +22,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.DRIED_CURVED_CHILI);
         basicItem(ModItems.CURVED_CHILI_SACK);
 
+        // Fuel
+        basicItem(ModItems.CHILI_BIOFUEL);
+
         // Foods
         basicItem(ModItems.HOT_SAUCE);
         // Item model of hot sauce barrel is generated during block state model generation

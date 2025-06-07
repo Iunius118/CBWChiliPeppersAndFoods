@@ -26,6 +26,9 @@ public class Constants {
         public static final ResourceLocation DRIED_CURVED_CHILI = CommonClass.modCBWLocation("dried_curved_chili");
         public static final ResourceLocation CURVED_CHILI_SACK = CommonClass.modCBWLocation("curved_chili_sack");
 
+        // Fuel
+        public static final ResourceLocation CHILI_BIOFUEL = CommonClass.modCBWLocation("chili_biofuel");
+
         // Foods
         public static final ResourceLocation HOT_SAUCE = CommonClass.modCBWLocation("hot_sauce");
         public static final ResourceLocation HOT_SAUCE_BARREL = CommonClass.modCBWLocation("hot_sauce_barrel");

@@ -42,6 +42,8 @@ public class NeoForgeModRegistries {
         itemRegister.register(Constants.Items.CURVED_CHILI_STRING.getPath(), () -> ModItems.CURVED_CHILI_STRING);
         itemRegister.register(Constants.Items.DRIED_CURVED_CHILI.getPath(), () -> ModItems.DRIED_CURVED_CHILI);
         itemRegister.register(Constants.Items.CURVED_CHILI_SACK.getPath(), () -> ModItems.CURVED_CHILI_SACK);
+        // Fuel
+        itemRegister.register(Constants.Items.CHILI_BIOFUEL.getPath(), () -> ModItems.CHILI_BIOFUEL);
         // Foods
         itemRegister.register(Constants.Items.HOT_SAUCE.getPath(), () -> ModItems.HOT_SAUCE);
         itemRegister.register(Constants.Items.HOT_SAUCE_BARREL.getPath(), () -> ModItems.HOT_SAUCE_BARREL);

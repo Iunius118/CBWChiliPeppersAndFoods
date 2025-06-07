@@ -19,6 +19,7 @@ public class ModItemTags {
     public static final TagKey<Item> FOODS_CHILI_SEASONING = makeCBWTag("foods/chili_seasoning");
     public static final TagKey<Item> FOODS_COOKED_FISH = makeCBWTag("foods/cooked_fish");
     public static final TagKey<Item> FOODS_COOKED_MEAT = makeCBWTag("foods/cooked_meat");
+    public static final TagKey<Item> CHILI_BIOMASS = makeCBWTag("chili_biomass");
 
     private static TagKey<Item> makeCBWTag(String id) {
         return TagKey.create(Registries.ITEM, CommonClass.modCBWLocation(id));

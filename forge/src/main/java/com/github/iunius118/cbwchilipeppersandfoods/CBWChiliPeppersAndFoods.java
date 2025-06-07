@@ -6,6 +6,7 @@ import com.github.iunius118.cbwchilipeppersandfoods.registry.ForgeModRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.registries.VanillaRegistries;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.LootTableLoadEvent;
+import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -35,12 +37,23 @@ public class CBWChiliPeppersAndFoods {
         modEventBus.addListener(this::onCommonSetup);
 
         // Register Forge event listeners
+        MinecraftForge.EVENT_BUS.addListener(this::onFurnaceFuelBurnTimeEvent);
         MinecraftForge.EVENT_BUS.addListener(this::onLootTableLoad);
     }
 
     private void onCommonSetup(final FMLCommonSetupEvent event) {
         // Register compostable items
         ComposterBlock.COMPOSTABLES.putAll(ModItems.COMPOSTABLES);
+    }
+
+    private void onFurnaceFuelBurnTimeEvent(final FurnaceFuelBurnTimeEvent event) {
+        // Set burn time for furnace fuel items
+        ItemStack fuelStack = event.getItemStack();
+        ModItems.FURNACE_FUELS.forEach((item, burnTime) -> {
+            if (fuelStack.is(item)) {
+                event.setBurnTime(burnTime);
+            }
+        });
     }
 
     private void onLootTableLoad(final LootTableLoadEvent event) {

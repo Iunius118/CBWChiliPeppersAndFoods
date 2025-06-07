@@ -73,6 +73,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_curved_chili_sack", has(ModItems.CURVED_CHILI_SACK))
                 .save(recipeOutput, getItemId(ModItems.DRIED_CURVED_CHILI) + "_from_sack");
 
+        /* Fuel */
+        // Chili Plant Biofuel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHILI_BIOFUEL)
+                .group(getItemId(ModItems.CHILI_BIOFUEL).toString())
+                .pattern("cc")
+                .pattern("cc")
+                .define('c', ModItemTags.CHILI_BIOMASS)
+                .unlockedBy("has_curved_chili", has(ModItems.CURVED_CHILI))
+                .save(recipeOutput, getItemId(ModItems.CHILI_BIOFUEL));
+
         /* Foods */
         // Hot sauce
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.HOT_SAUCE, 3)

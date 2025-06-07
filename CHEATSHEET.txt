@@ -1,7 +1,7 @@
 # Cheatsheet
 
 CBW Chili Peppers and Foods
-version 1.0.0
+version 1.1.0
 
 - [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods)
 - [Chili Bullet Weapons](https://iunius118.github.io/ChiliBulletWeapons/)
@@ -80,6 +80,17 @@ Sack of chili peppers can be used to store chili peppers in a compact fashion.
 Crafting:
 
 - 9x Dried Curved Chili Pepper <-> 1x Sack of Curved Chili Peppers
+
+### Chili Plant Biofuel
+
+Chili plant biofuel is a solid fuel made from biomass of chili pepper plants and can be used as fuel (1:20) in furnaces.
+
+Crafting (shaped recipe):
+
+    Chili Plant Biofuel
+    4x String of Curved Chili Peppers/Sack of Curved Chili Peppers (c)
+    | c | c |
+    | c | c |
 
 ### Composting
 
