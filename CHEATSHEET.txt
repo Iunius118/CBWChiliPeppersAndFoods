@@ -113,6 +113,8 @@ The following items can be added to composters:
 
 Hot chili sauce is a hot sauce made from curved chili peppers and can be used to flavor food.
 
+Hot chili sauce gives Slowness IV and Blindness effects (0:02) when used on a mob.
+
 Crafting (shaped recipe):
 
     Hot Chili Sauce
@@ -143,6 +145,8 @@ Crafting (shaped recipe):
 
 Green hot chili sauce is a hot sauce made from curved green chili peppers and can be used to flavor food.
 
+Green hot chili sauce gives Slowness IV and Blindness effects (0:02) when used on a mob.
+
 Crafting (shaped recipe):
 
     Green Hot Chili Sauce
@@ -150,6 +154,8 @@ Crafting (shaped recipe):
     |   | w |   |
     | c | c | c |
     | g | g | g |
+
+Glass bottles will be returned when green hot chili sauce is consumed.
 
 ### Pickled Green Chili Pepper
 

@@ -3,7 +3,11 @@
 
 ## [Unreleased]
 ### Added
-- Add chili plant biofuel.
+- Add chili plant biofuel that can be used as fuel in furnaces.
+- Add item tag `chilibulletweapons:chili_biomass`.
+
+### Changed
+- Hot chili sauce now gives slowness and blindness effects for 2 seconds when used on a mob.
 
 ### Fixed
 - Fix title of mod creative mode tab.
