@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chilibulletweapons:ferrocapsicumium_ingot",
+  "key": {
+    "c": {
+      "item": "chilibulletweapons:capsaicin_powder"
+    },
+    "g": {
+      "tag": "c:ingots/gold"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "r": {
+      "tag": "c:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "iir",
+    "igc",
+    "rcc"
+  ],
+  "result": {
+    "count": 4,
+    "id": "chilibulletweapons:ferrocapsicumium_ingot"
+  }
+}

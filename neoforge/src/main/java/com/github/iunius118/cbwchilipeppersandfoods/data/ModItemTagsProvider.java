@@ -8,6 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -22,11 +23,16 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(ModItemTags.C_CROPS).addTag(ModItemTags.C_CROPS_CHILI);
+        // Namespace: c
+        tag(Tags.Items.CROPS).addTag(ModItemTags.C_CROPS_CHILI);
         tag(ModItemTags.C_CROPS_CHILI).add(ModItems.CURVED_CHILI, ModItems.CURVED_GREEN_CHILI);
-        tag(ModItemTags.C_SEEDS).addTag(ModItemTags.C_SEEDS_CHILI);
+        tag(Tags.Items.SEEDS).addTag(ModItemTags.C_SEEDS_CHILI);
         tag(ModItemTags.C_SEEDS_CHILI).add(ModItems.CHILI_SEEDS);
+        tag(Tags.Items.NUGGETS).add(ModItems.FERROCAPSICUMIUM_NUGGET);
+        tag(Tags.Items.INGOTS).add(ModItems.FERROCAPSICUMIUM_INGOT);
+        tag(Tags.Items.STORAGE_BLOCKS).add(ModItems.FERROCAPSICUMIUM_BLOCK, ModItems.CURVED_CHILI_STRING);
 
+        // Namespace: chilibulletweapons
         tag(ModItemTags.FOODS_RED_CHILI_PEPPER).add(ModItems.CURVED_CHILI, ModItems.DRIED_CURVED_CHILI);
         tag(ModItemTags.FOODS_GREEN_CHILI_PEPPER).add(ModItems.CURVED_GREEN_CHILI, ModItems.PICKLED_GREEN_CHILI);
         tag(ModItemTags.FOODS_CHILI_PEPPERS).addTag(ModItemTags.FOODS_RED_CHILI_PEPPER).addTag(ModItemTags.FOODS_GREEN_CHILI_PEPPER);

@@ -230,3 +230,49 @@ Chicken with chili chocolate sauce is chicken braised in sauce of chili chocolat
 Crafting (shapeless recipe):
 
 - Cooked Chicken + Chili Chocolate -> Chicken with Chili Chocolate Sauce
+
+## Materials
+
+### Capsaicin Powder
+
+Capsaicin powder is a component of chili peppers, a substance extracted from chili peppers with alcohol and dried.
+
+Crafting (shapeless recipe):
+
+- Barrel of Hot Chili Sauce + Nether Wart + Blaze Powder -> Capsaicin Powder
+
+### Ferro-Capsicumium Ingot
+
+Ferro-capsicumium is an alloy consisting of iron and curved chili pepper components with redstone as catalyst.
+
+Crafting (shaped recipe):
+
+    Ferro-Capsicumium Ingot
+    3x Iron Ingot (i), 2x Redstone Dust (r), 1x Gold Ingot (g), and 3x Capsaicin Powder (c) -> 4x Ferro-Capsicumium Ingot
+    | i | i | r |
+    | i | g | c |
+    | r | c | c |
+
+Ferro-capsicumium ingots can be smelted in a furnace or blast furnace to obtain iron ingots.
+
+Cooking in Furnace/Blast Furnace:
+
+- Ferro-Capsicumium Ingot -> Iron Ingot
+
+### Block of Ferro-Capsicumium
+
+Block of ferro-capsicumium can be used to store ferro-capsicumium ingots in a compact fashion.
+
+Crafting:
+
+- 9x Ferro-Capsicumium Ingot <-> 1x Block of Ferro-Capsicumium
+
+Block of ferro-capsicumium can be harvested when broken with a pickaxe with stone or higher mining level.
+
+### Ferro-Capsicumium Nugget
+
+Ferro-capsicumium nuggets are pieces of ferro-capsicumium.
+
+Crafting:
+
+- 1x Ferro-Capsicumium Ingot <-> 9x Ferro-Capsicumium Nugget

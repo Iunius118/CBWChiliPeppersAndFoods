@@ -45,8 +45,11 @@ public class ModItems {
     public static final Item CHILI_CHOCOLATE = add(new Item(new Item.Properties().food(ModFoods.CHILI_CHOCOLATE)));
     public static final Item CHILI_CHOCOLATE_CHICKEN = add(new Item(new Item.Properties().food(ModFoods.CHILI_CHOCOLATE_CHICKEN)));
 
-    // Misc.
+    // Materials
     public static final Item CAPSAICIN_POWDER = add(new Item(new Item.Properties()));
+    public static final Item FERROCAPSICUMIUM_NUGGET = add(new Item(new Item.Properties()));
+    public static final Item FERROCAPSICUMIUM_INGOT = add(new Item(new Item.Properties()));
+    public static final Item FERROCAPSICUMIUM_BLOCK = add(new BlockItem(ModBlocks.FERROCAPSICUMIUM_BLOCK, new Item.Properties()));
 
     // Creative tab icon
     // This will not be added to creative tabs

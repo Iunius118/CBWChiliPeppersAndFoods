@@ -1,6 +1,7 @@
 {
   "block.chilibulletweapons.chili_pepper": "Chili Pepper Crops (CBW)",
   "block.chilibulletweapons.curved_chili_string": "String of Curved Chili Peppers",
+  "block.chilibulletweapons.ferrocapsicumium_block": "Block of Ferro-Capsicumium",
   "block.chilibulletweapons.hot_sauce_barrel": "Barrel of Hot Chili Sauce",
   "item.chilibulletweapons.capsaicin_powder": "Capsaicin Powder",
   "item.chilibulletweapons.chili_biofuel": "Chili Plant Biofuel",
@@ -15,6 +16,8 @@
   "item.chilibulletweapons.curved_chili_sack": "Sack of Curved Chili Peppers",
   "item.chilibulletweapons.curved_green_chili": "Curved Green Chili Pepper",
   "item.chilibulletweapons.dried_curved_chili": "Dried Curved Chili Pepper",
+  "item.chilibulletweapons.ferrocapsicumium_ingot": "Ferro-Capsicumium Ingot",
+  "item.chilibulletweapons.ferrocapsicumium_nugget": "Ferro-Capsicumium Nugget",
   "item.chilibulletweapons.fried_chili_pepper": "Fried Chili Pepper",
   "item.chilibulletweapons.green_hot_sauce": "Green Hot Chili Sauce",
   "item.chilibulletweapons.half_chili_chicken_sandwich": "Half-sized Chili Chicken Sandwich",

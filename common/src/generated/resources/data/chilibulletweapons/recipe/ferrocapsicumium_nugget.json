@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chilibulletweapons:ferrocapsicumium_nugget",
+  "ingredients": [
+    {
+      "item": "chilibulletweapons:ferrocapsicumium_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "chilibulletweapons:ferrocapsicumium_nugget"
+  }
+}

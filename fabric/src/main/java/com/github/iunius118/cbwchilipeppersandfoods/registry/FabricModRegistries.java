@@ -29,6 +29,7 @@ public class FabricModRegistries {
         blockRegister.register(Constants.Blocks.CHILI_PEPPER.getPath(), ModBlocks.CHILI_PEPPER);
         blockRegister.register(Constants.Blocks.CURVED_CHILI_STRING.getPath(), ModBlocks.CURVED_CHILI_STRING);
         blockRegister.register(Constants.Blocks.HOT_SAUCE_BARREL.getPath(), ModBlocks.HOT_SAUCE_BARREL);
+        blockRegister.register(Constants.Blocks.FERROCAPSICUMIUM_BLOCK.getPath(), ModBlocks.FERROCAPSICUMIUM_BLOCK);
     }
 
     private static void registerItems() {
@@ -60,8 +61,11 @@ public class FabricModRegistries {
         itemRegister.register(Constants.Items.FRIED_CHILI_PEPPER.getPath(), ModItems.FRIED_CHILI_PEPPER);
         itemRegister.register(Constants.Items.CHILI_CHOCOLATE.getPath(), ModItems.CHILI_CHOCOLATE);
         itemRegister.register(Constants.Items.CHILI_CHOCOLATE_CHICKEN.getPath(), ModItems.CHILI_CHOCOLATE_CHICKEN);
-        // Misc.
+        // Materials
         itemRegister.register(Constants.Items.CAPSAICIN_POWDER.getPath(), ModItems.CAPSAICIN_POWDER);
+        itemRegister.register(Constants.Items.FERROCAPSICUMIUM_NUGGET.getPath(), ModItems.FERROCAPSICUMIUM_NUGGET);
+        itemRegister.register(Constants.Items.FERROCAPSICUMIUM_INGOT.getPath(), ModItems.FERROCAPSICUMIUM_INGOT);
+        itemRegister.register(Constants.Items.FERROCAPSICUMIUM_BLOCK.getPath(), ModItems.FERROCAPSICUMIUM_BLOCK);
         // Creative tab icon
         itemRegister.register(Constants.Items.ICON_MAIN.getPath(), ModItems.ICON_MAIN);
     }

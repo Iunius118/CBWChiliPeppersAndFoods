@@ -22,5 +22,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.CROPS).add(ModBlocks.CHILI_PEPPER);
         tag(BlockTags.MAINTAINS_FARMLAND).add(ModBlocks.CHILI_PEPPER);
         tag(BlockTags.MINEABLE_WITH_AXE).add(ModBlocks.CHILI_PEPPER).add(ModBlocks.HOT_SAUCE_BARREL);
+        // Block of ferro-capsicumium requires a pickaxe that is at least stone level to mine
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.FERROCAPSICUMIUM_BLOCK);
+        tag(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.FERROCAPSICUMIUM_BLOCK);
+        tag(BlockTags.BEACON_BASE_BLOCKS).add(ModBlocks.FERROCAPSICUMIUM_BLOCK);
     }
 }

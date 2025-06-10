@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chilibulletweapons:capsaicin_powder",
+  "ingredients": [
+    {
+      "item": "chilibulletweapons:hot_sauce_barrel"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chilibulletweapons:capsaicin_powder"
+  }
+}

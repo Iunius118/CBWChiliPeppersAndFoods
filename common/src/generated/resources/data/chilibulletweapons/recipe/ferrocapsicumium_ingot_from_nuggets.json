@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chilibulletweapons:ferrocapsicumium_ingot",
+  "key": {
+    "n": {
+      "item": "chilibulletweapons:ferrocapsicumium_nugget"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "nnn",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chilibulletweapons:ferrocapsicumium_ingot"
+  }
+}

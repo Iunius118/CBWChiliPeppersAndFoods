@@ -1,6 +1,7 @@
 package com.github.iunius118.cbwchilipeppersandfoods.data;
 
 import com.github.iunius118.cbwchilipeppersandfoods.Constants;
+import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -43,8 +44,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHILI_CHOCOLATE);
         basicItem(ModItems.CHILI_CHOCOLATE_CHICKEN);
 
-        // Misc.
+        // Materials
         basicItem(ModItems.CAPSAICIN_POWDER);
+        basicItem(ModItems.FERROCAPSICUMIUM_NUGGET);
+        basicItem(ModItems.FERROCAPSICUMIUM_INGOT);
+        simpleBlockItem(ModBlocks.FERROCAPSICUMIUM_BLOCK);
 
         // Creative mode tab
         basicItem(ModItems.ICON_MAIN);

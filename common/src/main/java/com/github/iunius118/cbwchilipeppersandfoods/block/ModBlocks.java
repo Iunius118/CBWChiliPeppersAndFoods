@@ -27,4 +27,10 @@ public class ModBlocks {
             .strength(2.5F)
             .sound(SoundType.WOOD)
             .ignitedByLava());
+    public static final Block FERROCAPSICUMIUM_BLOCK = new Block(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.METAL)
+            .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+            .requiresCorrectToolForDrops()
+            .strength(5.0F, 6.0F)
+            .sound(SoundType.METAL));
 }

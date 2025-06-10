@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ferrocapsicumium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chilibulletweapons:ferrocapsicumium_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chilibulletweapons:ferrocapsicumium_nugget"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ferrocapsicumium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chilibulletweapons:ferrocapsicumium_nugget"
+    ]
+  }
+}

@@ -21,6 +21,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModBlocks.CHILI_PEPPER, "Chili Pepper Crops (CBW)");
         add(ModBlocks.CURVED_CHILI_STRING, "String of Curved Chili Peppers");
         add(ModBlocks.HOT_SAUCE_BARREL, "Barrel of Hot Chili Sauce");
+        add(ModBlocks.FERROCAPSICUMIUM_BLOCK, "Block of Ferro-Capsicumium");
 
         // Item.Plants
         add(ModItems.CHILI_SEEDS, "Chili Pepper Seeds (CBW)");
@@ -46,7 +47,9 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.FRIED_CHILI_PEPPER, "Fried Chili Pepper");
         add(ModItems.CHILI_CHOCOLATE, "Chili Chocolate");
         add(ModItems.CHILI_CHOCOLATE_CHICKEN, "Chicken with Chili Chocolate Sauce");
-        // Item.Misc.
+        // Item.Materials
         add(ModItems.CAPSAICIN_POWDER, "Capsaicin Powder");
+        add(ModItems.FERROCAPSICUMIUM_NUGGET, "Ferro-Capsicumium Nugget");
+        add(ModItems.FERROCAPSICUMIUM_INGOT, "Ferro-Capsicumium Ingot");
     }
 }

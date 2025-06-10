@@ -5,6 +5,7 @@
 ### Added
 - Add chili plant biofuel that can be used as fuel in furnaces.
 - Add item tag `chilibulletweapons:chili_biomass`.
+- Add ferro-capsicumium nugget, ferro-capsicumium ingot, and block of ferro-capsicumium.
 
 ### Changed
 - Hot chili sauce now gives slowness and blindness effects for 2 seconds when used on a mob.

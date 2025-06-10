@@ -15,6 +15,7 @@ public class Constants {
         public static final ResourceLocation CHILI_PEPPER = CommonClass.modCBWLocation("chili_pepper");
         public static final ResourceLocation CURVED_CHILI_STRING = CommonClass.modCBWLocation("curved_chili_string");
         public static final ResourceLocation HOT_SAUCE_BARREL = CommonClass.modCBWLocation("hot_sauce_barrel");
+        public static final ResourceLocation FERROCAPSICUMIUM_BLOCK = CommonClass.modCBWLocation("ferrocapsicumium_block");
     }
 
     public static class Items {
@@ -47,8 +48,11 @@ public class Constants {
         public static final ResourceLocation CHILI_CHOCOLATE = CommonClass.modCBWLocation("chili_chocolate");
         public static final ResourceLocation CHILI_CHOCOLATE_CHICKEN = CommonClass.modCBWLocation("chili_chocolate_chicken");
 
-        // Misc.
+        // Materials
         public static final ResourceLocation CAPSAICIN_POWDER = CommonClass.modCBWLocation("capsaicin_powder");
+        public static final ResourceLocation FERROCAPSICUMIUM_NUGGET = CommonClass.modCBWLocation("ferrocapsicumium_nugget");
+        public static final ResourceLocation FERROCAPSICUMIUM_INGOT = CommonClass.modCBWLocation("ferrocapsicumium_ingot");
+        public static final ResourceLocation FERROCAPSICUMIUM_BLOCK = CommonClass.modCBWLocation("ferrocapsicumium_block");
 
         // Creative tab icon
         public static final ResourceLocation ICON_MAIN = CommonClass.modCBWLocation("icon_main");

@@ -7,9 +7,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 public class ModItemTags {
-    public static final TagKey<Item> C_CROPS = makeCTag("crops");
     public static final TagKey<Item> C_CROPS_CHILI = makeCTag("crops/chili");
-    public static final TagKey<Item> C_SEEDS = makeCTag("seeds");
     public static final TagKey<Item> C_SEEDS_CHILI = makeCTag("seeds/chili");
     public static final TagKey<Item> C_TOOLS_SHEAR = makeCTag("tools/shear");
 

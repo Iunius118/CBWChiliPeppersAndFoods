@@ -24,6 +24,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         registerChiliPepper();
         registerTrivialBlockWithItem(ModBlocks.HOT_SAUCE_BARREL);
         registerCrossBlock(ModBlocks.CURVED_CHILI_STRING);
+        this.simpleBlock(ModBlocks.FERROCAPSICUMIUM_BLOCK);
     }
 
     private void registerChiliPepper() {
