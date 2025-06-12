@@ -113,8 +113,6 @@ The following items can be added to composters:
 
 Hot chili sauce is a hot sauce made from curved chili peppers and can be used to flavor food.
 
-Hot chili sauce gives Slowness IV and Blindness effects (0:02) when used on a mob.
-
 Crafting (shaped recipe):
 
     Hot Chili Sauce
@@ -123,7 +121,7 @@ Crafting (shaped recipe):
     | c | c | c |
     | g | g | g |
 
-Glass bottles will be returned when hot chili sauce is consumed.
+Glass bottles will be returned when hot chili sauce is consumed by crafting.
 
 A barrel of hot chili sauce can be used to make many bottles of hot chili sauce at one time.
 
@@ -141,11 +139,12 @@ Crafting (shaped recipe):
     | g | # | g |
     | g | g | g |
 
+Hot chili sauce can be thrown by using it.
+It splashes on impact and applies Slowness IV and Blindness effects (0:02) to nearby entities.
+
 ### Green Hot Chili Sauce
 
 Green hot chili sauce is a hot sauce made from curved green chili peppers and can be used to flavor food.
-
-Green hot chili sauce gives Slowness IV and Blindness effects (0:02) when used on a mob.
 
 Crafting (shaped recipe):
 
@@ -155,7 +154,10 @@ Crafting (shaped recipe):
     | c | c | c |
     | g | g | g |
 
-Glass bottles will be returned when green hot chili sauce is consumed.
+Glass bottles will be returned when green hot chili sauce is consumed by crafting.
+
+Green hot chili sauce can be thrown by using it.
+It splashes on impact and applies Slowness IV and Blindness effects (0:02) to nearby entities.
 
 ### Pickled Green Chili Pepper
 
@@ -259,6 +261,14 @@ Cooking in Furnace/Blast Furnace:
 
 - Ferro-Capsicumium Ingot -> Iron Ingot
 
+### Ferro-Capsicumium Nugget
+
+Ferro-capsicumium nuggets are pieces of ferro-capsicumium.
+
+Crafting:
+
+- 9x Ferro-Capsicumium Nugget <-> 1x Ferro-Capsicumium Ingot
+
 ### Block of Ferro-Capsicumium
 
 Block of ferro-capsicumium can be used to store ferro-capsicumium ingots in a compact fashion.
@@ -268,14 +278,6 @@ Crafting:
 - 9x Ferro-Capsicumium Ingot <-> 1x Block of Ferro-Capsicumium
 
 Block of ferro-capsicumium can be harvested when broken with a pickaxe with stone or higher mining level.
-
-### Ferro-Capsicumium Nugget
-
-Ferro-capsicumium nuggets are pieces of ferro-capsicumium.
-
-Crafting:
-
-- 1x Ferro-Capsicumium Ingot <-> 9x Ferro-Capsicumium Nugget
 
 ## Tools
 

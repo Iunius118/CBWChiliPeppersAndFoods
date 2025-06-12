@@ -2,8 +2,6 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
-
-## [1.1.0]
 ### Added
 - Add chili plant biofuel that can be used as fuel in furnaces.
 - Add item tag `chilibulletweapons:chili_biomass`.
@@ -12,7 +10,7 @@
 - Add ferro-capsicumium shovel and hoe.
 
 ### Changed
-- Using hot chili sauce on a mob now applies slowness and blindness effects for 2 seconds.
+- Hot chili sauces can now be thrown like splash potions with slowness and blindness effects for 2 seconds.
 
 ### Fixed
 - Fix title of mod creative mode tab.
