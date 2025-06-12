@@ -54,6 +54,10 @@ public class Constants {
         public static final ResourceLocation FERROCAPSICUMIUM_INGOT = CommonClass.modCBWLocation("ferrocapsicumium_ingot");
         public static final ResourceLocation FERROCAPSICUMIUM_BLOCK = CommonClass.modCBWLocation("ferrocapsicumium_block");
 
+        // Tools
+        public static final ResourceLocation FERROCAPSICUMIUM_SHOVEL = CommonClass.modCBWLocation("ferrocapsicumium_shovel");
+        public static final ResourceLocation FERROCAPSICUMIUM_HOE = CommonClass.modCBWLocation("ferrocapsicumium_hoe");
+
         // Creative tab icon
         public static final ResourceLocation ICON_MAIN = CommonClass.modCBWLocation("icon_main");
     }

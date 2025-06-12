@@ -5,12 +5,16 @@ import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import com.github.iunius118.cbwchilipeppersandfoods.tags.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
@@ -24,6 +28,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput, HolderLookup.Provider holderLookup) {
+        HolderLookup.RegistryLookup<Enchantment> enchantmentRegistry = holderLookup.lookupOrThrow(Registries.ENCHANTMENT);
+
         //* Plants *//
 
         // Seeds
@@ -268,6 +274,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ferrocapsicumium_nugget", has(ModItems.FERROCAPSICUMIUM_NUGGET))
                 .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_INGOT) + "_from_nuggets");
 
+        // Ferro-Capsicumium Nugget from smelting ferro-capsicumium items
+        var ingredientsForNugget = Ingredient.of(ModItems.FERROCAPSICUMIUM_SHOVEL, ModItems.FERROCAPSICUMIUM_HOE);
+        SimpleCookingRecipeBuilder.smelting(ingredientsForNugget, RecipeCategory.MISC, ModItems.FERROCAPSICUMIUM_NUGGET, 0.1F, 200)
+                .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
+                .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_NUGGET) + "_from_smelting");
+        SimpleCookingRecipeBuilder.blasting(ingredientsForNugget, RecipeCategory.MISC, ModItems.FERROCAPSICUMIUM_NUGGET, 0.1F, 100)
+                .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
+                .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_NUGGET) + "_from_blasting");
+
         // Ferro-Capsicumium Ingot
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FERROCAPSICUMIUM_INGOT, 4)
                 .group(getItemId(ModItems.FERROCAPSICUMIUM_INGOT).toString())
@@ -304,6 +319,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.FERROCAPSICUMIUM_BLOCK)
                 .unlockedBy("has_ferrocapsicumium_block", has(ModItems.FERROCAPSICUMIUM_BLOCK))
                 .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_INGOT) + "_from_block");
+
+        //* Tools *//
+
+        // Ferro-Capsicumium Shovel
+        ItemStack feCapShovel = new ItemStack(ModItems.FERROCAPSICUMIUM_SHOVEL);
+        // Add enchantments to shovel
+        feCapShovel.enchant(enchantmentRegistry.getOrThrow(Enchantments.EFFICIENCY), 1);
+        feCapShovel.enchant(enchantmentRegistry.getOrThrow(Enchantments.UNBREAKING), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, feCapShovel)
+                .group(getItemId(ModItems.FERROCAPSICUMIUM_SHOVEL).toString())
+                .pattern("i")
+                .pattern("s")
+                .pattern("s")
+                .define('i', ModItems.FERROCAPSICUMIUM_INGOT)
+                .define('s', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
+                .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_SHOVEL));
+
+        // Ferro-Capsicumium Hoe
+        ItemStack feCapHoe = new ItemStack(ModItems.FERROCAPSICUMIUM_HOE);
+        // Add enchantments to hoe
+        feCapHoe.enchant(enchantmentRegistry.getOrThrow(Enchantments.FORTUNE), 1);
+        feCapHoe.enchant(enchantmentRegistry.getOrThrow(Enchantments.UNBREAKING), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, feCapHoe)
+                .group(getItemId(ModItems.FERROCAPSICUMIUM_HOE).toString())
+                .pattern("ii")
+                .pattern(" s")
+                .pattern(" s")
+                .define('i', ModItems.FERROCAPSICUMIUM_INGOT)
+                .define('s', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
+                .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_HOE));
     }
 
     private ResourceLocation getItemId(Item item) {

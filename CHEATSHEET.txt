@@ -276,3 +276,29 @@ Ferro-capsicumium nuggets are pieces of ferro-capsicumium.
 Crafting:
 
 - 1x Ferro-Capsicumium Ingot <-> 9x Ferro-Capsicumium Nugget
+
+## Tools
+
+### Ferro-Capsicumium Shovel
+
+A ferro-capsicumium shovel is a tool made from ferro-capsicumium and can be used like an iron shovel.
+
+Crafting (shaped recipe):
+
+    Ferro-Capsicumium Shovel
+    1x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
+    |   | i |   |
+    |   | s |   |
+    |   | s |   |
+
+### Ferro-Capsicumium Hoe
+
+A ferro-capsicumium hoe is a tool made from ferro-capsicumium and can be used like an iron hoe.
+
+Crafting (shaped recipe):
+
+    Ferro-Capsicumium Hoe
+    1x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
+    | i | i |   |
+    |   | s |   |
+    |   | s |   |

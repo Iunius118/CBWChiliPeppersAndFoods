@@ -51,5 +51,8 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.CAPSAICIN_POWDER, "Capsaicin Powder");
         add(ModItems.FERROCAPSICUMIUM_NUGGET, "Ferro-Capsicumium Nugget");
         add(ModItems.FERROCAPSICUMIUM_INGOT, "Ferro-Capsicumium Ingot");
+        // Item.Tools
+        add(ModItems.FERROCAPSICUMIUM_SHOVEL, "Ferro-Capsicumium Shovel");
+        add(ModItems.FERROCAPSICUMIUM_HOE, "Ferro-Capsicumium Hoe");
     }
 }

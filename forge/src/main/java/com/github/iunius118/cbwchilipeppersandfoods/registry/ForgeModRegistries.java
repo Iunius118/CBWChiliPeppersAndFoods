@@ -68,6 +68,9 @@ public class ForgeModRegistries {
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_NUGGET.getPath(), () -> ModItems.FERROCAPSICUMIUM_NUGGET);
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_INGOT.getPath(), () -> ModItems.FERROCAPSICUMIUM_INGOT);
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_BLOCK.getPath(), () -> ModItems.FERROCAPSICUMIUM_BLOCK);
+        // Tools
+        itemRegister.register(Constants.Items.FERROCAPSICUMIUM_SHOVEL.getPath(), () -> ModItems.FERROCAPSICUMIUM_SHOVEL);
+        itemRegister.register(Constants.Items.FERROCAPSICUMIUM_HOE.getPath(), () -> ModItems.FERROCAPSICUMIUM_HOE);
         // Creative tab icon
         itemRegister.register(Constants.Items.ICON_MAIN.getPath(), () -> ModItems.ICON_MAIN);
 

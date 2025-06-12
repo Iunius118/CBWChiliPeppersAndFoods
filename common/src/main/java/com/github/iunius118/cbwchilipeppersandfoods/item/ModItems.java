@@ -1,10 +1,7 @@
 package com.github.iunius118.cbwchilipeppersandfoods.item;
 
 import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -50,6 +47,12 @@ public class ModItems {
     public static final Item FERROCAPSICUMIUM_NUGGET = add(new Item(new Item.Properties()));
     public static final Item FERROCAPSICUMIUM_INGOT = add(new Item(new Item.Properties()));
     public static final Item FERROCAPSICUMIUM_BLOCK = add(new BlockItem(ModBlocks.FERROCAPSICUMIUM_BLOCK, new Item.Properties()));
+
+    // Tools
+    public static final Item FERROCAPSICUMIUM_SHOVEL = add(new ShovelItem(ModTiers.FERROCAPSICUMIUM,
+            new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.FERROCAPSICUMIUM, 1.5F, -3.0F))));
+    public static final Item FERROCAPSICUMIUM_HOE = add(new HoeItem(ModTiers.FERROCAPSICUMIUM,
+            new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.FERROCAPSICUMIUM, -2.0F, -1.0F))));
 
     // Creative tab icon
     // This will not be added to creative tabs

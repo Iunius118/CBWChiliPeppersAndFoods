@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-11T02:32:00.5034007	Tags for minecraft:item mod id chilibulletweapons
+// 1.21.1	2025-06-13T01:01:25.1332573	Tags for minecraft:item mod id chilibulletweapons
 d7863948289cf48cdb69d16da3355ebce8ea13b5 data/chilibulletweapons/tags/item/chili_biomass.json
 c743c46a02c2aad819a8162e30ccd2b6d12ce08e data/chilibulletweapons/tags/item/foods/chili_peppers.json
 e12f26c550300371ea4dfd5e0af7c3588c29ed13 data/chilibulletweapons/tags/item/foods/chili_peppers/green.json
@@ -13,3 +13,5 @@ da46f96bc13c4a27c511298908a9f8207f94e1fe data/c/tags/item/crops.json
 f22737b0c8878bd60d56ea4cc00e35184bc9ffae data/c/tags/item/seeds.json
 5ae775032c52f263ebaaa8c5499f282078592830 data/c/tags/item/seeds/chili.json
 71c4f4faa8636d09c7c416eee06da879f2b8809e data/c/tags/item/storage_blocks.json
+be71a64febdb604d1a5872387a475be1f250548c data/minecraft/tags/item/hoes.json
+dfbb6f360a044d06444221146089b07ebdc145e3 data/minecraft/tags/item/shovels.json

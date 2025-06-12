@@ -6,6 +6,7 @@ import com.github.iunius118.cbwchilipeppersandfoods.tags.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
@@ -23,6 +24,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        // Namespace: minecraft
+        tag(ItemTags.SHOVELS).add(ModItems.FERROCAPSICUMIUM_SHOVEL);
+        tag(ItemTags.HOES).add(ModItems.FERROCAPSICUMIUM_HOE);
+
         // Namespace: c
         tag(Tags.Items.CROPS).addTag(ModItemTags.C_CROPS_CHILI);
         tag(ModItemTags.C_CROPS_CHILI).add(ModItems.CURVED_CHILI, ModItems.CURVED_GREEN_CHILI);
