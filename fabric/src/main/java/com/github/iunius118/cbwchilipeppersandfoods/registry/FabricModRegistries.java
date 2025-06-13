@@ -68,6 +68,7 @@ public class FabricModRegistries {
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_BLOCK.getPath(), ModItems.FERROCAPSICUMIUM_BLOCK);
         // Tools
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_SHOVEL.getPath(), ModItems.FERROCAPSICUMIUM_SHOVEL);
+        itemRegister.register(Constants.Items.FERROCAPSICUMIUM_AXE.getPath(), ModItems.FERROCAPSICUMIUM_AXE);
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_HOE.getPath(), ModItems.FERROCAPSICUMIUM_HOE);
         // Creative tab icon
         itemRegister.register(Constants.Items.ICON_MAIN.getPath(), ModItems.ICON_MAIN);

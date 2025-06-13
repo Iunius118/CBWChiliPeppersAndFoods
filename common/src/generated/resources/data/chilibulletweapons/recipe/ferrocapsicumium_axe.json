@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "chilibulletweapons:ferrocapsicumium_axe",
+  "key": {
+    "i": {
+      "item": "chilibulletweapons:ferrocapsicumium_ingot"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "ii",
+    "is",
+    " s"
+  ],
+  "result": {
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:efficiency": 1,
+          "minecraft:unbreaking": 1
+        }
+      }
+    },
+    "count": 1,
+    "id": "chilibulletweapons:ferrocapsicumium_axe"
+  }
+}

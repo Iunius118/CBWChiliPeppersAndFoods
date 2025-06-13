@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-13T01:01:25.1332573	Item Models: chilibulletweapons
+// 1.21.1	2025-06-13T20:16:25.1126224	Item Models: chilibulletweapons
 35b369159dd386d62423ab5935dafca84908a4aa assets/chilibulletweapons/models/item/capsaicin_powder.json
 a3c68cf97af12b3851a7c0ee505da51e59419ca1 assets/chilibulletweapons/models/item/chili_biofuel.json
 b724cefcebcb7185e4d09939652fe462c4015789 assets/chilibulletweapons/models/item/chili_chicken_sandwich.json
@@ -13,6 +13,7 @@ c9c82115e39f331273a69db6569c538485fb82d8 assets/chilibulletweapons/models/item/c
 2c11476a19a2a3eff2107230c9f8d9562cfe3efd assets/chilibulletweapons/models/item/curved_chili_string.json
 249e4d51f5082a0bb6eaa8036e8c76e8f5f94cb3 assets/chilibulletweapons/models/item/curved_green_chili.json
 0939757da84f79a6e08c04681c97fd83f4a60206 assets/chilibulletweapons/models/item/dried_curved_chili.json
+c3148901c6edbcb963604b615a7a8040935e9005 assets/chilibulletweapons/models/item/ferrocapsicumium_axe.json
 b8a5db89da89bb3ea201a411e93a7536725d3020 assets/chilibulletweapons/models/item/ferrocapsicumium_block.json
 bec23f901fb673f1ef36cb7e15bf6ab274378f98 assets/chilibulletweapons/models/item/ferrocapsicumium_hoe.json
 ff3c13988e3c287fd247c0232bc2c9615a52790b assets/chilibulletweapons/models/item/ferrocapsicumium_ingot.json

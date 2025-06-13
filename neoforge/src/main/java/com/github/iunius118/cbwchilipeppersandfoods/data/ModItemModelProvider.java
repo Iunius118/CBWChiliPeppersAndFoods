@@ -52,6 +52,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // Tools
         handheldItem(ModItems.FERROCAPSICUMIUM_SHOVEL);
+        handheldItem(ModItems.FERROCAPSICUMIUM_AXE);
         handheldItem(ModItems.FERROCAPSICUMIUM_HOE);
 
         // Creative mode tab

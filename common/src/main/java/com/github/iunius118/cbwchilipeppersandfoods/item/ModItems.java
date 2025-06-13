@@ -53,6 +53,8 @@ public class ModItems {
     // Tools
     public static final Item FERROCAPSICUMIUM_SHOVEL = add(new ShovelItem(ModTiers.FERROCAPSICUMIUM,
             new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.FERROCAPSICUMIUM, 1.5F, -3.0F))));
+    public static final Item FERROCAPSICUMIUM_AXE = add(new AxeItem(ModTiers.FERROCAPSICUMIUM,
+            new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.FERROCAPSICUMIUM, 6.0F, -3.1F))));
     public static final Item FERROCAPSICUMIUM_HOE = add(new HoeItem(ModTiers.FERROCAPSICUMIUM,
             new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.FERROCAPSICUMIUM, -2.0F, -1.0F))));
 

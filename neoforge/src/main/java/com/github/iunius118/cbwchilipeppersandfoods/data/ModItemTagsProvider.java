@@ -26,6 +26,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         // Namespace: minecraft
         tag(ItemTags.SHOVELS).add(ModItems.FERROCAPSICUMIUM_SHOVEL);
+        tag(ItemTags.AXES).add(ModItems.FERROCAPSICUMIUM_AXE);
         tag(ItemTags.HOES).add(ModItems.FERROCAPSICUMIUM_HOE);
 
         // Namespace: c

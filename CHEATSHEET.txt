@@ -88,9 +88,9 @@ Chili plant biofuel is a solid fuel made from biomass of chili pepper plants and
 Crafting (shaped recipe):
 
     Chili Plant Biofuel
-    4x String of Curved Chili Peppers/Sack of Curved Chili Peppers (c)
-    | c | c |
-    | c | c |
+    4x String of Curved Chili Peppers/Sack of Curved Chili Peppers (s)
+    | s | s |
+    | s | s |
 
 ### Composting
 
@@ -287,10 +287,22 @@ A ferro-capsicumium shovel is a tool made from ferro-capsicumium and can be used
 
 Crafting (shaped recipe):
 
-    Ferro-Capsicumium Shovel
+    Ferro-Capsicumium Shovel (Efficiency I, Unbreaking I)
     1x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
     |   | i |   |
     |   | s |   |
+    |   | s |   |
+
+### Ferro-Capsicumium Axe
+
+A ferro-capsicumium axe is a tool made from ferro-capsicumium and can be used like an iron axe.
+
+Crafting (shaped recipe):
+
+    Ferro-Capsicumium Axe (Efficiency I, Unbreaking I)
+    3x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
+    | i | i |   |
+    | i | s |   |
     |   | s |   |
 
 ### Ferro-Capsicumium Hoe
@@ -299,8 +311,8 @@ A ferro-capsicumium hoe is a tool made from ferro-capsicumium and can be used li
 
 Crafting (shaped recipe):
 
-    Ferro-Capsicumium Hoe
-    1x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
+    Ferro-Capsicumium Hoe (Fortune I, Unbreaking I)
+    2x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
     | i | i |   |
     |   | s |   |
     |   | s |   |

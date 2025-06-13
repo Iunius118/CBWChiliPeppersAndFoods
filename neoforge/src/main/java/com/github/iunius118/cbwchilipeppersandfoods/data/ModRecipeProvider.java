@@ -275,7 +275,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_INGOT) + "_from_nuggets");
 
         // Ferro-Capsicumium Nugget from smelting ferro-capsicumium items
-        var ingredientsForNugget = Ingredient.of(ModItems.FERROCAPSICUMIUM_SHOVEL, ModItems.FERROCAPSICUMIUM_HOE);
+        var ingredientsForNugget = Ingredient.of(
+                ModItems.FERROCAPSICUMIUM_SHOVEL,
+                ModItems.FERROCAPSICUMIUM_AXE,
+                ModItems.FERROCAPSICUMIUM_HOE);
         SimpleCookingRecipeBuilder.smelting(ingredientsForNugget, RecipeCategory.MISC, ModItems.FERROCAPSICUMIUM_NUGGET, 0.1F, 200)
                 .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
                 .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_NUGGET) + "_from_smelting");
@@ -336,6 +339,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('s', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
                 .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_SHOVEL));
+
+        // Ferro-Capsicumium Axe
+        ItemStack feCapAxe = new ItemStack(ModItems.FERROCAPSICUMIUM_AXE);
+        // Add enchantments to axe
+        feCapAxe.enchant(enchantmentRegistry.getOrThrow(Enchantments.EFFICIENCY), 1);
+        feCapAxe.enchant(enchantmentRegistry.getOrThrow(Enchantments.UNBREAKING), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, feCapAxe)
+                .group(getItemId(ModItems.FERROCAPSICUMIUM_AXE).toString())
+                .pattern("ii")
+                .pattern("is")
+                .pattern(" s")
+                .define('i', ModItems.FERROCAPSICUMIUM_INGOT)
+                .define('s', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
+                .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_AXE));
 
         // Ferro-Capsicumium Hoe
         ItemStack feCapHoe = new ItemStack(ModItems.FERROCAPSICUMIUM_HOE);
