@@ -316,3 +316,16 @@ Crafting (shaped recipe):
     | i | i |   |
     |   | s |   |
     |   | s |   |
+
+### Ferro-Capsicumium Shears
+
+Ferro-capsicumium shears are a tool made from ferro-capsicumium and can be used like shears.
+
+Crafting (shaped recipe):
+
+    Ferro-Capsicumium Shears (Unbreaking I)
+    2x Ferro-Capsicumium Ingot (i)
+    |   | i |
+    | i |   |
+
+When chili pepper crops are harvested by using ferro-capsicumium shears, chili pepper seeds will automatically be sown.

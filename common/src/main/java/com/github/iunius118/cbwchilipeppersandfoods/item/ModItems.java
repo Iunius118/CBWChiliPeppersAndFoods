@@ -1,7 +1,10 @@
 package com.github.iunius118.cbwchilipeppersandfoods.item;
 
 import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.dispenser.ShearsDispenseItemBehavior;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.DispenserBlock;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -57,6 +60,8 @@ public class ModItems {
             new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.FERROCAPSICUMIUM, 6.0F, -3.1F))));
     public static final Item FERROCAPSICUMIUM_HOE = add(new HoeItem(ModTiers.FERROCAPSICUMIUM,
             new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.FERROCAPSICUMIUM, -2.0F, -1.0F))));
+    public static final Item FERROCAPSICUMIUM_SHEARS = add(new ShearsItem(
+            new Item.Properties().durability(ModTiers.FERROCAPSICUMIUM.getUses()).component(DataComponents.TOOL, ShearsItem.createToolProperties())));
 
     // Creative tab icon
     // This will not be added to creative tabs
@@ -68,18 +73,22 @@ public class ModItems {
     }
 
     static {
+        // Register dispense item behaviors
+        DispenserBlock.registerProjectileBehavior(HOT_SAUCE);
+        DispenserBlock.registerProjectileBehavior(GREEN_HOT_SAUCE);
+        DispenserBlock.registerBehavior(FERROCAPSICUMIUM_SHEARS, new ShearsDispenseItemBehavior());
         // Add compostable items
-        COMPOSTABLES.put(ModItems.CHILI_SEEDS, 0.3F);
-        COMPOSTABLES.put(ModItems.CURVED_GREEN_CHILI, 0.3F);
-        COMPOSTABLES.put(ModItems.CURVED_CHILI, 0.3F);
-        COMPOSTABLES.put(ModItems.CURVED_CHILI_STRING, 0.85F);
-        COMPOSTABLES.put(ModItems.DRIED_CURVED_CHILI, 0.3F);
-        COMPOSTABLES.put(ModItems.PICKLED_GREEN_CHILI, 0.3F);
-        COMPOSTABLES.put(ModItems.CHILI_POTATO_SANDWICH, 0.85F);
-        COMPOSTABLES.put(ModItems.HALF_CHILI_POTATO_SANDWICH, 0.5F);
-        COMPOSTABLES.put(ModItems.FRIED_CHILI_PEPPER, 0.3F);
-        COMPOSTABLES.put(ModItems.CHILI_CHOCOLATE, 0.3F);
+        COMPOSTABLES.put(CHILI_SEEDS, 0.3F);
+        COMPOSTABLES.put(CURVED_GREEN_CHILI, 0.3F);
+        COMPOSTABLES.put(CURVED_CHILI, 0.3F);
+        COMPOSTABLES.put(CURVED_CHILI_STRING, 0.85F);
+        COMPOSTABLES.put(DRIED_CURVED_CHILI, 0.3F);
+        COMPOSTABLES.put(PICKLED_GREEN_CHILI, 0.3F);
+        COMPOSTABLES.put(CHILI_POTATO_SANDWICH, 0.85F);
+        COMPOSTABLES.put(HALF_CHILI_POTATO_SANDWICH, 0.5F);
+        COMPOSTABLES.put(FRIED_CHILI_PEPPER, 0.3F);
+        COMPOSTABLES.put(CHILI_CHOCOLATE, 0.3F);
         // Add fuel items
-        FURNACE_FUELS.put(ModItems.CHILI_BIOFUEL, 1600);
+        FURNACE_FUELS.put(CHILI_BIOFUEL, 1600);
     }
 }

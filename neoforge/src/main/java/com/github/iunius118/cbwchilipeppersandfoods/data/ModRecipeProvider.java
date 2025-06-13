@@ -369,6 +369,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('s', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
                 .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_HOE));
+
+        // Ferro-Capsicumium Shears
+        ItemStack feCapShears = new ItemStack(ModItems.FERROCAPSICUMIUM_SHEARS);
+        // Add enchantments to shears
+        feCapShears.enchant(enchantmentRegistry.getOrThrow(Enchantments.UNBREAKING), 1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, feCapShears)
+                .group(getItemId(ModItems.FERROCAPSICUMIUM_SHEARS).toString())
+                .pattern(" i")
+                .pattern("i ")
+                .define('i', ModItems.FERROCAPSICUMIUM_INGOT)
+                .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
+                .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_SHEARS));
     }
 
     private ResourceLocation getItemId(Item item) {

@@ -4,7 +4,9 @@
   "package": "com.github.iunius118.cbwchilipeppersandfoods.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "ItemStackMixin"
+  ],
   "client": [],
   "server": [],
   "injectors": {

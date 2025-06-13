@@ -28,6 +28,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.SHOVELS).add(ModItems.FERROCAPSICUMIUM_SHOVEL);
         tag(ItemTags.AXES).add(ModItems.FERROCAPSICUMIUM_AXE);
         tag(ItemTags.HOES).add(ModItems.FERROCAPSICUMIUM_HOE);
+        tag(Tags.Items.TOOLS_SHEAR).add(ModItems.FERROCAPSICUMIUM_SHEARS);
 
         // Namespace: c
         tag(Tags.Items.CROPS).addTag(ModItemTags.C_CROPS_CHILI);

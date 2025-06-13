@@ -5,9 +5,9 @@
 ### Added
 - Add chili plant biofuel that can be used as fuel in furnaces.
 - Add item tag `chilibulletweapons:chili_biomass`.
-- Add capsaicin powder recipe
+- Add capsaicin powder recipe.
 - Add ferro-capsicumium nugget, ingot and block.
-- Add ferro-capsicumium shovel, axe and hoe.
+- Add ferro-capsicumium shovel, axe, hoe and shears.
 
 ### Changed
 - Hot chili sauces can now be thrown like splash potions with slowness and blindness effects for 2 seconds.

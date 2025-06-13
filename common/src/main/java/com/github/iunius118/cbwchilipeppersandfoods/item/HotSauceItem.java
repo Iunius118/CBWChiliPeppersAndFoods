@@ -18,7 +18,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ProjectileItem;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.DispenserBlock;
 
 import java.util.List;
 import java.util.Optional;
@@ -32,9 +31,6 @@ public class HotSauceItem extends Item implements ProjectileItem {
     public HotSauceItem(Properties properties, int color) {
         super(properties);
         this.color = color;
-
-        // Register dispense behavior
-        DispenserBlock.registerProjectileBehavior(this);
     }
 
     @Override

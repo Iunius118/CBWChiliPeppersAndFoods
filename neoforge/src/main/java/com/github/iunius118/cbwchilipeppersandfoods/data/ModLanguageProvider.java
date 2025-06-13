@@ -55,5 +55,6 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.FERROCAPSICUMIUM_SHOVEL, "Ferro-Capsicumium Shovel");
         add(ModItems.FERROCAPSICUMIUM_AXE, "Ferro-Capsicumium Axe");
         add(ModItems.FERROCAPSICUMIUM_HOE, "Ferro-Capsicumium Hoe");
+        add(ModItems.FERROCAPSICUMIUM_SHEARS, "Ferro-Capsicumium Shears");
     }
 }

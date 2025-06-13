@@ -79,9 +79,17 @@ public class ChiliPepperCrop extends CropBlock {
                 Block.popResource(level, pos, dropItem);
             }
 
-            // Remove crop block
             level.playSound(null, pos, ModSoundEvents.CHILI_PEPPER_PICK_CHILI_PEPPERS, SoundSource.BLOCKS, 0.8F, 1.0F);
-            level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
+
+            // Update block
+            if (stack.is(ModItems.FERROCAPSICUMIUM_SHEARS)) {
+                // Reset crop block to age 0 when using Ferro-Capsicumium Shears
+                level.setBlockAndUpdate(pos, this.getStateForAge(0));
+            } else {
+                // Remove crop block
+                level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
+            }
+
             level.gameEvent(player, GameEvent.SHEAR, pos);
             player.awardStat(Stats.ITEM_USED.get(Items.SHEARS));
 
