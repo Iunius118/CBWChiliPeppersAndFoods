@@ -2,6 +2,8 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+### Added
+- Add capsicum crystal instead of capsaicin powder.
 
 ## [1.1.0]
 ### Added

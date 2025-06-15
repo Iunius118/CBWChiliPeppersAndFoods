@@ -23,14 +23,22 @@ import java.util.List;
 import java.util.Optional;
 
 public class HotSauceItem extends Item implements ProjectileItem {
+    // Duration of the effects in ticks (2 seconds)
+    public static final int HOT_SAUCE_DURATION = 40;
+    // Duration of the effects in ticks (10 seconds)
+    public static final int CAPSICUM_CRYSTAL_DURATION = 200;
+    // Splash potion colors
     public static final int RED_HOT_SAUCE_COLOR = 0xFFCF0408;
     public static final int GREEN_HOT_SAUCE_COLOR = 0xFFAAC60E;
+    public static final int CAPSICUM_CRYSTAL_COLOR = 0xFFFFF0F0;
 
     public final int color;
+    public final int effectDuration;
 
-    public HotSauceItem(Properties properties, int color) {
+    public HotSauceItem(Properties properties, int effectDuration, int color) {
         super(properties);
         this.color = color;
+        this.effectDuration = effectDuration;
     }
 
     @Override
@@ -63,12 +71,11 @@ public class HotSauceItem extends Item implements ProjectileItem {
         return splashPotion;
     }
 
-    public static List<MobEffectInstance> getMobEffects() {
-        // Add Slowdown IV and Blindness effects (duration: 2 seconds)
-        int duration = 40;
+    public List<MobEffectInstance> getMobEffects() {
+        // Add Slowdown IV and Blindness effects
         return List.of(
-                new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, duration, 3),
-                new MobEffectInstance(MobEffects.BLINDNESS, duration, 0)
+                new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, effectDuration, 3),
+                new MobEffectInstance(MobEffects.BLINDNESS, effectDuration, 0)
         );
     }
 

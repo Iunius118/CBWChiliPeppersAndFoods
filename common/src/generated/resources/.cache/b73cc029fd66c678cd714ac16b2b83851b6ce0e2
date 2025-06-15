@@ -1,5 +1,7 @@
-// 1.21.1	2025-06-14T00:00:13.9412911	Item Models: chilibulletweapons
+// 1.21.1	2025-06-15T09:44:45.7185004	Item Models: chilibulletweapons
 35b369159dd386d62423ab5935dafca84908a4aa assets/chilibulletweapons/models/item/capsaicin_powder.json
+91169828f3163e405d965c2ddbd831998f3c067b assets/chilibulletweapons/models/item/capsicum_crystal.json
+c5a67b2058f65ed95ebb560c82ed701e0e0cc0c9 assets/chilibulletweapons/models/item/capsicum_crystal_bottle.json
 a3c68cf97af12b3851a7c0ee505da51e59419ca1 assets/chilibulletweapons/models/item/chili_biofuel.json
 b724cefcebcb7185e4d09939652fe462c4015789 assets/chilibulletweapons/models/item/chili_chicken_sandwich.json
 adcaf38df1d0cdff954928a96b793eb6cd1adb25 assets/chilibulletweapons/models/item/chili_chocolate.json

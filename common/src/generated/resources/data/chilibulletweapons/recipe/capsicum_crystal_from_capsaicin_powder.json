@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chilibulletweapons:capsicum_crystal",
+  "ingredients": [
+    {
+      "item": "chilibulletweapons:capsaicin_powder"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chilibulletweapons:capsicum_crystal"
+  }
+}

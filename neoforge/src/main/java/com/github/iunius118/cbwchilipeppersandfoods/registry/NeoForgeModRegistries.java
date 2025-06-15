@@ -63,7 +63,8 @@ public class NeoForgeModRegistries {
         itemRegister.register(Constants.Items.CHILI_CHOCOLATE.getPath(), () -> ModItems.CHILI_CHOCOLATE);
         itemRegister.register(Constants.Items.CHILI_CHOCOLATE_CHICKEN.getPath(), () -> ModItems.CHILI_CHOCOLATE_CHICKEN);
         // Materials
-        itemRegister.register(Constants.Items.CAPSAICIN_POWDER.getPath(), () -> ModItems.CAPSAICIN_POWDER);
+        itemRegister.register(Constants.Items.CAPSICUM_CRYSTAL.getPath(), () -> ModItems.CAPSICUM_CRYSTAL);
+        itemRegister.register(Constants.Items.CAPSICUM_CRYSTAL_BOTTLE.getPath(), () -> ModItems.CAPSICUM_CRYSTAL_BOTTLE);
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_NUGGET.getPath(), () -> ModItems.FERROCAPSICUMIUM_NUGGET);
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_INGOT.getPath(), () -> ModItems.FERROCAPSICUMIUM_INGOT);
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_BLOCK.getPath(), () -> ModItems.FERROCAPSICUMIUM_BLOCK);
@@ -72,6 +73,8 @@ public class NeoForgeModRegistries {
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_AXE.getPath(), () -> ModItems.FERROCAPSICUMIUM_AXE);
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_HOE.getPath(), () -> ModItems.FERROCAPSICUMIUM_HOE);
         itemRegister.register(Constants.Items.FERROCAPSICUMIUM_SHEARS.getPath(), () -> ModItems.FERROCAPSICUMIUM_SHEARS);
+        // Misc.
+        itemRegister.register(Constants.Items.CAPSAICIN_POWDER.getPath(), () -> ModItems.CAPSAICIN_POWDER);
         // Creative tab icon
         itemRegister.register(Constants.Items.ICON_MAIN.getPath(), () -> ModItems.ICON_MAIN);
 

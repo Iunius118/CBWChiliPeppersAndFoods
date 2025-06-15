@@ -29,10 +29,10 @@ public class ModItems {
 
     // Foods
     public static final Item HOT_SAUCE = add(new HotSauceItem(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE),
-            HotSauceItem.RED_HOT_SAUCE_COLOR));
+            HotSauceItem.HOT_SAUCE_DURATION, HotSauceItem.RED_HOT_SAUCE_COLOR));
     public static final Item HOT_SAUCE_BARREL = add(new BlockItem(ModBlocks.HOT_SAUCE_BARREL, new Item.Properties()));
     public static final Item GREEN_HOT_SAUCE = add(new HotSauceItem(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE),
-            HotSauceItem.GREEN_HOT_SAUCE_COLOR));
+            HotSauceItem.HOT_SAUCE_DURATION, HotSauceItem.GREEN_HOT_SAUCE_COLOR));
     public static final Item PICKLED_GREEN_CHILI = add(new Item(new Item.Properties().food(ModFoods.PICKLED_GREEN_CHILI)));
     public static final Item CHILI_CHICKEN_SANDWICH = add(new Item(new Item.Properties().food(ModFoods.CHILI_CHICKEN_SANDWICH)));
     public static final Item CHILI_FISH_SANDWICH = add(new Item(new Item.Properties().food(ModFoods.CHILI_FISH_SANDWICH)));
@@ -48,7 +48,10 @@ public class ModItems {
     public static final Item CHILI_CHOCOLATE_CHICKEN = add(new Item(new Item.Properties().food(ModFoods.CHILI_CHOCOLATE_CHICKEN)));
 
     // Materials
-    public static final Item CAPSAICIN_POWDER = add(new Item(new Item.Properties()));
+    public static final Item CAPSICUM_CRYSTAL = add(new Item(new Item.Properties()));
+    // Bottle of capsicum crystal will be added to creative mode tab by Chili Bullet Weapons mod
+    public static final Item CAPSICUM_CRYSTAL_BOTTLE = new HotSauceItem(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE),
+            HotSauceItem.CAPSICUM_CRYSTAL_DURATION, HotSauceItem.CAPSICUM_CRYSTAL_COLOR);
     public static final Item FERROCAPSICUMIUM_NUGGET = add(new Item(new Item.Properties()));
     public static final Item FERROCAPSICUMIUM_INGOT = add(new Item(new Item.Properties()));
     public static final Item FERROCAPSICUMIUM_BLOCK = add(new BlockItem(ModBlocks.FERROCAPSICUMIUM_BLOCK, new Item.Properties()));
@@ -63,6 +66,10 @@ public class ModItems {
     public static final Item FERROCAPSICUMIUM_SHEARS = add(new ShearsItem(
             new Item.Properties().durability(ModTiers.FERROCAPSICUMIUM.getUses()).component(DataComponents.TOOL, ShearsItem.createToolProperties())));
 
+    // Misc.
+    // Capsaicin powder is deprecated since v1.1.1
+    public static final Item CAPSAICIN_POWDER = new Item(new Item.Properties());
+
     // Creative tab icon
     // This will not be added to creative tabs
     public static final Item ICON_MAIN = new Item(new Item.Properties());
@@ -76,6 +83,7 @@ public class ModItems {
         // Register dispense item behaviors
         DispenserBlock.registerProjectileBehavior(HOT_SAUCE);
         DispenserBlock.registerProjectileBehavior(GREEN_HOT_SAUCE);
+        DispenserBlock.registerProjectileBehavior(CAPSICUM_CRYSTAL_BOTTLE);
         DispenserBlock.registerBehavior(FERROCAPSICUMIUM_SHEARS, new ShearsDispenseItemBehavior());
         // Add compostable items
         COMPOSTABLES.put(CHILI_SEEDS, 0.3F);

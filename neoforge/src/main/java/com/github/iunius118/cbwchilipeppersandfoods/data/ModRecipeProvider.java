@@ -249,14 +249,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //* Materials *//
 
-        // Capsaicin Powder
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CAPSAICIN_POWDER)
-                .group(getItemId(ModItems.CAPSAICIN_POWDER).toString())
+        // Capsicum Crystal
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CAPSICUM_CRYSTAL)
+                .group(getItemId(ModItems.CAPSICUM_CRYSTAL).toString())
                 .requires(ModItems.HOT_SAUCE_BARREL)
                 .requires(Items.NETHER_WART)
                 .requires(Items.BLAZE_POWDER)
                 .unlockedBy("has_hot_sauce_barrel", has(ModItems.HOT_SAUCE_BARREL))
-                .save(recipeOutput, getItemId(ModItems.CAPSAICIN_POWDER));
+                .save(recipeOutput, getItemId(ModItems.CAPSICUM_CRYSTAL));
+
+        // Convert capsaicin powder to capsicum crystal
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CAPSICUM_CRYSTAL)
+                .group(getItemId(ModItems.CAPSICUM_CRYSTAL).toString())
+                .requires(ModItems.CAPSAICIN_POWDER)
+                .unlockedBy("has_capsaicin_powder", has(ModItems.CAPSAICIN_POWDER))
+                .save(recipeOutput, getItemId(ModItems.CAPSICUM_CRYSTAL) + "_from_capsaicin_powder");
 
         // Ferro-Capsicumium Nugget
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.FERROCAPSICUMIUM_NUGGET, 9)
@@ -295,8 +302,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('i', Tags.Items.INGOTS_IRON)
                 .define('r', Tags.Items.DUSTS_REDSTONE)
                 .define('g', Tags.Items.INGOTS_GOLD)
-                .define('c', ModItems.CAPSAICIN_POWDER)
-                .unlockedBy("has_capsaicin_powder", has(ModItems.CAPSAICIN_POWDER))
+                .define('c', ModItems.CAPSICUM_CRYSTAL)
+                .unlockedBy("has_capsaicin_powder", has(ModItems.CAPSICUM_CRYSTAL))
                 .save(recipeOutput, getItemId(ModItems.FERROCAPSICUMIUM_INGOT));
 
         // Iron Ingot from Ferro-Capsicumium Ingot

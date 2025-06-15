@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "chilibulletweapons:capsaicin_powder",
+  "group": "chilibulletweapons:capsicum_crystal",
   "ingredients": [
     {
       "item": "chilibulletweapons:hot_sauce_barrel"
@@ -15,6 +15,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "chilibulletweapons:capsaicin_powder"
+    "id": "chilibulletweapons:capsicum_crystal"
   }
 }

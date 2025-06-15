@@ -1,7 +1,7 @@
 # Cheatsheet
 
 CBW Chili Peppers and Foods
-version 1.1.0
+version 1.1.1
 
 - [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods)
 - [Chili Bullet Weapons](https://iunius118.github.io/ChiliBulletWeapons/)
@@ -235,13 +235,13 @@ Crafting (shapeless recipe):
 
 ## Materials
 
-### Capsaicin Powder
+### Capsicum Crystal
 
-Capsaicin powder is a component of chili peppers, a substance extracted from chili peppers with alcohol and dried.
+Capsicum crystal is a crystalline component of chili peppers, a substance extracted from chili peppers with alcohol and dried.
 
 Crafting (shapeless recipe):
 
-- Barrel of Hot Chili Sauce + Nether Wart + Blaze Powder -> Capsaicin Powder
+- Barrel of Hot Chili Sauce + Nether Wart + Blaze Powder -> Capsicum Crystal
 
 ### Ferro-Capsicumium Ingot
 
@@ -250,7 +250,7 @@ Ferro-capsicumium is an alloy consisting of iron and curved chili pepper compone
 Crafting (shaped recipe):
 
     Ferro-Capsicumium Ingot
-    3x Iron Ingot (i), 2x Redstone Dust (r), 1x Gold Ingot (g), and 3x Capsaicin Powder (c) -> 4x Ferro-Capsicumium Ingot
+    3x Iron Ingot (i), 2x Redstone Dust (r), 1x Gold Ingot (g), and 3x Capsicum Crystal (c) -> 4x Ferro-Capsicumium Ingot
     | i | i | r |
     | i | g | c |
     | r | c | c |
@@ -319,7 +319,7 @@ Crafting (shaped recipe):
 
 ### Ferro-Capsicumium Shears
 
-Ferro-capsicumium shears are a tool made from ferro-capsicumium and can be used like shears.
+Ferro-capsicumium shears are tools made from ferro-capsicumium and can be used like shears.
 
 Crafting (shaped recipe):
 

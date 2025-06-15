@@ -48,7 +48,8 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.CHILI_CHOCOLATE, "Chili Chocolate");
         add(ModItems.CHILI_CHOCOLATE_CHICKEN, "Chicken with Chili Chocolate Sauce");
         // Item.Materials
-        add(ModItems.CAPSAICIN_POWDER, "Capsaicin Powder");
+        add(ModItems.CAPSICUM_CRYSTAL, "Capsicum Crystal");
+        add(ModItems.CAPSICUM_CRYSTAL_BOTTLE, "Bottle of Capsicum Crystal");
         add(ModItems.FERROCAPSICUMIUM_NUGGET, "Ferro-Capsicumium Nugget");
         add(ModItems.FERROCAPSICUMIUM_INGOT, "Ferro-Capsicumium Ingot");
         // Item.Tools
@@ -56,5 +57,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.FERROCAPSICUMIUM_AXE, "Ferro-Capsicumium Axe");
         add(ModItems.FERROCAPSICUMIUM_HOE, "Ferro-Capsicumium Hoe");
         add(ModItems.FERROCAPSICUMIUM_SHEARS, "Ferro-Capsicumium Shears");
+        // Item.Misc
+        add(ModItems.CAPSAICIN_POWDER, "Capsaicin Powder");
     }
 }

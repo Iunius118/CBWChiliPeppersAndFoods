@@ -45,7 +45,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHILI_CHOCOLATE_CHICKEN);
 
         // Materials
-        basicItem(ModItems.CAPSAICIN_POWDER);
+        basicItem(ModItems.CAPSICUM_CRYSTAL);
+        basicItem(ModItems.CAPSICUM_CRYSTAL_BOTTLE);
         basicItem(ModItems.FERROCAPSICUMIUM_NUGGET);
         basicItem(ModItems.FERROCAPSICUMIUM_INGOT);
         simpleBlockItem(ModBlocks.FERROCAPSICUMIUM_BLOCK);
@@ -55,6 +56,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.FERROCAPSICUMIUM_AXE);
         handheldItem(ModItems.FERROCAPSICUMIUM_HOE);
         basicItem(ModItems.FERROCAPSICUMIUM_SHEARS);
+
+        // Misc.
+        basicItem(ModItems.CAPSAICIN_POWDER);
 
         // Creative mode tab
         basicItem(ModItems.ICON_MAIN);
