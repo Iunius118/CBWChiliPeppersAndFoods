@@ -123,6 +123,11 @@ Crafting (shaped recipe):
 
 Glass bottles will be returned when hot chili sauce is consumed by crafting.
 
+Hot chili sauce can be thrown by using it.
+It splashes on impact and applies Slowness IV and Blindness effects (0:02) to nearby entities.
+
+### Barrel of Hot Chili Sauce
+
 A barrel of hot chili sauce can be used to make many bottles of hot chili sauce at one time.
 
 Crafting (shaped recipe):
@@ -138,9 +143,6 @@ Crafting (shaped recipe):
     | g | g | g |
     | g | # | g |
     | g | g | g |
-
-Hot chili sauce can be thrown by using it.
-It splashes on impact and applies Slowness IV and Blindness effects (0:02) to nearby entities.
 
 ### Green Hot Chili Sauce
 
