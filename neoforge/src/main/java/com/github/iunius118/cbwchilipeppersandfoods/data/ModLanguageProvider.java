@@ -59,5 +59,21 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.FERROCAPSICUMIUM_SHEARS, "Ferro-Capsicumium Shears");
         // Item.Misc
         add(ModItems.CAPSAICIN_POWDER, "Capsaicin Powder");
+
+        // Advancements
+        add("advancements.chilibulletweapons.main.root.title", "CBW Chili Peppers and Foods");
+        add("advancements.chilibulletweapons.main.root.description", "Chili peppers and foods");
+        add("advancements.chilibulletweapons.main.curved_chili.title", "Hot Topic");
+        add("advancements.chilibulletweapons.main.curved_chili.description", "Obtain a Curved Chili Pepper");
+        add("advancements.chilibulletweapons.main.harvested_chili_pepper_with_shears.title", "Be Gentle");
+        add("advancements.chilibulletweapons.main.harvested_chili_pepper_with_shears.description", "Harvest Curved Chili Peppers using shears");
+        add("advancements.chilibulletweapons.main.half_sandwich.title", "Let's Go Halves");
+        add("advancements.chilibulletweapons.main.half_sandwich.description", "Obtain half-sized sandwiches");
+        add("advancements.chilibulletweapons.main.threw_hot_sauce.title", "Non-Lethal?");
+        add("advancements.chilibulletweapons.main.threw_hot_sauce.description", "Throw a bottle of hot chili sauce");
+        add("advancements.chilibulletweapons.main.capsicum_crystal.title", "Corrosive, Toxic, Irritant");
+        add("advancements.chilibulletweapons.main.capsicum_crystal.description", "Obtain a Capsicum Crystal");
+        add("advancements.chilibulletweapons.main.ferrocapsicumium_ingot.title", "Fer-Ro-Cap-Sic ... What?");
+        add("advancements.chilibulletweapons.main.ferrocapsicumium_ingot.description", "Obtain a Ferro-Capsicumium Ingot");
     }
 }

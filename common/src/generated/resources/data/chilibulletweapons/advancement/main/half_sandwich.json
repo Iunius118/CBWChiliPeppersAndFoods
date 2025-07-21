@@ -1,0 +1,65 @@
+{
+  "parent": "chilibulletweapons:main/curved_chili",
+  "criteria": {
+    "has_half_chili_chicken_sandwich": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chilibulletweapons:half_chili_chicken_sandwich"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_half_chili_fish_sandwich": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chilibulletweapons:half_chili_fish_sandwich"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_half_chili_meat_sandwich": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chilibulletweapons:half_chili_meat_sandwich"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_half_chili_potato_sandwich": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chilibulletweapons:half_chili_potato_sandwich"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.chilibulletweapons.main.half_sandwich.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chilibulletweapons:half_chili_potato_sandwich"
+    },
+    "title": {
+      "translate": "advancements.chilibulletweapons.main.half_sandwich.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_half_chili_chicken_sandwich",
+      "has_half_chili_fish_sandwich",
+      "has_half_chili_meat_sandwich",
+      "has_half_chili_potato_sandwich"
+    ]
+  ]
+}

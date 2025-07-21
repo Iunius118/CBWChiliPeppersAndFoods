@@ -1,10 +1,13 @@
 package com.github.iunius118.cbwchilipeppersandfoods.item;
 
+import com.github.iunius118.cbwchilipeppersandfoods.advancements.ModCriteriaTriggers;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -57,6 +60,12 @@ public class HotSauceItem extends Item implements ProjectileItem {
             level.playSound(null, player.getX(), player.getY(), player.getZ(),
                     SoundEvents.SPLASH_POTION_THROW, SoundSource.PLAYERS,
                     0.5F, 0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
+
+            if (player instanceof ServerPlayer serverPlayer) {
+                // Trigger advancement
+                ModCriteriaTriggers.THREW_HOT_SAUCE.trigger(serverPlayer, stack);
+                serverPlayer.awardStat(Stats.ITEM_USED.get(this));
+            }
         }
 
         stack.consume(1, player);

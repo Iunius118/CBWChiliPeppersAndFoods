@@ -1,0 +1,32 @@
+{
+  "parent": "chilibulletweapons:main/curved_chili",
+  "criteria": {
+    "has_capsicum_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chilibulletweapons:capsicum_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.chilibulletweapons.main.capsicum_crystal.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chilibulletweapons:capsicum_crystal"
+    },
+    "title": {
+      "translate": "advancements.chilibulletweapons.main.capsicum_crystal.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_capsicum_crystal"
+    ]
+  ]
+}

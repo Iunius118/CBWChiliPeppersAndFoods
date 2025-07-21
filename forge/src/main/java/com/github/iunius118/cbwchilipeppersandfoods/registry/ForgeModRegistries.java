@@ -1,6 +1,7 @@
 package com.github.iunius118.cbwchilipeppersandfoods.registry;
 
 import com.github.iunius118.cbwchilipeppersandfoods.Constants;
+import com.github.iunius118.cbwchilipeppersandfoods.advancements.ModCriteriaTriggers;
 import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import com.github.iunius118.cbwchilipeppersandfoods.platform.Services;
@@ -20,6 +21,7 @@ public class ForgeModRegistries {
         registerBlocks(modEventBus);
         registerItems(modEventBus);
         registerSoundEvents(modEventBus);
+        registerCriterionTriggers(modEventBus);
         registerCreativeModeTabs(modEventBus);
     }
 
@@ -88,6 +90,15 @@ public class ForgeModRegistries {
         soundEventRegister.register(Constants.SoundEvents.CHILI_PEPPER_PICK_CHILI_PEPPERS.getPath(), () -> ModSoundEvents.CHILI_PEPPER_PICK_CHILI_PEPPERS);
 
         soundEventRegister.register(modEventBus);
+    }
+
+    private static void registerCriterionTriggers(IEventBus modEventBus) {
+        var criterionTriggerRegistry = DeferredRegister.create(Registries.TRIGGER_TYPE, Constants.CBW_MOD_ID);
+
+        criterionTriggerRegistry.register(Constants.CriterionTriggers.HARVESTED_CHILI_PEPPER_WITH_SHEARS.getPath(), () -> ModCriteriaTriggers.HARVESTED_CHILI_PEPPER_WITH_SHEARS);
+        criterionTriggerRegistry.register(Constants.CriterionTriggers.THREW_HOT_SAUCE.getPath(), () -> ModCriteriaTriggers.THREW_HOT_SAUCE);
+
+        criterionTriggerRegistry.register(modEventBus);
     }
 
     private static void registerCreativeModeTabs(IEventBus modEventBus) {

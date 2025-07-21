@@ -1,7 +1,7 @@
 # Cheatsheet
 
 CBW Chili Peppers and Foods
-version 1.1.1
+version 1.2.0
 
 - [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods)
 - [Chili Bullet Weapons](https://iunius118.github.io/ChiliBulletWeapons/)

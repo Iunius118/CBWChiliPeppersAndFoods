@@ -1,0 +1,32 @@
+{
+  "parent": "chilibulletweapons:main/capsicum_crystal",
+  "criteria": {
+    "has_ferrocapsicumium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chilibulletweapons:ferrocapsicumium_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.chilibulletweapons.main.ferrocapsicumium_ingot.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "chilibulletweapons:ferrocapsicumium_ingot"
+    },
+    "title": {
+      "translate": "advancements.chilibulletweapons.main.ferrocapsicumium_ingot.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_ferrocapsicumium_ingot"
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "parent": "chilibulletweapons:main/curved_chili",
+  "criteria": {
+    "harvested_chili_pepper_with_shears": {
+      "trigger": "chilibulletweapons:harvested_chili_pepper_with_shears"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.chilibulletweapons.main.harvested_chili_pepper_with_shears.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:shears"
+    },
+    "title": {
+      "translate": "advancements.chilibulletweapons.main.harvested_chili_pepper_with_shears.title"
+    }
+  },
+  "requirements": [
+    [
+      "harvested_chili_pepper_with_shears"
+    ]
+  ]
+}

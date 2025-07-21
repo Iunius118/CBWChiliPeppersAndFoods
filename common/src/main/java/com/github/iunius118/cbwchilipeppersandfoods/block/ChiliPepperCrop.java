@@ -1,11 +1,13 @@
 package com.github.iunius118.cbwchilipeppersandfoods.block;
 
+import com.github.iunius118.cbwchilipeppersandfoods.advancements.ModCriteriaTriggers;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import com.github.iunius118.cbwchilipeppersandfoods.loot.ModLootTables;
 import com.github.iunius118.cbwchilipeppersandfoods.sounds.ModSoundEvents;
 import com.github.iunius118.cbwchilipeppersandfoods.tags.ModItemTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -66,10 +68,17 @@ public class ChiliPepperCrop extends CropBlock {
         if (isHarvestable && stack.is(ModItemTags.C_TOOLS_SHEAR)) {
             // Use shears on harvestable crop
             if (level.isClientSide) {
+                // Return success on client side
                 return ItemInteractionResult.sidedSuccess(true);
             }
 
+            // On server side
             ServerLevel serverLevel = (ServerLevel) level;
+
+            if (player instanceof ServerPlayer serverplayer) {
+                // Trigger advancement
+                ModCriteriaTriggers.HARVESTED_CHILI_PEPPER_WITH_SHEARS.trigger(serverplayer);
+            }
 
             // Harvest
             List<ItemStack> dropItems = getRandomItemsFromLootTable(stack, state, serverLevel, pos);

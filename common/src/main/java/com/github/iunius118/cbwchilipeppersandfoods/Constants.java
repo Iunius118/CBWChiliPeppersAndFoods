@@ -72,6 +72,11 @@ public class Constants {
         public static final ResourceLocation CHILI_PEPPER_PICK_CHILI_PEPPERS = CommonClass.modCBWLocation("block_chili_pepper_pick_chili_peppers");
     }
 
+    public static class CriterionTriggers {
+        public static final ResourceLocation HARVESTED_CHILI_PEPPER_WITH_SHEARS = CommonClass.modCBWLocation("harvested_chili_pepper_with_shears");
+        public static final ResourceLocation THREW_HOT_SAUCE = CommonClass.modCBWLocation("threw_hot_sauce");
+    }
+
     public static class CreativeModeTabs {
         public static final ResourceLocation MAIN = CommonClass.modCBWLocation("main");
 

@@ -63,6 +63,7 @@ public class CBWChiliPeppersAndFoods {
         dataGenerator.addProvider(includesServer, new ModItemTagsProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
         dataGenerator.addProvider(includesServer, new ModLootTableProvider(packOutput, lookupProvider));
         dataGenerator.addProvider(includesServer, new ModRecipeProvider(packOutput, lookupProvider));
+        dataGenerator.addProvider(includesServer, new ModAdvancementProvider(packOutput, lookupProvider, existingFileHelper));
         dataGenerator.addProvider(includesServer, new ModDataMapProvider(packOutput, lookupProvider));
 
         // Client
