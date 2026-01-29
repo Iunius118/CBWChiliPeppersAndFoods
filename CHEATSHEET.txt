@@ -1,7 +1,7 @@
 # Cheatsheet
 
 CBW Chili Peppers and Foods
-version 1.2.0
+version 1.2.1
 
 - [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods)
 - [Chili Bullet Weapons](https://iunius118.github.io/ChiliBulletWeapons/)
@@ -245,89 +245,89 @@ Crafting (shapeless recipe):
 
 - Barrel of Hot Chili Sauce + Nether Wart + Blaze Powder -> Capsicum Crystal
 
-### Ferro-Capsicumium Ingot
+### Fe-Cap Ingot
 
-Ferro-capsicumium is an alloy consisting of iron and curved chili pepper components with redstone as catalyst.
+Ferro-capsicumium (Fe-Cap) is an alloy consisting of iron and curved chili pepper components with redstone as catalyst.
 
 Crafting (shaped recipe):
 
-    Ferro-Capsicumium Ingot
-    3x Iron Ingot (i), 2x Redstone Dust (r), 1x Gold Ingot (g), and 3x Capsicum Crystal (c) -> 4x Ferro-Capsicumium Ingot
+    Fe-Cap Ingot
+    3x Iron Ingot (i), 2x Redstone Dust (r), 1x Gold Ingot (g), and 3x Capsicum Crystal (c) -> 4x Fe-Cap Ingot
     | i | i | r |
     | i | g | c |
     | r | c | c |
 
-Ferro-capsicumium ingots can be smelted in a furnace or blast furnace to obtain iron ingots.
+Fe-Cap ingots can be smelted in a furnace or blast furnace to obtain iron ingots.
 
 Cooking in Furnace/Blast Furnace:
 
-- Ferro-Capsicumium Ingot -> Iron Ingot
+- Fe-Cap Ingot -> Iron Ingot
 
-### Ferro-Capsicumium Nugget
+### Fe-Cap Nugget
 
-Ferro-capsicumium nuggets are pieces of ferro-capsicumium.
-
-Crafting:
-
-- 9x Ferro-Capsicumium Nugget <-> 1x Ferro-Capsicumium Ingot
-
-### Block of Ferro-Capsicumium
-
-Block of ferro-capsicumium can be used to store ferro-capsicumium ingots in a compact fashion.
+Fe-Cap nuggets are pieces of ferro-capsicumium.
 
 Crafting:
 
-- 9x Ferro-Capsicumium Ingot <-> 1x Block of Ferro-Capsicumium
+- 9x Fe-Cap Nugget <-> 1x Fe-Cap Ingot
 
-Block of ferro-capsicumium can be harvested when broken with a pickaxe with stone or higher mining level.
+### Block of Fe-Cap
+
+Block of Fe-Cap can be used to store Fe-Cap ingots in a compact fashion.
+
+Crafting:
+
+- 9x Fe-Cap Ingot <-> 1x Block of Fe-Cap
+
+Block of Fe-Cap can be harvested when broken with a pickaxe with stone or higher mining level.
 
 ## Tools
 
-### Ferro-Capsicumium Shovel
+### Fe-Cap Shovel
 
-A ferro-capsicumium shovel is a tool made from ferro-capsicumium and can be used like an iron shovel.
+A Fe-Cap shovel is a tool made from ferro-capsicumium and can be used like an iron shovel.
 
 Crafting (shaped recipe):
 
-    Ferro-Capsicumium Shovel (Efficiency I, Unbreaking I)
-    1x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
+    Fe-Cap Shovel (Efficiency I, Unbreaking I)
+    1x Fe-Cap Ingot (i) and 2x Stick (s)
     |   | i |   |
     |   | s |   |
     |   | s |   |
 
-### Ferro-Capsicumium Axe
+### Fe-Cap Axe
 
-A ferro-capsicumium axe is a tool made from ferro-capsicumium and can be used like an iron axe.
+A Fe-Cap axe is a tool made from ferro-capsicumium and can be used like an iron axe.
 
 Crafting (shaped recipe):
 
-    Ferro-Capsicumium Axe (Efficiency I, Unbreaking I)
-    3x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
+    Fe-Cap Axe (Efficiency I, Unbreaking I)
+    3x Fe-Cap Ingot (i) and 2x Stick (s)
     | i | i |   |
     | i | s |   |
     |   | s |   |
 
-### Ferro-Capsicumium Hoe
+### Fe-Cap Hoe
 
-A ferro-capsicumium hoe is a tool made from ferro-capsicumium and can be used like an iron hoe.
+A Fe-Cap hoe is a tool made from ferro-capsicumium and can be used like an iron hoe.
 
 Crafting (shaped recipe):
 
-    Ferro-Capsicumium Hoe (Fortune I, Unbreaking I)
-    2x Ferro-Capsicumium Ingot (i) and 2x Stick (s)
+    Fe-Cap Hoe (Fortune I, Unbreaking I)
+    2x Fe-Cap Ingot (i) and 2x Stick (s)
     | i | i |   |
     |   | s |   |
     |   | s |   |
 
-### Ferro-Capsicumium Shears
+### Fe-Cap Shears
 
-Ferro-capsicumium shears are tools made from ferro-capsicumium and can be used like shears.
+Fe-Cap shears are tools made from ferro-capsicumium and can be used like shears.
 
 Crafting (shaped recipe):
 
-    Ferro-Capsicumium Shears (Unbreaking I)
-    2x Ferro-Capsicumium Ingot (i)
+    Fe-Cap Shears (Unbreaking I)
+    2x Fe-Cap Ingot (i)
     |   | i |
     | i |   |
 
-When chili pepper crops are harvested by using ferro-capsicumium shears, chili pepper seeds will automatically be sown.
+When chili pepper crops are harvested by using Fe-Cap shears, chili pepper seeds will automatically be sown.

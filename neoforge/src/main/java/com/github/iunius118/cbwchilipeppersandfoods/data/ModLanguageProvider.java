@@ -21,7 +21,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModBlocks.CHILI_PEPPER, "Chili Pepper Crops (CBW)");
         add(ModBlocks.CURVED_CHILI_STRING, "String of Curved Chili Peppers");
         add(ModBlocks.HOT_SAUCE_BARREL, "Barrel of Hot Chili Sauce");
-        add(ModBlocks.FERROCAPSICUMIUM_BLOCK, "Block of Ferro-Capsicumium");
+        add(ModBlocks.FERROCAPSICUMIUM_BLOCK, "Block of Fe-Cap");
 
         // Item.Plants
         add(ModItems.CHILI_SEEDS, "Chili Pepper Seeds (CBW)");
@@ -50,13 +50,13 @@ public class ModLanguageProvider extends LanguageProvider {
         // Item.Materials
         add(ModItems.CAPSICUM_CRYSTAL, "Capsicum Crystal");
         add(ModItems.CAPSICUM_CRYSTAL_BOTTLE, "Bottle of Capsicum Crystal");
-        add(ModItems.FERROCAPSICUMIUM_NUGGET, "Ferro-Capsicumium Nugget");
-        add(ModItems.FERROCAPSICUMIUM_INGOT, "Ferro-Capsicumium Ingot");
+        add(ModItems.FERROCAPSICUMIUM_NUGGET, "Fe-Cap Nugget");
+        add(ModItems.FERROCAPSICUMIUM_INGOT, "Fe-Cap Ingot");
         // Item.Tools
-        add(ModItems.FERROCAPSICUMIUM_SHOVEL, "Ferro-Capsicumium Shovel");
-        add(ModItems.FERROCAPSICUMIUM_AXE, "Ferro-Capsicumium Axe");
-        add(ModItems.FERROCAPSICUMIUM_HOE, "Ferro-Capsicumium Hoe");
-        add(ModItems.FERROCAPSICUMIUM_SHEARS, "Ferro-Capsicumium Shears");
+        add(ModItems.FERROCAPSICUMIUM_SHOVEL, "Fe-Cap Shovel");
+        add(ModItems.FERROCAPSICUMIUM_AXE, "Fe-Cap Axe");
+        add(ModItems.FERROCAPSICUMIUM_HOE, "Fe-Cap Hoe");
+        add(ModItems.FERROCAPSICUMIUM_SHEARS, "Fe-Cap Shears");
         // Item.Misc
         add(ModItems.CAPSAICIN_POWDER, "Capsaicin Powder");
 
@@ -74,6 +74,6 @@ public class ModLanguageProvider extends LanguageProvider {
         add("advancements.chilibulletweapons.main.capsicum_crystal.title", "Corrosive, Toxic, Irritant");
         add("advancements.chilibulletweapons.main.capsicum_crystal.description", "Obtain a Capsicum Crystal");
         add("advancements.chilibulletweapons.main.ferrocapsicumium_ingot.title", "Fer-Ro-Cap-Sic ... What?");
-        add("advancements.chilibulletweapons.main.ferrocapsicumium_ingot.description", "Obtain a Ferro-Capsicumium Ingot");
+        add("advancements.chilibulletweapons.main.ferrocapsicumium_ingot.description", "Obtain a ferro-capsicumium ... Fe-Cap Ingot");
     }
 }
