@@ -10,7 +10,6 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.registries.VanillaRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -46,8 +45,8 @@ public class CBWChiliPeppersAndFoods implements ModInitializer {
     private void onLootTableLoad(ResourceKey<LootTable> key, LootTable.Builder tableBuilder, LootTableSource source, HolderLookup.Provider registries) {
         if (source.isBuiltin() && ModLootTables.VANILLA_SHORT_GRASS_BLOCK.equals(key)) {
             // Add chili pepper loot pool to short grass
-            Holder.Reference<Enchantment> fortune = VanillaRegistries.createLookup()
-                    .lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE);
+            Holder.Reference<Enchantment> fortune = registries.lookupOrThrow(Registries.ENCHANTMENT)
+                    .getOrThrow(Enchantments.FORTUNE);
             var lootPool = LootPool.lootPool()
                     .add(LootItem.lootTableItem(ModItems.CURVED_CHILI)
                             .when(LootItemRandomChanceCondition.randomChance(0.125F))

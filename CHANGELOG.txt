@@ -2,6 +2,11 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+### Changed
+- Shorten `Ferro-Capsicumium` in item names to `Fe-Cap`.
+
+### Fixed
+- Fix crash on Select World menu in Fabric version.
 
 ## [1.2.0]
 ### Added
