@@ -2,6 +2,8 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+
+## [1.2.1]
 ### Changed
 - Shorten `Ferro-Capsicumium` in item names to `Fe-Cap`.
 
