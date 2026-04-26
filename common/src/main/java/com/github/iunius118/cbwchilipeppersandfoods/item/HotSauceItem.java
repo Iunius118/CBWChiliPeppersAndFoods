@@ -9,12 +9,12 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrownSplashPotion;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -45,14 +45,13 @@ public class HotSauceItem extends Item implements ProjectileItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+    public InteractionResult use(Level level, Player player, InteractionHand usedHand) {
         ItemStack stack = player.getItemInHand(usedHand);
 
-        if (!level.isClientSide) {
+        if (!level.isClientSide()) {
             // On server side
             // Create and throw a splash potion with effects
-            var thrownPotion = new ThrownPotion(level, player);
-            thrownPotion.setItem(getSplashPotion());
+            var thrownPotion = new ThrownSplashPotion(level, player, getSplashPotion());
             thrownPotion.shootFromRotation(player, player.getXRot(), player.getYRot(), -20.0F, 0.5F, 1.0F);
             level.addFreshEntity(thrownPotion);
 
@@ -69,13 +68,14 @@ public class HotSauceItem extends Item implements ProjectileItem {
         }
 
         stack.consume(1, player);
-        return InteractionResultHolder.sidedSuccess(stack, level.isClientSide());
+        return InteractionResult.SUCCESS;
     }
 
     public ItemStack getSplashPotion() {
         // Create a splash potion item with effects
         ItemStack splashPotion = new ItemStack(Items.SPLASH_POTION);
-        var potionContents = new PotionContents(Optional.empty(), Optional.of(color), getMobEffects());
+        var potionContents =
+                new PotionContents(Optional.empty(), Optional.of(color), getMobEffects(), Optional.empty());
         splashPotion.set(DataComponents.POTION_CONTENTS, potionContents);
         return splashPotion;
     }
@@ -83,7 +83,7 @@ public class HotSauceItem extends Item implements ProjectileItem {
     public List<MobEffectInstance> getMobEffects() {
         // Add Slowdown IV and Blindness effects
         return List.of(
-                new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, effectDuration, 3),
+                new MobEffectInstance(MobEffects.SLOWNESS, effectDuration, 3),
                 new MobEffectInstance(MobEffects.BLINDNESS, effectDuration, 0)
         );
     }
@@ -92,9 +92,7 @@ public class HotSauceItem extends Item implements ProjectileItem {
 
     @Override
     public Projectile asProjectile(Level level, Position pos, ItemStack stack, Direction direction) {
-        ThrownPotion thrownpotion = new ThrownPotion(level, pos.x(), pos.y(), pos.z());
-        thrownpotion.setItem(getSplashPotion());
-        return thrownpotion;
+        return new ThrownSplashPotion(level, pos.x(), pos.y(), pos.z(), getSplashPotion());
     }
 
     @Override

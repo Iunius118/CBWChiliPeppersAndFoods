@@ -2,7 +2,7 @@ package com.github.iunius118.cbwchilipeppersandfoods.tags;
 
 import com.github.iunius118.cbwchilipeppersandfoods.CommonClass;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
@@ -18,12 +18,13 @@ public class ModItemTags {
     public static final TagKey<Item> FOODS_COOKED_FISH = makeCBWTag("foods/cooked_fish");
     public static final TagKey<Item> FOODS_COOKED_MEAT = makeCBWTag("foods/cooked_meat");
     public static final TagKey<Item> CHILI_BIOMASS = makeCBWTag("chili_biomass");
+    public static final TagKey<Item> FERROCAPSICUMIUM_TOOL_MATERIALS = makeCBWTag("ferrocapsicumium_tool_materials");
 
     private static TagKey<Item> makeCBWTag(String id) {
         return TagKey.create(Registries.ITEM, CommonClass.modCBWLocation(id));
     }
 
     private static TagKey<Item> makeCTag(String path) {
-        return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", path));
+        return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", path));
     }
 }

@@ -3,15 +3,9 @@
   "category": "misc",
   "group": "chilibulletweapons:hot_sauce",
   "key": {
-    "c": {
-      "tag": "chilibulletweapons:foods/chili_peppers/red"
-    },
-    "g": {
-      "item": "minecraft:glass_bottle"
-    },
-    "w": {
-      "item": "minecraft:water_bucket"
-    }
+    "c": "#chilibulletweapons:foods/chili_peppers/red",
+    "g": "minecraft:glass_bottle",
+    "w": "minecraft:water_bucket"
   },
   "pattern": [
     " w ",

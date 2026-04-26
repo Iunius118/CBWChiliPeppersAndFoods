@@ -3,15 +3,9 @@
   "category": "misc",
   "group": "chilibulletweapons:green_hot_sauce",
   "key": {
-    "c": {
-      "item": "chilibulletweapons:curved_green_chili"
-    },
-    "g": {
-      "item": "minecraft:glass_bottle"
-    },
-    "w": {
-      "item": "minecraft:water_bucket"
-    }
+    "c": "chilibulletweapons:curved_green_chili",
+    "g": "minecraft:glass_bottle",
+    "w": "minecraft:water_bucket"
   },
   "pattern": [
     " w ",

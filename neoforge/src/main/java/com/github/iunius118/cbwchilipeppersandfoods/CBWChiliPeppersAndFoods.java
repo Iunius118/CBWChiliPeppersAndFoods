@@ -38,7 +38,7 @@ public class CBWChiliPeppersAndFoods {
 
     private void onLootTableLoad(final LootTableLoadEvent event) {
         // Add chili pepper loot pool to short grass
-        if (ModLootTables.VANILLA_SHORT_GRASS_BLOCK.location().equals(event.getName())) {
+        if (ModLootTables.VANILLA_SHORT_GRASS_BLOCK.identifier().equals(event.getName())) {
             Holder.Reference<Enchantment> fortune = VanillaRegistries.createLookup()
                     .lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE);
             LootPool pool = LootPool.lootPool()
@@ -50,26 +50,17 @@ public class CBWChiliPeppersAndFoods {
         }
     }
 
-    private void gatherData(final GatherDataEvent event) {
-        var dataGenerator = event.getGenerator();
-        var packOutput = dataGenerator.getPackOutput();
-        var lookupProvider = event.getLookupProvider();
-        var existingFileHelper = event.getExistingFileHelper();
-        var blockTagsProvider = new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper);
+    private void gatherData(final GatherDataEvent.Client event) {
+        // Data
+        event.createProvider(ModBlockTagsProvider::new);
+        event.createProvider(ModItemTagsProvider::new);
+        event.createProvider(ModLootTableProvider::new);
+        event.createProvider(ModRecipeProvider.Runner::new);
+        event.createProvider(ModAdvancementProvider::new);
+        event.createProvider(ModDataMapProvider::new);
 
-        // Server
-        final boolean includesServer = event.includeServer();
-        dataGenerator.addProvider(includesServer, blockTagsProvider);
-        dataGenerator.addProvider(includesServer, new ModItemTagsProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
-        dataGenerator.addProvider(includesServer, new ModLootTableProvider(packOutput, lookupProvider));
-        dataGenerator.addProvider(includesServer, new ModRecipeProvider(packOutput, lookupProvider));
-        dataGenerator.addProvider(includesServer, new ModAdvancementProvider(packOutput, lookupProvider, existingFileHelper));
-        dataGenerator.addProvider(includesServer, new ModDataMapProvider(packOutput, lookupProvider));
-
-        // Client
-        final boolean includesClient = event.includeClient();
-        dataGenerator.addProvider(includesClient, new ModLanguageProvider(packOutput));
-        dataGenerator.addProvider(includesClient, new ModBlockStateProvider(packOutput, existingFileHelper));
-        dataGenerator.addProvider(includesClient, new ModItemModelProvider(packOutput, existingFileHelper));
+        // Assets
+        event.createProvider(ModLanguageProvider::new);
+        event.createProvider(ModModelProvider::new);
     }
 }

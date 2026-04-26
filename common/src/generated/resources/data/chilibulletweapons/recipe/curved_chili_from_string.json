@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "chilibulletweapons:curved_chili",
   "ingredients": [
-    {
-      "item": "chilibulletweapons:curved_chili_string"
-    }
+    "chilibulletweapons:curved_chili_string"
   ],
   "result": {
     "count": 9,

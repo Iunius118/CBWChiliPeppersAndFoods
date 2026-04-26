@@ -3,11 +3,13 @@ package com.github.iunius118.cbwchilipeppersandfoods.advancements;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.advancements.Criterion;
-import net.minecraft.advancements.critereon.ContextAwarePredicate;
-import net.minecraft.advancements.critereon.EntityPredicate;
-import net.minecraft.advancements.critereon.ItemPredicate;
-import net.minecraft.advancements.critereon.SimpleCriterionTrigger;
+import net.minecraft.advancements.criterion.ContextAwarePredicate;
+import net.minecraft.advancements.criterion.EntityPredicate;
+import net.minecraft.advancements.criterion.ItemPredicate;
+import net.minecraft.advancements.criterion.SimpleCriterionTrigger;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 
@@ -24,7 +26,8 @@ public class ThrewHotSauceTrigger extends SimpleCriterionTrigger<ThrewHotSauceTr
         this.trigger(shooter, instance -> instance.matches(stack));
     }
 
-    public record TriggerInstance(Optional<ContextAwarePredicate> player, Optional<ItemPredicate> item) implements SimpleCriterionTrigger.SimpleInstance {
+    public record TriggerInstance(Optional<ContextAwarePredicate> player, Optional<ItemPredicate> item) implements
+            SimpleCriterionTrigger.SimpleInstance {
         public static final Codec<TriggerInstance> CODEC = RecordCodecBuilder.create(
                 instance -> instance.group(
                         EntityPredicate.ADVANCEMENT_CODEC.optionalFieldOf("player").forGetter(TriggerInstance::player),
@@ -37,8 +40,8 @@ public class ThrewHotSauceTrigger extends SimpleCriterionTrigger<ThrewHotSauceTr
                     .createCriterion(new TriggerInstance(Optional.empty(), Optional.of(item)));
         }
 
-        public static Criterion<TriggerInstance> threwHotSauce(ItemLike item) {
-            return threwHotSauce(ItemPredicate.Builder.item().of(item).build());
+        public static Criterion<TriggerInstance> threwHotSauce(HolderLookup.RegistryLookup<Item> items, ItemLike item) {
+            return threwHotSauce(ItemPredicate.Builder.item().of(items, item).build());
         }
 
         public boolean matches(ItemStack item) {

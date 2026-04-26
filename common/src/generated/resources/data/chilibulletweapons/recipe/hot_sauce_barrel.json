@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "chilibulletweapons:hot_sauce_barrel",
   "key": {
-    "c": {
-      "tag": "chilibulletweapons:foods/chili_peppers/red"
-    },
-    "w": {
-      "item": "minecraft:water_bucket"
-    }
+    "c": "#chilibulletweapons:foods/chili_peppers/red",
+    "w": "minecraft:water_bucket"
   },
   "pattern": [
     " w ",
@@ -16,7 +12,6 @@
     "ccc"
   ],
   "result": {
-    "count": 1,
     "id": "chilibulletweapons:hot_sauce_barrel"
   }
 }

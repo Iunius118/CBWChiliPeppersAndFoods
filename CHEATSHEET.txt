@@ -1,7 +1,7 @@
 # Cheatsheet
 
 CBW Chili Peppers and Foods
-version 1.2.1
+version 2.0.0
 
 - [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods)
 - [Chili Bullet Weapons](https://iunius118.github.io/ChiliBulletWeapons/)
@@ -9,7 +9,6 @@ version 1.2.1
 ## Requirements
 
 - NeoForge version - NeoForge
-- Forge version - Minecraft Forge
 - Fabric version - Fabric Loader and Fabric API
 
 ## How to Get Started

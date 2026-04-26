@@ -3,15 +3,9 @@
   "category": "misc",
   "group": "chilibulletweapons:pasta_oil_and_chili",
   "key": {
-    "b": {
-      "item": "minecraft:bowl"
-    },
-    "c": {
-      "tag": "chilibulletweapons:foods/chili_peppers"
-    },
-    "w": {
-      "tag": "c:crops/wheat"
-    }
+    "b": "minecraft:bowl",
+    "c": "#chilibulletweapons:foods/chili_peppers",
+    "w": "#c:crops/wheat"
   },
   "pattern": [
     " c ",
@@ -19,7 +13,6 @@
     " b "
   ],
   "result": {
-    "count": 1,
     "id": "chilibulletweapons:pasta_oil_and_chili"
   }
 }

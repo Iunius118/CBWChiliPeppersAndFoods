@@ -3,11 +3,8 @@
   "category": "food",
   "cookingtime": 600,
   "experience": 0.1,
-  "ingredient": {
-    "item": "chilibulletweapons:curved_chili"
-  },
+  "ingredient": "chilibulletweapons:curved_chili",
   "result": {
-    "count": 1,
     "id": "chilibulletweapons:dried_curved_chili"
   }
 }

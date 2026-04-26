@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "chilibulletweapons:half_chili_meat_sandwich",
   "ingredients": [
-    {
-      "item": "chilibulletweapons:chili_meat_sandwich"
-    }
+    "chilibulletweapons:chili_meat_sandwich"
   ],
   "result": {
     "count": 2,

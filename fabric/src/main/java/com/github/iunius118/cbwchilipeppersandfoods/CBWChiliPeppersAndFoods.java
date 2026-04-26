@@ -6,7 +6,7 @@ import com.github.iunius118.cbwchilipeppersandfoods.registry.FabricModRegistries
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fabricmc.fabric.api.loot.v3.LootTableSource;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.FuelValueEvents;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -39,10 +39,12 @@ public class CBWChiliPeppersAndFoods implements ModInitializer {
     }
 
     private static void registerFuelItems() {
-        ModItems.FURNACE_FUELS.forEach(FuelRegistry.INSTANCE::add);
+        FuelValueEvents.BUILD.register(
+                (builder, context) -> ModItems.FURNACE_FUELS.forEach(builder::add));
     }
 
-    private void onLootTableLoad(ResourceKey<LootTable> key, LootTable.Builder tableBuilder, LootTableSource source, HolderLookup.Provider registries) {
+    private void onLootTableLoad(ResourceKey<LootTable> key, LootTable.Builder tableBuilder,
+                                 LootTableSource source, HolderLookup.Provider registries) {
         if (source.isBuiltin() && ModLootTables.VANILLA_SHORT_GRASS_BLOCK.equals(key)) {
             // Add chili pepper loot pool to short grass
             Holder.Reference<Enchantment> fortune = registries.lookupOrThrow(Registries.ENCHANTMENT)

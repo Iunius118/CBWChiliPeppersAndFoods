@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "chilibulletweapons:dried_curved_chili",
   "ingredients": [
-    {
-      "item": "chilibulletweapons:curved_chili_sack"
-    }
+    "chilibulletweapons:curved_chili_sack"
   ],
   "result": {
     "count": 9,

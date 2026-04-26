@@ -3,18 +3,11 @@
   "category": "misc",
   "group": "chilibulletweapons:capsicum_crystal",
   "ingredients": [
-    {
-      "item": "chilibulletweapons:hot_sauce_barrel"
-    },
-    {
-      "item": "minecraft:nether_wart"
-    },
-    {
-      "item": "minecraft:blaze_powder"
-    }
+    "chilibulletweapons:hot_sauce_barrel",
+    "minecraft:nether_wart",
+    "minecraft:blaze_powder"
   ],
   "result": {
-    "count": 1,
     "id": "chilibulletweapons:capsicum_crystal"
   }
 }

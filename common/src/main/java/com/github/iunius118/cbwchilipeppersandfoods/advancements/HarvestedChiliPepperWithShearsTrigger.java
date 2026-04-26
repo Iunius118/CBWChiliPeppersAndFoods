@@ -3,14 +3,15 @@ package com.github.iunius118.cbwchilipeppersandfoods.advancements;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.advancements.Criterion;
-import net.minecraft.advancements.critereon.ContextAwarePredicate;
-import net.minecraft.advancements.critereon.EntityPredicate;
-import net.minecraft.advancements.critereon.SimpleCriterionTrigger;
+import net.minecraft.advancements.criterion.ContextAwarePredicate;
+import net.minecraft.advancements.criterion.EntityPredicate;
+import net.minecraft.advancements.criterion.SimpleCriterionTrigger;
 import net.minecraft.server.level.ServerPlayer;
 
 import java.util.Optional;
 
-public class HarvestedChiliPepperWithShearsTrigger extends SimpleCriterionTrigger<HarvestedChiliPepperWithShearsTrigger.TriggerInstance> {
+public class HarvestedChiliPepperWithShearsTrigger extends
+        SimpleCriterionTrigger<HarvestedChiliPepperWithShearsTrigger.TriggerInstance> {
 
     @Override
     public Codec<TriggerInstance> codec() {
@@ -21,7 +22,8 @@ public class HarvestedChiliPepperWithShearsTrigger extends SimpleCriterionTrigge
         this.trigger(shooter, TriggerInstance::matches);
     }
 
-    public record TriggerInstance(Optional<ContextAwarePredicate> player) implements SimpleCriterionTrigger.SimpleInstance {
+    public record TriggerInstance(Optional<ContextAwarePredicate> player) implements
+            SimpleCriterionTrigger.SimpleInstance {
         public static final Codec<TriggerInstance> CODEC = RecordCodecBuilder.create(
                 instance -> instance.group(
                         EntityPredicate.ADVANCEMENT_CODEC.optionalFieldOf("player").forGetter(TriggerInstance::player)
@@ -29,7 +31,8 @@ public class HarvestedChiliPepperWithShearsTrigger extends SimpleCriterionTrigge
         );
 
         public static Criterion<TriggerInstance> harvestedChiliPepperWithShears() {
-            return ModCriteriaTriggers.HARVESTED_CHILI_PEPPER_WITH_SHEARS.createCriterion(new TriggerInstance(Optional.empty()));
+            return ModCriteriaTriggers.HARVESTED_CHILI_PEPPER_WITH_SHEARS
+                    .createCriterion(new TriggerInstance(Optional.empty()));
         }
 
         public boolean matches() {

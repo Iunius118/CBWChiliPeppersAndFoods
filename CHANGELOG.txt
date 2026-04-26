@@ -2,6 +2,13 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+### Changed
+- Port to 26.1.2.
+- NeoForge version - Require NeoForge 26.1.2.22-beta.
+- Fabric version - Require Fabric Loader 0.19.2 and Fabric API 0.146.1+26.1.2.
+
+### Removed
+- Forge version.
 
 ## [1.2.1]
 ### Changed

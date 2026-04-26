@@ -11,8 +11,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.ItemInteractionResult;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -61,15 +60,15 @@ public class ChiliPepperCrop extends CropBlock {
     }
 
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
-                                              Player player, InteractionHand hand, BlockHitResult hitResult) {
+    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
+                                          Player player, InteractionHand hand, BlockHitResult hitResult) {
         boolean isHarvestable = (state.getValue(AGE) >= ChiliPepperCrop.GREEN_CHILI_AGE);
 
         if (isHarvestable && stack.is(ModItemTags.C_TOOLS_SHEAR)) {
             // Use shears on harvestable crop
-            if (level.isClientSide) {
+            if (level.isClientSide()) {
                 // Return success on client side
-                return ItemInteractionResult.sidedSuccess(true);
+                return InteractionResult.SUCCESS;
             }
 
             // On server side
@@ -104,16 +103,17 @@ public class ChiliPepperCrop extends CropBlock {
 
             if (!player.getAbilities().instabuild) {
                 // Wear out shears when player is not creative mode
-                stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(hand));
+                stack.hurtAndBreak(1, player, hand.asEquipmentSlot());
             }
 
-            return ItemInteractionResult.sidedSuccess(false);
+            return InteractionResult.SUCCESS;
         }
 
         return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
     }
 
-    private List<ItemStack> getRandomItemsFromLootTable(ItemStack stack, BlockState state, ServerLevel serverLevel, BlockPos pos) {
+    private List<ItemStack> getRandomItemsFromLootTable(ItemStack stack, BlockState state, ServerLevel serverLevel,
+                                                        BlockPos pos) {
         var server = serverLevel.getServer();
         var lootTable = server.reloadableRegistries().getLootTable(ModLootTables.CBW_CHILI_PEPPER_BLOCK);
         var lootParams = new LootParams.Builder(serverLevel)

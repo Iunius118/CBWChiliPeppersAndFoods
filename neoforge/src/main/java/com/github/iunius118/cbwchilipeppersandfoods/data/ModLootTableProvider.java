@@ -7,7 +7,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.mojang.serialization.JsonOps;
-import net.minecraft.advancements.critereon.StatePropertiesPredicate;
+import net.minecraft.advancements.criterion.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -38,8 +38,8 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModLootTableProvider extends LootTableProvider {
 
-    public ModLootTableProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        super(packOutput, Set.of(), VanillaLootTableProvider.create(packOutput, lookupProvider).getTables(), lookupProvider);
+    public ModLootTableProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, Set.of(), VanillaLootTableProvider.create(output, lookupProvider).getTables(), lookupProvider);
     }
 
     @Override
@@ -58,7 +58,8 @@ public class ModLootTableProvider extends LootTableProvider {
         @Override
         protected void generate() {
             add(ModBlocks.CHILI_PEPPER, createChiliPepperCropDrops());
-            add(ModBlocks.CURVED_CHILI_STRING, this.createSingleItemTableWithSilkTouch(ModBlocks.CURVED_CHILI_STRING, ModItems.DRIED_CURVED_CHILI, ConstantValue.exactly(9.0F)));
+            add(ModBlocks.CURVED_CHILI_STRING, this.createSingleItemTableWithSilkTouch(ModBlocks.CURVED_CHILI_STRING,
+                    ModItems.DRIED_CURVED_CHILI, ConstantValue.exactly(9.0F)));
             add(ModBlocks.HOT_SAUCE_BARREL, this.createSingleItemTable(ModBlocks.HOT_SAUCE_BARREL));
             add(ModBlocks.FERROCAPSICUMIUM_BLOCK, this.createSingleItemTable(ModBlocks.FERROCAPSICUMIUM_BLOCK));
         }
@@ -68,27 +69,37 @@ public class ModLootTableProvider extends LootTableProvider {
             var chiliSeedCondition = new LootItemBlockStatePropertyCondition.Builder(ModBlocks.CHILI_PEPPER) {
                 @Override
                 public LootItemCondition build() {
-                    var key = ResourceKey.create(Registries.BLOCK, BuiltInRegistries.BLOCK.getKey(ModBlocks.CHILI_PEPPER));
-                    var blockHolder = BuiltInRegistries.BLOCK.getHolderOrThrow(key);
-                    return new LootItemBlockStatePropertyCondition(blockHolder, getChiliPepperOutOfHarvestAgePredicate());
+                    var key = ResourceKey
+                            .create(Registries.BLOCK, BuiltInRegistries.BLOCK.getKey(ModBlocks.CHILI_PEPPER));
+                    var blockHolder = BuiltInRegistries.BLOCK.getOrThrow(key);
+                    return new LootItemBlockStatePropertyCondition(blockHolder,
+                            getChiliPepperOutOfHarvestAgePredicate());
                 }
             };
             var greenChiliCondition = new LootItemBlockStatePropertyCondition.Builder(ModBlocks.CHILI_PEPPER)
-                    .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ChiliPepperCrop.AGE, ChiliPepperCrop.GREEN_CHILI_AGE));
+                    .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ChiliPepperCrop.AGE,
+                            ChiliPepperCrop.GREEN_CHILI_AGE));
             var curvedChiliCondition = new LootItemBlockStatePropertyCondition.Builder(ModBlocks.CHILI_PEPPER)
-                    .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ChiliPepperCrop.AGE, ChiliPepperCrop.MAX_AGE));
+                    .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ChiliPepperCrop.AGE,
+                            ChiliPepperCrop.MAX_AGE));
 
-            Holder.Reference<Enchantment> fortune = registries.lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE);
+            Holder.Reference<Enchantment> fortune =
+                    registries.lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE);
 
             // Add drops for each age of chili pepper crop
             var lootTableBuilder = LootTable.lootTable()
-                    .withPool(LootPool.lootPool().when(chiliSeedCondition).add(LootItem.lootTableItem(ModItems.CHILI_SEEDS)))
-                    .withPool(LootPool.lootPool().when(greenChiliCondition).add(LootItem.lootTableItem(ModItems.CURVED_GREEN_CHILI)))
-                    .withPool(LootPool.lootPool().when(curvedChiliCondition).add(LootItem.lootTableItem(ModItems.CURVED_CHILI)))
+                    .withPool(LootPool.lootPool().when(chiliSeedCondition)
+                            .add(LootItem.lootTableItem(ModItems.CHILI_SEEDS)))
+                    .withPool(LootPool.lootPool().when(greenChiliCondition)
+                            .add(LootItem.lootTableItem(ModItems.CURVED_GREEN_CHILI)))
+                    .withPool(LootPool.lootPool().when(curvedChiliCondition)
+                            .add(LootItem.lootTableItem(ModItems.CURVED_CHILI)))
                     // Add bonus for fortune enchantment
-                    .withPool(LootPool.lootPool().when(greenChiliCondition).add(LootItem.lootTableItem(ModItems.CURVED_GREEN_CHILI)
+                    .withPool(LootPool.lootPool().when(greenChiliCondition)
+                            .add(LootItem.lootTableItem(ModItems.CURVED_GREEN_CHILI)
                             .apply(ApplyBonusCount.addBonusBinomialDistributionCount(fortune, 0.5714286F, 2))))
-                    .withPool(LootPool.lootPool().when(curvedChiliCondition).add(LootItem.lootTableItem(ModItems.CURVED_CHILI)
+                    .withPool(LootPool.lootPool().when(curvedChiliCondition)
+                            .add(LootItem.lootTableItem(ModItems.CURVED_CHILI)
                             .apply(ApplyBonusCount.addBonusBinomialDistributionCount(fortune, 0.5714286F, 2))));
             return this.applyExplosionDecay(ModBlocks.CHILI_PEPPER, lootTableBuilder);
         }

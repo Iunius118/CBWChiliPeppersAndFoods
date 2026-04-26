@@ -3,9 +3,7 @@
   "category": "equipment",
   "group": "chilibulletweapons:ferrocapsicumium_shears",
   "key": {
-    "i": {
-      "item": "chilibulletweapons:ferrocapsicumium_ingot"
-    }
+    "i": "chilibulletweapons:ferrocapsicumium_ingot"
   },
   "pattern": [
     " i",
@@ -14,12 +12,9 @@
   "result": {
     "components": {
       "minecraft:enchantments": {
-        "levels": {
-          "minecraft:unbreaking": 1
-        }
+        "minecraft:unbreaking": 1
       }
     },
-    "count": 1,
     "id": "chilibulletweapons:ferrocapsicumium_shears"
   }
 }

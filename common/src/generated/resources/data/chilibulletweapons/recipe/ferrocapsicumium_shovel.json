@@ -3,12 +3,8 @@
   "category": "equipment",
   "group": "chilibulletweapons:ferrocapsicumium_shovel",
   "key": {
-    "i": {
-      "item": "chilibulletweapons:ferrocapsicumium_ingot"
-    },
-    "s": {
-      "tag": "c:rods/wooden"
-    }
+    "i": "chilibulletweapons:ferrocapsicumium_ingot",
+    "s": "#c:rods/wooden"
   },
   "pattern": [
     "i",
@@ -18,13 +14,10 @@
   "result": {
     "components": {
       "minecraft:enchantments": {
-        "levels": {
-          "minecraft:efficiency": 1,
-          "minecraft:unbreaking": 1
-        }
+        "minecraft:efficiency": 1,
+        "minecraft:unbreaking": 1
       }
     },
-    "count": 1,
     "id": "chilibulletweapons:ferrocapsicumium_shovel"
   }
 }

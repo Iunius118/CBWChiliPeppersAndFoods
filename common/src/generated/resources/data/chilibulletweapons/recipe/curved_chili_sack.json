@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "chilibulletweapons:curved_chili_sack",
   "key": {
-    "c": {
-      "item": "chilibulletweapons:dried_curved_chili"
-    }
+    "c": "chilibulletweapons:dried_curved_chili"
   },
   "pattern": [
     "ccc",
@@ -13,7 +11,6 @@
     "ccc"
   ],
   "result": {
-    "count": 1,
     "id": "chilibulletweapons:curved_chili_sack"
   }
 }

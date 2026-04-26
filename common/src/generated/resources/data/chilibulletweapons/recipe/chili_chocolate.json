@@ -3,18 +3,10 @@
   "category": "misc",
   "group": "chilibulletweapons:chili_chocolate",
   "ingredients": [
-    {
-      "item": "chilibulletweapons:dried_curved_chili"
-    },
-    {
-      "item": "minecraft:cocoa_beans"
-    },
-    {
-      "item": "minecraft:cocoa_beans"
-    },
-    {
-      "item": "minecraft:cocoa_beans"
-    }
+    "chilibulletweapons:dried_curved_chili",
+    "minecraft:cocoa_beans",
+    "minecraft:cocoa_beans",
+    "minecraft:cocoa_beans"
   ],
   "result": {
     "count": 3,

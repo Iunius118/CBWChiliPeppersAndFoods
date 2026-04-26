@@ -3,16 +3,13 @@
   "category": "misc",
   "group": "chilibulletweapons:chili_biofuel",
   "key": {
-    "c": {
-      "tag": "chilibulletweapons:chili_biomass"
-    }
+    "c": "#chilibulletweapons:chili_biomass"
   },
   "pattern": [
     "cc",
     "cc"
   ],
   "result": {
-    "count": 1,
     "id": "chilibulletweapons:chili_biofuel"
   }
 }

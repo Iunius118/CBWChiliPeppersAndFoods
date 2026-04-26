@@ -4,18 +4,11 @@
   "cookingtime": 100,
   "experience": 0.1,
   "ingredient": [
-    {
-      "item": "chilibulletweapons:ferrocapsicumium_shovel"
-    },
-    {
-      "item": "chilibulletweapons:ferrocapsicumium_axe"
-    },
-    {
-      "item": "chilibulletweapons:ferrocapsicumium_hoe"
-    }
+    "chilibulletweapons:ferrocapsicumium_shovel",
+    "chilibulletweapons:ferrocapsicumium_axe",
+    "chilibulletweapons:ferrocapsicumium_hoe"
   ],
   "result": {
-    "count": 1,
     "id": "chilibulletweapons:ferrocapsicumium_nugget"
   }
 }

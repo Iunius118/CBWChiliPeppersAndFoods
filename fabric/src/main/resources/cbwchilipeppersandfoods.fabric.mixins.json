@@ -4,7 +4,7 @@
   "package": "com.github.iunius118.cbwchilipeppersandfoods.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "ItemStackMixin"
+    "TypedInstanceMixin"
   ],
   "client": [],
   "server": [],

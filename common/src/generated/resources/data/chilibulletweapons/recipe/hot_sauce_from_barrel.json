@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "chilibulletweapons:hot_sauce",
   "key": {
-    "#": {
-      "item": "chilibulletweapons:hot_sauce_barrel"
-    },
-    "g": {
-      "item": "minecraft:glass_bottle"
-    }
+    "#": "chilibulletweapons:hot_sauce_barrel",
+    "g": "minecraft:glass_bottle"
   },
   "pattern": [
     "ggg",

@@ -3,15 +3,9 @@
   "category": "misc",
   "group": "chilibulletweapons:chili_potato_sandwich",
   "ingredients": [
-    {
-      "tag": "chilibulletweapons:foods/chili_seasoning"
-    },
-    {
-      "item": "minecraft:baked_potato"
-    },
-    {
-      "item": "minecraft:bread"
-    }
+    "#chilibulletweapons:foods/chili_seasoning",
+    "minecraft:baked_potato",
+    "minecraft:bread"
   ],
   "result": {
     "count": 2,

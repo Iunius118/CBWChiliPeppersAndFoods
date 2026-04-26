@@ -3,15 +3,9 @@
   "category": "misc",
   "group": "chilibulletweapons:chili_meat_sandwich",
   "ingredients": [
-    {
-      "tag": "chilibulletweapons:foods/chili_seasoning"
-    },
-    {
-      "tag": "chilibulletweapons:foods/cooked_meat"
-    },
-    {
-      "item": "minecraft:bread"
-    }
+    "#chilibulletweapons:foods/chili_seasoning",
+    "#chilibulletweapons:foods/cooked_meat",
+    "minecraft:bread"
   ],
   "result": {
     "count": 2,

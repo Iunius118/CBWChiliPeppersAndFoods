@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "chilibulletweapons:ferrocapsicumium_ingot",
   "ingredients": [
-    {
-      "item": "chilibulletweapons:ferrocapsicumium_block"
-    }
+    "chilibulletweapons:ferrocapsicumium_block"
   ],
   "result": {
     "count": 9,
