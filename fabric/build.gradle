@@ -15,9 +15,8 @@ dependencies {
 }
 
 loom {
-    // Automatically enable AccessTransformers if the file exists
     def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
-
+    // Automatically enable AccessWideners if the file exists
     if (aw.exists()) {
         accessWidenerPath.set(aw)
     }

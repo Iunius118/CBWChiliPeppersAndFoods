@@ -6,9 +6,8 @@ plugins {
 neoForge {
     version = neoforge_version
 
-    // Automatically enable AccessTransformers if the file exists
     def at = project(':common').file('src/main/resources/META-INF/accesstransformer.cfg')
-
+    // Automatically enable AccessTransformers if the file exists
     if (at.exists()) {
         accessTransformers.from(at.absolutePath)
     }
@@ -34,6 +33,7 @@ neoForge {
             server()
             this.file("runs/server").createParentDirectories()
             gameDirectory = this.mkdir(this.file("runs/server"))
+            programArgument '--nogui'
         }
     }
 
