@@ -66,7 +66,8 @@ public class ModLanguageProvider extends LanguageProvider {
         add("advancements.chilibulletweapons.main.curved_chili.title", "Hot Topic");
         add("advancements.chilibulletweapons.main.curved_chili.description", "Obtain a Curved Chili Pepper");
         add("advancements.chilibulletweapons.main.harvested_chili_pepper_with_shears.title", "Be Gentle");
-        add("advancements.chilibulletweapons.main.harvested_chili_pepper_with_shears.description", "Harvest Curved Chili Peppers using shears");
+        add("advancements.chilibulletweapons.main.harvested_chili_pepper_with_shears.description",
+                "Harvest Curved Chili Peppers using shears");
         add("advancements.chilibulletweapons.main.half_sandwich.title", "Let's Go Halves");
         add("advancements.chilibulletweapons.main.half_sandwich.description", "Obtain half-sized sandwiches");
         add("advancements.chilibulletweapons.main.threw_hot_sauce.title", "Non-Lethal?");
@@ -74,6 +75,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add("advancements.chilibulletweapons.main.capsicum_crystal.title", "Corrosive, Toxic, Irritant");
         add("advancements.chilibulletweapons.main.capsicum_crystal.description", "Obtain a Capsicum Crystal");
         add("advancements.chilibulletweapons.main.ferrocapsicumium_ingot.title", "Fer-Ro-Cap-Sic ... What?");
-        add("advancements.chilibulletweapons.main.ferrocapsicumium_ingot.description", "Obtain a ferro-capsicumium ... Fe-Cap Ingot");
+        add("advancements.chilibulletweapons.main.ferrocapsicumium_ingot.description",
+                "Obtain a ferro-capsicumium ... Fe-Cap Ingot");
     }
 }

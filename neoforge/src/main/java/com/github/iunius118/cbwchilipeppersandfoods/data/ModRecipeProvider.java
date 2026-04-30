@@ -295,10 +295,12 @@ public class ModRecipeProvider extends VanillaRecipeProvider {
                 ModItems.FERROCAPSICUMIUM_SHOVEL,
                 ModItems.FERROCAPSICUMIUM_AXE,
                 ModItems.FERROCAPSICUMIUM_HOE);
-        SimpleCookingRecipeBuilder.smelting(ingredientsForNugget, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.FERROCAPSICUMIUM_NUGGET, 0.1F, 200)
+        SimpleCookingRecipeBuilder.smelting(ingredientsForNugget, RecipeCategory.MISC, CookingBookCategory.MISC,
+                        ModItems.FERROCAPSICUMIUM_NUGGET, 0.1F, 200)
                 .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
                 .save(this.output, getItemId(ModItems.FERROCAPSICUMIUM_NUGGET) + "_from_smelting");
-        SimpleCookingRecipeBuilder.blasting(ingredientsForNugget, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.FERROCAPSICUMIUM_NUGGET, 0.1F, 100)
+        SimpleCookingRecipeBuilder.blasting(ingredientsForNugget, RecipeCategory.MISC, CookingBookCategory.MISC,
+                        ModItems.FERROCAPSICUMIUM_NUGGET, 0.1F, 100)
                 .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
                 .save(this.output, getItemId(ModItems.FERROCAPSICUMIUM_NUGGET) + "_from_blasting");
 
