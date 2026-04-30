@@ -16,6 +16,7 @@ This mod is required by the [Chili Bullet Weapons](https://github.com/Iunius118/
 
 - Minecraft 26.1.2
 - NeoForge version - NeoForge
+- Forge version - Minecraft Forge
 - Fabric version - Fabric Loader and Fabric API
 
 ## How to Get Started

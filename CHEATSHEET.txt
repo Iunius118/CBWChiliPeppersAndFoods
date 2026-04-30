@@ -9,6 +9,7 @@ version 2.0.0
 ## Requirements
 
 - NeoForge version - NeoForge
+- Forge version - Minecraft Forge
 - Fabric version - Fabric Loader and Fabric API
 
 ## How to Get Started
