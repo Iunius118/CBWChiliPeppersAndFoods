@@ -39,10 +39,8 @@ public class ModAdvancementProvider extends AdvancementProvider {
             // Main root
             AdvancementHolder root = Advancement.Builder.recipeAdvancement()
                     .display(getItem(Constants.Items.ICON_MAIN),
-                            Component.translatable("advancements.%s.main.root.title"
-                                    .formatted(Constants.CBW_MOD_ID)),
-                            Component.translatable("advancements.%s.main.root.description"
-                                    .formatted(Constants.CBW_MOD_ID)),
+                            createTitle("main", "root"),
+                            createDescription("main", "root"),
                             Identifier.withDefaultNamespace("block/orange_concrete_powder"),
                             AdvancementType.TASK, false, false, false)
                     .addCriterion("has_curved_chili",
@@ -58,10 +56,8 @@ public class ModAdvancementProvider extends AdvancementProvider {
             AdvancementHolder harvestedChiliPepperWithShears = Advancement.Builder.recipeAdvancement()
                     .parent(curvedChili)
                     .display(Items.SHEARS,
-                            Component.translatable("advancements.%s.%s.%s.title"
-                                    .formatted(Constants.CBW_MOD_ID, "main", harvestedChiliPepperWithShearsName)),
-                            Component.translatable("advancements.%s.%s.%s.description"
-                                    .formatted(Constants.CBW_MOD_ID, "main", harvestedChiliPepperWithShearsName)),
+                            createTitle("main", harvestedChiliPepperWithShearsName),
+                            createDescription("main", harvestedChiliPepperWithShearsName),
                             null,
                             AdvancementType.TASK, true, true, false)
                     .addCriterion(harvestedChiliPepperWithShearsName,
@@ -83,10 +79,8 @@ public class ModAdvancementProvider extends AdvancementProvider {
             AdvancementHolder threwHotSauce = Advancement.Builder.recipeAdvancement()
                     .parent(curvedChili)
                     .display(ModItems.HOT_SAUCE,
-                            Component.translatable("advancements.%s.%s.%s.title"
-                                    .formatted(Constants.CBW_MOD_ID, "main", threwHotSauceName)),
-                            Component.translatable("advancements.%s.%s.%s.description"
-                                    .formatted(Constants.CBW_MOD_ID, "main", threwHotSauceName)),
+                            createTitle("main", threwHotSauceName),
+                            createDescription("main", threwHotSauceName),
                             null,
                             AdvancementType.TASK, true, true, false)
                     .addCriterion("threw_hot_sauce",
@@ -113,10 +107,8 @@ public class ModAdvancementProvider extends AdvancementProvider {
             Advancement.Builder builder = Advancement.Builder.recipeAdvancement()
                     .parent(parent)
                     .display(icon,
-                            Component.translatable("advancements.%s.%s.%s.title"
-                                    .formatted(Constants.CBW_MOD_ID, tab, name)),
-                            Component.translatable("advancements.%s.%s.%s.description"
-                                    .formatted(Constants.CBW_MOD_ID, tab, name)),
+                            createTitle(tab, name),
+                            createDescription(tab, name),
                             null,
                             advancementType, true, true, false)
                     .requirements(AdvancementRequirements.Strategy.OR);
@@ -142,6 +134,15 @@ public class ModAdvancementProvider extends AdvancementProvider {
 
         private Identifier getItemId(Item item) {
             return BuiltInRegistries.ITEM.getKey(item);
+        }
+
+        private Component createTitle(String tab, String name) {
+            return Component.translatable("advancements.%s.%s.%s.title".formatted(Constants.CBW_MOD_ID, tab, name));
+        }
+
+        private Component createDescription(String tab, String name) {
+            return Component.translatable("advancements.%s.%s.%s.description"
+                    .formatted(Constants.CBW_MOD_ID, tab, name));
         }
     }
 }
