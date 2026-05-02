@@ -3,7 +3,7 @@
 
 ## [Unreleased]
 
-## [2.0.0-beta.1]
+## [2.0.0]
 ### Changed
 - Port to 26.1.2.
 - NeoForge version - Require NeoForge 26.1.2.22-beta.
