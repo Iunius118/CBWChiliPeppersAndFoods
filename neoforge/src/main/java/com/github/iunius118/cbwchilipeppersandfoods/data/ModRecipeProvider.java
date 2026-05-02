@@ -318,10 +318,12 @@ public class ModRecipeProvider extends VanillaRecipeProvider {
                 .save(this.output);
 
         // Iron Ingot from Fe-Cap Ingot
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.FERROCAPSICUMIUM_INGOT), RecipeCategory.MISC, CookingBookCategory.MISC, Items.IRON_INGOT, 0.1F, 200)
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.FERROCAPSICUMIUM_INGOT), RecipeCategory.MISC,
+						CookingBookCategory.MISC, Items.IRON_INGOT, 0.1F, 200)
                 .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
                 .save(this.output, Constants.CBW_MOD_ID + ":iron_ingot_from_smelting");
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.FERROCAPSICUMIUM_INGOT), RecipeCategory.MISC, CookingBookCategory.MISC, Items.IRON_INGOT, 0.1F, 100)
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.FERROCAPSICUMIUM_INGOT), RecipeCategory.MISC,
+						CookingBookCategory.MISC, Items.IRON_INGOT, 0.1F, 100)
                 .unlockedBy("has_ferrocapsicumium_ingot", has(ModItems.FERROCAPSICUMIUM_INGOT))
                 .save(this.output, Constants.CBW_MOD_ID + ":iron_ingot_from_blasting");
 
