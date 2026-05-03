@@ -67,4 +67,10 @@ public class CBWChiliPeppersAndFoods {
             event.getTable().addPool(pool);
         }
     }
+
+    /**
+     * A helper class for accessing this mod's constants from outside its package.
+     */
+    public static final class Constants extends com.github.iunius118.cbwchilipeppersandfoods.Constants {
+    }
 }
