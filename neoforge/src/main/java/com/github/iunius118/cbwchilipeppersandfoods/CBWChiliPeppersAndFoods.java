@@ -52,8 +52,7 @@ public class CBWChiliPeppersAndFoods {
 
     private void gatherData(final GatherDataEvent.Client event) {
         // Data
-        event.createProvider(ModBlockTagsProvider::new);
-        event.createProvider(ModItemTagsProvider::new);
+        event.createBlockAndItemTags(ModBlockTagsProvider::new, ModItemTagsProvider::new);
         event.createProvider(ModLootTableProvider::new);
         event.createProvider(ModRecipeProvider.Runner::new);
         event.createProvider(ModAdvancementProvider::new);

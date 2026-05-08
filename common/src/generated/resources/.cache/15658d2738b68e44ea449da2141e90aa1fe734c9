@@ -1,4 +1,7 @@
-// 26.1.2	2026-04-26T17:32:43.1097055	Tags for minecraft:block mod id chilibulletweapons
+// 26.1.2	2026-05-08T22:24:26.3783055	Tags for minecraft:block mod id chilibulletweapons
+6e86f6be8f1f0dd5eb7a8fe9513ad2c7fd18d166 data/chilibulletweapons/tags/block/storage_blocks/ferrocapsicumium.json
+656ab85182994e160634664461476b5a55ee67fc data/c/tags/block/storage_blocks.json
+874424ddedbd8ef60060ef56bb69a1b025015f1a data/c/tags/block/storage_blocks/chili.json
 6e86f6be8f1f0dd5eb7a8fe9513ad2c7fd18d166 data/minecraft/tags/block/beacon_base_blocks.json
 10fccce304e9544f62acd1b955d8a1582ea66eee data/minecraft/tags/block/crops.json
 10fccce304e9544f62acd1b955d8a1582ea66eee data/minecraft/tags/block/maintains_farmland.json

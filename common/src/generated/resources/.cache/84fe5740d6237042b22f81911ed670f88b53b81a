@@ -1,4 +1,4 @@
-// 26.1.2	2026-04-26T17:32:43.1137026	Tags for minecraft:item mod id chilibulletweapons
+// 26.1.2	2026-05-08T22:24:26.3862998	Tags for minecraft:item mod id chilibulletweapons
 d7863948289cf48cdb69d16da3355ebce8ea13b5 data/chilibulletweapons/tags/item/chili_biomass.json
 157dbbbd4b448fb06fa29115229a276f43633334 data/chilibulletweapons/tags/item/ferrocapsicumium_tool_materials.json
 c743c46a02c2aad819a8162e30ccd2b6d12ce08e data/chilibulletweapons/tags/item/foods/chili_peppers.json
@@ -7,13 +7,17 @@ d1b789eb96a6d7c03609096352ea6643a8514e4f data/chilibulletweapons/tags/item/foods
 e05c986b3501fb76dd2771f3effb0156f083a929 data/chilibulletweapons/tags/item/foods/chili_seasoning.json
 bc229f680fa773a41269c1569f5a700f669eb8e5 data/chilibulletweapons/tags/item/foods/cooked_fish.json
 cd4460e5e3a22d6e78dd48c3af239f5ccc03fc9c data/chilibulletweapons/tags/item/foods/cooked_meat.json
+157dbbbd4b448fb06fa29115229a276f43633334 data/chilibulletweapons/tags/item/ingots/ferrocapsicumium.json
+38844f0dbe3e5a99ac2d69f7d12756390ec9d7e7 data/chilibulletweapons/tags/item/nuggets/ferrocapsicumium.json
+6e86f6be8f1f0dd5eb7a8fe9513ad2c7fd18d166 data/chilibulletweapons/tags/item/storage_blocks/ferrocapsicumium.json
 da46f96bc13c4a27c511298908a9f8207f94e1fe data/c/tags/item/crops.json
 26ee9f2687a24afa98f5726f79955e9534a47a62 data/c/tags/item/crops/chili.json
-157dbbbd4b448fb06fa29115229a276f43633334 data/c/tags/item/ingots.json
-38844f0dbe3e5a99ac2d69f7d12756390ec9d7e7 data/c/tags/item/nuggets.json
+f7550434cdc6f2e0200956de32bc701451e53bf0 data/c/tags/item/ingots.json
+7f976a29fe97805cc9a866463034e9ab205e2b8e data/c/tags/item/nuggets.json
 f22737b0c8878bd60d56ea4cc00e35184bc9ffae data/c/tags/item/seeds.json
 5ae775032c52f263ebaaa8c5499f282078592830 data/c/tags/item/seeds/chili.json
-71c4f4faa8636d09c7c416eee06da879f2b8809e data/c/tags/item/storage_blocks.json
+656ab85182994e160634664461476b5a55ee67fc data/c/tags/item/storage_blocks.json
+874424ddedbd8ef60060ef56bb69a1b025015f1a data/c/tags/item/storage_blocks/chili.json
 e03a6149e91f3b586ab3507e6cbc5b40f545e306 data/c/tags/item/tools/shear.json
 6dbca577e18ff18bd42f748e42cd5bb45b5b9ec4 data/minecraft/tags/item/axes.json
 be71a64febdb604d1a5872387a475be1f250548c data/minecraft/tags/item/hoes.json

@@ -2,6 +2,8 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+### Added
+- Add block tags and item tags for mod materials.
 
 ## [2.0.0]
 ### Changed
