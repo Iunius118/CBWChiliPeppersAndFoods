@@ -2,7 +2,6 @@ package com.github.iunius118.cbwchilipeppersandfoods;
 
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import com.github.iunius118.cbwchilipeppersandfoods.loot.ModLootTables;
-import com.github.iunius118.cbwchilipeppersandfoods.registry.ForgeModRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.registries.VanillaRegistries;
@@ -16,22 +15,23 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
+import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(Constants.MOD_ID)
 public class CBWChiliPeppersAndFoods {
+    public static BusGroup modBusGroup;
 
     public CBWChiliPeppersAndFoods(FMLJavaModLoadingContext context) {
-        final var modBusGroup = context.getModBusGroup();
+        modBusGroup = context.getModBusGroup();
 
         // Use Forge to bootstrap the Common mod.
         //Constants.LOG.info("Hello Forge world!");
         CommonClass.init();
 
         // Register mod event listeners
-        ForgeModRegistries.registerGameObjects(modBusGroup);
         FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::onCommonSetup);
 
         // Register Forge event listeners
