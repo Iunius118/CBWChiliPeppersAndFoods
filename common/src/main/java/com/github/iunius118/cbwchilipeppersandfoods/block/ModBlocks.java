@@ -1,6 +1,7 @@
 package com.github.iunius118.cbwchilipeppersandfoods.block;
 
 import com.github.iunius118.cbwchilipeppersandfoods.Constants;
+import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
@@ -26,6 +27,24 @@ public class ModBlocks {
             .instabreak()
             .sound(SoundType.CROP)
             .pushReaction(PushReaction.DESTROY));
+    public static final Block POTTED_CHILI_PEPPER_FLOWERING =
+            new PottedChiliPepperBlock(() -> ModItems.CHILI_SEEDS, BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK, Constants.Blocks.POTTED_CHILI_PEPPER_FLOWERING))
+                    .instabreak()
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY));
+    public static final Block POTTED_CHILI_PEPPER_GREEN =
+            new PottedChiliPepperBlock(() -> ModItems.CURVED_GREEN_CHILI, BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK, Constants.Blocks.POTTED_CHILI_PEPPER_GREEN))
+                    .instabreak()
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY));
+    public static final Block POTTED_CHILI_PEPPER_RED =
+            new PottedChiliPepperBlock(() -> ModItems.CURVED_CHILI, BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK, Constants.Blocks.POTTED_CHILI_PEPPER_RED))
+                    .instabreak()
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY));
     public static final Block HOT_SAUCE_BARREL = new Block(BlockBehaviour.Properties.of()
             .setId(ResourceKey.create(Registries.BLOCK, Constants.Blocks.HOT_SAUCE_BARREL))
             .mapColor(MapColor.WOOD)

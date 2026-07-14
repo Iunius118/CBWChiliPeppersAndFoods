@@ -74,6 +74,32 @@ public class ModRecipeProvider extends VanillaRecipeProvider {
                 .unlockedBy("has_curved_chili", has(ModItems.CURVED_CHILI))
                 .save(this.output, getItemId(ModItems.DRIED_CURVED_CHILI) + "_from_campfire_cooking");
 
+        // Potted chili peppers
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.DECORATIONS, ModItems.POTTED_CHILI_PEPPER_FLOWERING)
+                .group(getItemId(ModItems.POTTED_CHILI_PEPPER_FLOWERING))
+                .pattern("p")
+                .pattern("#")
+                .define('p', ModItems.CHILI_SEEDS)
+                .define('#', Items.FLOWER_POT)
+                .unlockedBy("has_chili_seeds", has(ModItems.CHILI_SEEDS))
+                .save(this.output);
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.DECORATIONS, ModItems.POTTED_CHILI_PEPPER_GREEN)
+                .group(getItemId(ModItems.POTTED_CHILI_PEPPER_GREEN))
+                .pattern("p")
+                .pattern("#")
+                .define('p', ModItems.CURVED_GREEN_CHILI)
+                .define('#', Items.FLOWER_POT)
+                .unlockedBy("has_curved_green_chili", has(ModItems.CURVED_GREEN_CHILI))
+                .save(this.output);
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.DECORATIONS, ModItems.POTTED_CHILI_PEPPER_RED)
+                .group(getItemId(ModItems.POTTED_CHILI_PEPPER_RED))
+                .pattern("p")
+                .pattern("#")
+                .define('p', ModItems.CURVED_CHILI)
+                .define('#', Items.FLOWER_POT)
+                .unlockedBy("has_curved_chili", has(ModItems.CURVED_CHILI))
+                .save(this.output);
+
         // Storage items
         ShapedRecipeBuilder.shaped(items, RecipeCategory.MISC, ModItems.CURVED_CHILI_SACK)
                 .group(getItemId(ModItems.CURVED_CHILI_SACK))

@@ -22,6 +22,9 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModBlocks.CURVED_CHILI_STRING, "String of Curved Chili Peppers");
         add(ModBlocks.HOT_SAUCE_BARREL, "Barrel of Hot Chili Sauce");
         add(ModBlocks.FERROCAPSICUMIUM_BLOCK, "Block of Fe-Cap");
+        add(ModBlocks.POTTED_CHILI_PEPPER_FLOWERING, "Potted Flowering Chili Pepper");
+        add(ModBlocks.POTTED_CHILI_PEPPER_GREEN, "Potted Green Chili Pepper");
+        add(ModBlocks.POTTED_CHILI_PEPPER_RED, "Potted Red Chili Pepper");
 
         // Item.Plants
         add(ModItems.CHILI_SEEDS, "Chili Pepper Seeds (CBW)");

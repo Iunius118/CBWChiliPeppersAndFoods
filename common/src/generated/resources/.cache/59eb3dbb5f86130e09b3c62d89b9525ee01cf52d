@@ -1,5 +1,8 @@
-// 26.1.2	2026-05-08T22:24:26.3892985	Loot Tables
+// 26.1.2	2026-07-15T01:54:22.1680338	Loot Tables
 77d8e13a719db23e4deb1f54ec1e711791c65f17 data/chilibulletweapons/loot_table/blocks/chili_pepper.json
 b99430b0cf626731549666bddabde9b250bb28f1 data/chilibulletweapons/loot_table/blocks/curved_chili_string.json
 f2f3885341e8ad8544089f96ba6cccbdd0ef02bb data/chilibulletweapons/loot_table/blocks/ferrocapsicumium_block.json
 0802ba4eda6399a039c473a9b5309bfce658dd98 data/chilibulletweapons/loot_table/blocks/hot_sauce_barrel.json
+e1eff62a81f53e3149e81c19620ebacbc2da4005 data/chilibulletweapons/loot_table/blocks/potted_chili_pepper_flowering.json
+2bfd2066353844d17ccc314cfaa390f40d1a5af7 data/chilibulletweapons/loot_table/blocks/potted_chili_pepper_green.json
+766800b8fd1647f18c2aea8c981a04e2983d04ad data/chilibulletweapons/loot_table/blocks/potted_chili_pepper_red.json

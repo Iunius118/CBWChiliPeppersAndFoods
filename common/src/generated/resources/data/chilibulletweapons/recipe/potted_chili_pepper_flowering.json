@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chilibulletweapons:potted_chili_pepper_flowering",
+  "key": {
+    "#": "minecraft:flower_pot",
+    "p": "chilibulletweapons:chili_seeds"
+  },
+  "pattern": [
+    "p",
+    "#"
+  ],
+  "result": {
+    "id": "chilibulletweapons:potted_chili_pepper_flowering"
+  }
+}

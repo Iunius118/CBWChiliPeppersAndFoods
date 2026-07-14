@@ -39,6 +39,15 @@ public class ModItems {
             createProperties(Constants.Items.DRIED_CURVED_CHILI)));
     public static final Item CURVED_CHILI_SACK = add(new Item(
             createProperties(Constants.Items.CURVED_CHILI_SACK)));
+    public static final Item POTTED_CHILI_PEPPER_FLOWERING = add(new BlockItem(ModBlocks.POTTED_CHILI_PEPPER_FLOWERING,
+            createProperties(Constants.Items.POTTED_CHILI_PEPPER_FLOWERING)
+                    .useBlockDescriptionPrefix()));
+    public static final Item POTTED_CHILI_PEPPER_GREEN = add(new BlockItem(ModBlocks.POTTED_CHILI_PEPPER_GREEN,
+            createProperties(Constants.Items.POTTED_CHILI_PEPPER_GREEN)
+                    .useBlockDescriptionPrefix()));
+    public static final Item POTTED_CHILI_PEPPER_RED = add(new BlockItem(ModBlocks.POTTED_CHILI_PEPPER_RED,
+            createProperties(Constants.Items.POTTED_CHILI_PEPPER_RED)
+                    .useBlockDescriptionPrefix()));
 
     // Fuel
     public static final Item CHILI_BIOFUEL = add(new Item(
@@ -172,6 +181,9 @@ public class ModItems {
         // Register block items
         registerBlockItem(CHILI_SEEDS);
         registerBlockItem(CURVED_CHILI_STRING);
+        registerBlockItem(POTTED_CHILI_PEPPER_FLOWERING);
+        registerBlockItem(POTTED_CHILI_PEPPER_GREEN);
+        registerBlockItem(POTTED_CHILI_PEPPER_RED);
         registerBlockItem(HOT_SAUCE_BARREL);
         registerBlockItem(FERROCAPSICUMIUM_BLOCK);
 

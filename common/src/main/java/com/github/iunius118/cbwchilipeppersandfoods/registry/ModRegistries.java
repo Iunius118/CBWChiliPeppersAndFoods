@@ -22,6 +22,12 @@ public class ModRegistries {
                 .registerObjects(r -> {
                     r.register(Constants.Blocks.CHILI_PEPPER.getPath(), () -> ModBlocks.CHILI_PEPPER);
                     r.register(Constants.Blocks.CURVED_CHILI_STRING.getPath(), () -> ModBlocks.CURVED_CHILI_STRING);
+                    r.register(Constants.Blocks.POTTED_CHILI_PEPPER_FLOWERING.getPath(),
+                            () -> ModBlocks.POTTED_CHILI_PEPPER_FLOWERING);
+                    r.register(Constants.Blocks.POTTED_CHILI_PEPPER_GREEN.getPath(),
+                            () -> ModBlocks.POTTED_CHILI_PEPPER_GREEN);
+                    r.register(Constants.Blocks.POTTED_CHILI_PEPPER_RED.getPath(),
+                            () -> ModBlocks.POTTED_CHILI_PEPPER_RED);
                     r.register(Constants.Blocks.HOT_SAUCE_BARREL.getPath(), () -> ModBlocks.HOT_SAUCE_BARREL);
                     r.register(Constants.Blocks.FERROCAPSICUMIUM_BLOCK.getPath(),
                             () -> ModBlocks.FERROCAPSICUMIUM_BLOCK);
@@ -36,6 +42,12 @@ public class ModRegistries {
                     r.register(Constants.Items.CURVED_CHILI_STRING.getPath(), () -> ModItems.CURVED_CHILI_STRING);
                     r.register(Constants.Items.DRIED_CURVED_CHILI.getPath(), () -> ModItems.DRIED_CURVED_CHILI);
                     r.register(Constants.Items.CURVED_CHILI_SACK.getPath(), () -> ModItems.CURVED_CHILI_SACK);
+                    r.register(Constants.Items.POTTED_CHILI_PEPPER_FLOWERING.getPath(),
+                            () -> ModItems.POTTED_CHILI_PEPPER_FLOWERING);
+                    r.register(Constants.Items.POTTED_CHILI_PEPPER_GREEN.getPath(),
+                            () -> ModItems.POTTED_CHILI_PEPPER_GREEN);
+                    r.register(Constants.Items.POTTED_CHILI_PEPPER_RED.getPath(),
+                            () -> ModItems.POTTED_CHILI_PEPPER_RED);
                     // Fuel
                     r.register(Constants.Items.CHILI_BIOFUEL.getPath(), () -> ModItems.CHILI_BIOFUEL);
                     // Foods

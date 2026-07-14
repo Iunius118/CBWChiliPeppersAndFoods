@@ -16,6 +16,12 @@ public class Constants {
         public static final Identifier CURVED_CHILI_STRING = CommonClass.modCBWLocation("curved_chili_string");
         public static final Identifier HOT_SAUCE_BARREL = CommonClass.modCBWLocation("hot_sauce_barrel");
         public static final Identifier FERROCAPSICUMIUM_BLOCK = CommonClass.modCBWLocation("ferrocapsicumium_block");
+        public static final Identifier POTTED_CHILI_PEPPER_FLOWERING =
+                CommonClass.modCBWLocation("potted_chili_pepper_flowering");
+        public static final Identifier POTTED_CHILI_PEPPER_GREEN =
+                CommonClass.modCBWLocation("potted_chili_pepper_green");
+        public static final Identifier POTTED_CHILI_PEPPER_RED =
+                CommonClass.modCBWLocation("potted_chili_pepper_red");
     }
 
     public static class Items {
@@ -26,6 +32,12 @@ public class Constants {
         public static final Identifier CURVED_CHILI_STRING = CommonClass.modCBWLocation("curved_chili_string");
         public static final Identifier DRIED_CURVED_CHILI = CommonClass.modCBWLocation("dried_curved_chili");
         public static final Identifier CURVED_CHILI_SACK = CommonClass.modCBWLocation("curved_chili_sack");
+        public static final Identifier POTTED_CHILI_PEPPER_FLOWERING =
+                CommonClass.modCBWLocation("potted_chili_pepper_flowering");
+        public static final Identifier POTTED_CHILI_PEPPER_GREEN =
+                CommonClass.modCBWLocation("potted_chili_pepper_green");
+        public static final Identifier POTTED_CHILI_PEPPER_RED =
+                CommonClass.modCBWLocation("potted_chili_pepper_red");
 
         // Fuel
         public static final Identifier CHILI_BIOFUEL = CommonClass.modCBWLocation("chili_biofuel");

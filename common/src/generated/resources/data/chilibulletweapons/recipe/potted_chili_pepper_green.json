@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chilibulletweapons:potted_chili_pepper_green",
+  "key": {
+    "#": "minecraft:flower_pot",
+    "p": "chilibulletweapons:curved_green_chili"
+  },
+  "pattern": [
+    "p",
+    "#"
+  ],
+  "result": {
+    "id": "chilibulletweapons:potted_chili_pepper_green"
+  }
+}

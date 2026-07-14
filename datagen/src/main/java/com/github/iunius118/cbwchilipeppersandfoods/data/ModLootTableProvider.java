@@ -60,6 +60,10 @@ public class ModLootTableProvider extends LootTableProvider {
             add(ModBlocks.CHILI_PEPPER, createChiliPepperCropDrops());
             add(ModBlocks.CURVED_CHILI_STRING, this.createSingleItemTableWithSilkTouch(ModBlocks.CURVED_CHILI_STRING,
                     ModItems.DRIED_CURVED_CHILI, ConstantValue.exactly(9.0F)));
+            add(ModBlocks.POTTED_CHILI_PEPPER_FLOWERING,
+                    this.createSingleItemTable(ModBlocks.POTTED_CHILI_PEPPER_FLOWERING));
+            add(ModBlocks.POTTED_CHILI_PEPPER_GREEN, this.createSingleItemTable(ModBlocks.POTTED_CHILI_PEPPER_GREEN));
+            add(ModBlocks.POTTED_CHILI_PEPPER_RED, this.createSingleItemTable(ModBlocks.POTTED_CHILI_PEPPER_RED));
             add(ModBlocks.HOT_SAUCE_BARREL, this.createSingleItemTable(ModBlocks.HOT_SAUCE_BARREL));
             add(ModBlocks.FERROCAPSICUMIUM_BLOCK, this.createSingleItemTable(ModBlocks.FERROCAPSICUMIUM_BLOCK));
         }
@@ -122,6 +126,9 @@ public class ModLootTableProvider extends LootTableProvider {
             return List.of(
                     ModBlocks.CHILI_PEPPER,
                     ModBlocks.CURVED_CHILI_STRING,
+                    ModBlocks.POTTED_CHILI_PEPPER_FLOWERING,
+                    ModBlocks.POTTED_CHILI_PEPPER_GREEN,
+                    ModBlocks.POTTED_CHILI_PEPPER_RED,
                     ModBlocks.HOT_SAUCE_BARREL,
                     ModBlocks.FERROCAPSICUMIUM_BLOCK
             );
