@@ -37,8 +37,10 @@ jobs:
         with:
           draft: true
           files: |
+            common/build/libs/*.jar
+            datagen/build/libs/*.jar
+            fabric/build/libs/*.jar
             forge/build/libs/*.jar
             neoforge/build/libs/*.jar
-            fabric/build/libs/*.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
