@@ -3,6 +3,8 @@ package com.github.iunius118.cbwchilipeppersandfoods.data;
 import com.github.iunius118.cbwchilipeppersandfoods.Constants;
 import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
+import com.github.iunius118.cbwchilipeppersandfoods.tags.ModBlockTags;
+import com.github.iunius118.cbwchilipeppersandfoods.tags.ModItemTags;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 
@@ -62,6 +64,20 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.FERROCAPSICUMIUM_SHEARS, "Fe-Cap Shears");
         // Item.Misc
         add(ModItems.CAPSAICIN_POWDER, "Capsaicin Powder");
+
+        // Tags
+        add(ModBlockTags.STORAGE_BLOCKS_FERROCAPSICUMIUM, "Storage Blocks Fe-Cap");
+        add(ModItemTags.FOODS_CHILI_PEPPERS, "Foods Chili Peppers");
+        add(ModItemTags.FOODS_RED_CHILI_PEPPER, "Foods Red Chili Pepper");
+        add(ModItemTags.FOODS_GREEN_CHILI_PEPPER, "Foods Green Chili Pepper");
+        add(ModItemTags.FOODS_CHILI_SEASONING, "Foods Chili Seasoning");
+        add(ModItemTags.FOODS_COOKED_FISH, "Foods Cooked Fish");
+        add(ModItemTags.FOODS_COOKED_MEAT, "Foods Cooked Meat");
+        add(ModItemTags.CHILI_BIOMASS, "Chili Biomass");
+        add(ModItemTags.INGOTS_FERROCAPSICUMIUM, "Ingots Fe-Cap");
+        add(ModItemTags.NUGGETS_FERROCAPSICUMIUM, "Nuggets Fe-Cap");
+        add(ModItemTags.STORAGE_BLOCKS_FERROCAPSICUMIUM, "Storage Blocks Fe-Cap");
+        add(ModItemTags.FERROCAPSICUMIUM_TOOL_MATERIALS, "Fe-Cap Tool Materials");
 
         // Advancements
         add("advancements.chilibulletweapons.main.root.title", "CBW Chili Peppers and Foods");

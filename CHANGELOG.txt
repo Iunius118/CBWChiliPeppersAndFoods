@@ -4,6 +4,7 @@
 ## [Unreleased]
 ### Added
 - Add potted chili pepper blocks.
+- Add translations for mod tags.
 
 ## [2.1.0]
 ### Added
