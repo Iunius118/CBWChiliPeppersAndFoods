@@ -17,6 +17,9 @@
   "block.chilibulletweapons.curved_chili_string": "String of Curved Chili Peppers",
   "block.chilibulletweapons.ferrocapsicumium_block": "Block of Fe-Cap",
   "block.chilibulletweapons.hot_sauce_barrel": "Barrel of Hot Chili Sauce",
+  "block.chilibulletweapons.potted_chili_pepper_flowering": "Potted Flowering Chili Pepper",
+  "block.chilibulletweapons.potted_chili_pepper_green": "Potted Green Chili Pepper",
+  "block.chilibulletweapons.potted_chili_pepper_red": "Potted Red Chili Pepper",
   "item.chilibulletweapons.capsaicin_powder": "Capsaicin Powder",
   "item.chilibulletweapons.capsicum_crystal": "Capsicum Crystal",
   "item.chilibulletweapons.capsicum_crystal_bottle": "Bottle of Capsicum Crystal",
@@ -47,5 +50,17 @@
   "item.chilibulletweapons.hot_sauce": "Hot Chili Sauce",
   "item.chilibulletweapons.pasta_oil_and_chili": "Pasta Olio e Peperoncino",
   "item.chilibulletweapons.pickled_green_chili": "Pickled Green Chili Pepper",
-  "itemGroup.cbwchilipeppersandfoods.main": "CBW Chili Peppers and Foods"
+  "itemGroup.cbwchilipeppersandfoods.main": "CBW Chili Peppers and Foods",
+  "tag.block.chilibulletweapons.storage_blocks.ferrocapsicumium": "Storage Blocks Fe-Cap",
+  "tag.item.chilibulletweapons.chili_biomass": "Chili Biomass",
+  "tag.item.chilibulletweapons.ferrocapsicumium_tool_materials": "Fe-Cap Tool Materials",
+  "tag.item.chilibulletweapons.foods.chili_peppers": "Foods Chili Peppers",
+  "tag.item.chilibulletweapons.foods.chili_peppers.green": "Foods Green Chili Pepper",
+  "tag.item.chilibulletweapons.foods.chili_peppers.red": "Foods Red Chili Pepper",
+  "tag.item.chilibulletweapons.foods.chili_seasoning": "Foods Chili Seasoning",
+  "tag.item.chilibulletweapons.foods.cooked_fish": "Foods Cooked Fish",
+  "tag.item.chilibulletweapons.foods.cooked_meat": "Foods Cooked Meat",
+  "tag.item.chilibulletweapons.ingots.ferrocapsicumium": "Ingots Fe-Cap",
+  "tag.item.chilibulletweapons.nuggets.ferrocapsicumium": "Nuggets Fe-Cap",
+  "tag.item.chilibulletweapons.storage_blocks.ferrocapsicumium": "Storage Blocks Fe-Cap"
 }
