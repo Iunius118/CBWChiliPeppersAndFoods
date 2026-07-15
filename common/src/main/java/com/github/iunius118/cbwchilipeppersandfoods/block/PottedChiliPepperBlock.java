@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.function.Supplier;
 
 public class PottedChiliPepperBlock extends Block implements BonemealableBlock {
-    private static final VoxelShape SHAPE = Block.column(6.0, 0.0, 6.0);
+    private static final VoxelShape SHAPE = Block.column(8.0, 0.0, 6.0);
     private final Supplier<Item> harvestable;
 
     public PottedChiliPepperBlock(Supplier<Item> harvestable, Properties properties) {
