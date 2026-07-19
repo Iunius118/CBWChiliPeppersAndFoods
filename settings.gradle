@@ -1,5 +1,7 @@
 pluginManagement {
     repositories {
+        includeBuild("build-logic")
+
         gradlePluginPortal()
         mavenCentral()
         exclusiveContent {
