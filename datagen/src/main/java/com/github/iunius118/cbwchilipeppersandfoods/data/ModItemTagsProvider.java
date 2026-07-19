@@ -2,6 +2,7 @@ package com.github.iunius118.cbwchilipeppersandfoods.data;
 
 import com.github.iunius118.cbwchilipeppersandfoods.Constants;
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
+import com.github.iunius118.cbwchilipeppersandfoods.tags.ModBlockTags;
 import com.github.iunius118.cbwchilipeppersandfoods.tags.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -24,28 +25,44 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        // Namespace: minecraft
+        // - Namespace: minecraft //
+        // Tools
         tag(ItemTags.SHOVELS).add(ModItems.FERROCAPSICUMIUM_SHOVEL);
         tag(ItemTags.AXES).add(ModItems.FERROCAPSICUMIUM_AXE);
         tag(ItemTags.HOES).add(ModItems.FERROCAPSICUMIUM_HOE);
-        tag(Tags.Items.TOOLS_SHEAR).add(ModItems.FERROCAPSICUMIUM_SHEARS);
 
-        // Namespace: c
+        // - Namespace: c //
+        // Plants
         tag(Tags.Items.CROPS).addTag(ModItemTags.C_CROPS_CHILI);
         tag(ModItemTags.C_CROPS_CHILI).add(ModItems.CURVED_CHILI, ModItems.CURVED_GREEN_CHILI);
         tag(Tags.Items.SEEDS).addTag(ModItemTags.C_SEEDS_CHILI);
         tag(ModItemTags.C_SEEDS_CHILI).add(ModItems.CHILI_SEEDS);
+        // Materials
         tag(Tags.Items.NUGGETS).add(ModItems.FERROCAPSICUMIUM_NUGGET);
         tag(Tags.Items.INGOTS).add(ModItems.FERROCAPSICUMIUM_INGOT);
+        // Storage Blocks
+        copy(ModBlockTags.C_STORAGE_BLOCKS_CHILI, ModItemTags.C_STORAGE_BLOCKS_CHILI);
         tag(Tags.Items.STORAGE_BLOCKS).add(ModItems.FERROCAPSICUMIUM_BLOCK, ModItems.CURVED_CHILI_STRING);
+        // Tools
+        tag(Tags.Items.TOOLS_SHEAR).add(ModItems.FERROCAPSICUMIUM_SHEARS);
 
-        // Namespace: chilibulletweapons
+        // - Namespace: chilibulletweapons //
+        // Ingredients
         tag(ModItemTags.FOODS_RED_CHILI_PEPPER).add(ModItems.CURVED_CHILI, ModItems.DRIED_CURVED_CHILI);
         tag(ModItemTags.FOODS_GREEN_CHILI_PEPPER).add(ModItems.CURVED_GREEN_CHILI, ModItems.PICKLED_GREEN_CHILI);
-        tag(ModItemTags.FOODS_CHILI_PEPPERS).addTag(ModItemTags.FOODS_RED_CHILI_PEPPER).addTag(ModItemTags.FOODS_GREEN_CHILI_PEPPER);
-        tag(ModItemTags.FOODS_CHILI_SEASONING).addTag(ModItemTags.FOODS_CHILI_PEPPERS).add(ModItems.HOT_SAUCE, ModItems.GREEN_HOT_SAUCE);
+        tag(ModItemTags.FOODS_CHILI_PEPPERS).addTag(ModItemTags.FOODS_RED_CHILI_PEPPER)
+                .addTag(ModItemTags.FOODS_GREEN_CHILI_PEPPER);
+        tag(ModItemTags.FOODS_CHILI_SEASONING).addTag(ModItemTags.FOODS_CHILI_PEPPERS)
+                .add(ModItems.HOT_SAUCE, ModItems.GREEN_HOT_SAUCE);
         tag(ModItemTags.FOODS_COOKED_FISH).add(Items.COOKED_COD, Items.COOKED_SALMON);
-        tag(ModItemTags.FOODS_COOKED_MEAT).add(Items.COOKED_BEEF, Items.COOKED_MUTTON, Items.COOKED_PORKCHOP, Items.COOKED_RABBIT);
+        tag(ModItemTags.FOODS_COOKED_MEAT)
+                .add(Items.COOKED_BEEF, Items.COOKED_MUTTON, Items.COOKED_PORKCHOP, Items.COOKED_RABBIT);
+        // Materials
+        tag(ModItemTags.NUGGETS_FERROCAPSICUMIUM).add(ModItems.FERROCAPSICUMIUM_NUGGET);
+        tag(ModItemTags.INGOTS_FERROCAPSICUMIUM).add(ModItems.FERROCAPSICUMIUM_INGOT);
+        copy(ModBlockTags.STORAGE_BLOCKS_FERROCAPSICUMIUM, ModItemTags.STORAGE_BLOCKS_FERROCAPSICUMIUM);
+        tag(ModItemTags.FERROCAPSICUMIUM_TOOL_MATERIALS).add(ModItems.FERROCAPSICUMIUM_INGOT);
+        // Misc.
         tag(ModItemTags.CHILI_BIOMASS).add(ModItems.CURVED_CHILI_STRING, ModItems.CURVED_CHILI_SACK);
     }
 }

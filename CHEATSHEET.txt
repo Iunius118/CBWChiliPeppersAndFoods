@@ -1,7 +1,7 @@
 # Cheatsheet
 
 CBW Chili Peppers and Foods
-version 1.2.1
+version 1.3.0
 
 - [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods)
 - [Chili Bullet Weapons](https://iunius118.github.io/ChiliBulletWeapons/)
@@ -80,6 +80,39 @@ Sack of chili peppers can be used to store chili peppers in a compact fashion.
 Crafting:
 
 - 9x Dried Curved Chili Pepper <-> 1x Sack of Curved Chili Peppers
+
+### Potted Chili Peppers
+
+A potted chili pepper is a flower pot containing a chili pepper plant. It can be placed and used as a decorative block.
+
+There are three types of potted chili peppers:
+
+- Potted Flowering Chili Pepper
+- Potted Green Chili Pepper
+- Potted Red Chili Pepper
+
+Crafting (shaped recipe):
+
+    Potted Flowering Chili Pepper
+    1x Chili Pepper Seeds (CBW) (p) and 1x Flower Pot (#)
+    | p |
+    | # |
+
+    Potted Green Chili Pepper
+    1x Curved Green Chili Pepper (p) and 1x Flower Pot (#)
+    | p |
+    | # |
+
+    Potted Red Chili Pepper
+    1x Curved Chili Pepper (p) and 1x Flower Pot (#)
+    | p |
+    | # |
+
+Using bone meal on each type of placed potted chili pepper yields its corresponding item:
+
+- Potted Flowering Chili Pepper - 1x Chili Pepper Seeds (CBW)
+- Potted Green Chili Pepper - 1x Curved Green Chili Pepper
+- Potted Red Chili Pepper - 1x Curved Chili Pepper
 
 ### Chili Plant Biofuel
 

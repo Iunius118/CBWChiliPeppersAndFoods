@@ -22,6 +22,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CURVED_CHILI_STRING);
         basicItem(ModItems.DRIED_CURVED_CHILI);
         basicItem(ModItems.CURVED_CHILI_SACK);
+        basicItem(ModItems.POTTED_CHILI_PEPPER_FLOWERING);
+        basicItem(ModItems.POTTED_CHILI_PEPPER_GREEN);
+        basicItem(ModItems.POTTED_CHILI_PEPPER_RED);
 
         // Fuel
         basicItem(ModItems.CHILI_BIOFUEL);

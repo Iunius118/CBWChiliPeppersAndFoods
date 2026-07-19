@@ -2,7 +2,6 @@ package com.github.iunius118.cbwchilipeppersandfoods;
 
 import com.github.iunius118.cbwchilipeppersandfoods.item.ModItems;
 import com.github.iunius118.cbwchilipeppersandfoods.loot.ModLootTables;
-import com.github.iunius118.cbwchilipeppersandfoods.registry.ForgeModRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.registries.VanillaRegistries;
@@ -24,16 +23,16 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(Constants.MOD_ID)
 public class CBWChiliPeppersAndFoods {
+    public static IEventBus modEventBus;
 
     public CBWChiliPeppersAndFoods(FMLJavaModLoadingContext context) {
-        final IEventBus modEventBus = context.getModEventBus();
+        modEventBus = context.getModEventBus();
 
         // Use Forge to bootstrap the Common mod.
         //Constants.LOG.info("Hello Forge world!");
         CommonClass.init();
 
         // Register mod event listeners
-        ForgeModRegistries.registerGameObjects(modEventBus);
         modEventBus.addListener(this::onCommonSetup);
 
         // Register Forge event listeners

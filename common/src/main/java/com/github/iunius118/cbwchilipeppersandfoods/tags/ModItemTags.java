@@ -10,6 +10,7 @@ public class ModItemTags {
     public static final TagKey<Item> C_CROPS_CHILI = makeCTag("crops/chili");
     public static final TagKey<Item> C_SEEDS_CHILI = makeCTag("seeds/chili");
     public static final TagKey<Item> C_TOOLS_SHEAR = makeCTag("tools/shear");
+    public static final TagKey<Item> C_STORAGE_BLOCKS_CHILI = makeCTag("storage_blocks/chili");
 
     public static final TagKey<Item> FOODS_CHILI_PEPPERS = makeCBWTag("foods/chili_peppers");
     public static final TagKey<Item> FOODS_RED_CHILI_PEPPER = makeCBWTag("foods/chili_peppers/red");
@@ -18,6 +19,10 @@ public class ModItemTags {
     public static final TagKey<Item> FOODS_COOKED_FISH = makeCBWTag("foods/cooked_fish");
     public static final TagKey<Item> FOODS_COOKED_MEAT = makeCBWTag("foods/cooked_meat");
     public static final TagKey<Item> CHILI_BIOMASS = makeCBWTag("chili_biomass");
+    public static final TagKey<Item> INGOTS_FERROCAPSICUMIUM = makeCBWTag("ingots/ferrocapsicumium");
+    public static final TagKey<Item> NUGGETS_FERROCAPSICUMIUM = makeCBWTag("nuggets/ferrocapsicumium");
+    public static final TagKey<Item> STORAGE_BLOCKS_FERROCAPSICUMIUM = makeCBWTag("storage_blocks/ferrocapsicumium");
+    public static final TagKey<Item> FERROCAPSICUMIUM_TOOL_MATERIALS = makeCBWTag("ferrocapsicumium_tool_materials");
 
     private static TagKey<Item> makeCBWTag(String id) {
         return TagKey.create(Registries.ITEM, CommonClass.modCBWLocation(id));

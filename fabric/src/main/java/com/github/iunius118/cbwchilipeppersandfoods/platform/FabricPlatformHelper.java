@@ -1,7 +1,12 @@
 package com.github.iunius118.cbwchilipeppersandfoods.platform;
 
 import com.github.iunius118.cbwchilipeppersandfoods.platform.services.IPlatformHelper;
+import com.github.iunius118.cbwchilipeppersandfoods.registry.FabricModObjectRegistry;
+import com.github.iunius118.cbwchilipeppersandfoods.registry.ModObjectRegistry;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.core.Registry;
+import net.minecraft.world.item.CreativeModeTab;
 
 public class FabricPlatformHelper implements IPlatformHelper {
 
@@ -18,5 +23,15 @@ public class FabricPlatformHelper implements IPlatformHelper {
     @Override
     public boolean isDevelopmentEnvironment() {
         return FabricLoader.getInstance().isDevelopmentEnvironment();
+    }
+
+    @Override
+    public <V, T extends V> ModObjectRegistry<V, T> createModObjectRegistry(Registry<V> registry, String namespace) {
+        return new FabricModObjectRegistry<>(registry, namespace);
+    }
+
+    @Override
+    public CreativeModeTab.Builder createCreativeModeTabBuilder() {
+        return FabricItemGroup.builder();
     }
 }

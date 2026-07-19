@@ -5,11 +5,12 @@ plugins {
 
 neoForge {
     neoFormVersion = neo_form_version
-    // Automatically enable AccessTransformers if the file exists
-    def at = file('src/main/resources/META-INF/accesstransformer.cfg')
 
+    // Expose access available on all loaders to vanilla sources (development environment only, not included in JARs)
+    def at = file('dev/accesstransformer.cfg')
+    // Automatically enable AccessTransformers if the file exists
     if (at.exists()) {
-        accessTransformers.add(at.absolutePath)
+        accessTransformers.from(at.absolutePath)
     }
 
     parchment {

@@ -13,19 +13,36 @@ public class Constants {
 
     public static class Blocks {
         public static final ResourceLocation CHILI_PEPPER = CommonClass.modCBWLocation("chili_pepper");
-        public static final ResourceLocation CURVED_CHILI_STRING = CommonClass.modCBWLocation("curved_chili_string");
+        public static final ResourceLocation CURVED_CHILI_STRING =
+                CommonClass.modCBWLocation("curved_chili_string");
         public static final ResourceLocation HOT_SAUCE_BARREL = CommonClass.modCBWLocation("hot_sauce_barrel");
-        public static final ResourceLocation FERROCAPSICUMIUM_BLOCK = CommonClass.modCBWLocation("ferrocapsicumium_block");
+        public static final ResourceLocation FERROCAPSICUMIUM_BLOCK =
+                CommonClass.modCBWLocation("ferrocapsicumium_block");
+        public static final ResourceLocation POTTED_CHILI_PEPPER_FLOWERING =
+                CommonClass.modCBWLocation("potted_chili_pepper_flowering");
+        public static final ResourceLocation POTTED_CHILI_PEPPER_GREEN =
+                CommonClass.modCBWLocation("potted_chili_pepper_green");
+        public static final ResourceLocation POTTED_CHILI_PEPPER_RED =
+                CommonClass.modCBWLocation("potted_chili_pepper_red");
     }
 
     public static class Items {
         // Plants
         public static final ResourceLocation CHILI_SEEDS = CommonClass.modCBWLocation("chili_seeds");
-        public static final ResourceLocation CURVED_GREEN_CHILI = CommonClass.modCBWLocation("curved_green_chili");
+        public static final ResourceLocation CURVED_GREEN_CHILI =
+                CommonClass.modCBWLocation("curved_green_chili");
         public static final ResourceLocation CURVED_CHILI = CommonClass.modCBWLocation("curved_chili");
-        public static final ResourceLocation CURVED_CHILI_STRING = CommonClass.modCBWLocation("curved_chili_string");
-        public static final ResourceLocation DRIED_CURVED_CHILI = CommonClass.modCBWLocation("dried_curved_chili");
+        public static final ResourceLocation CURVED_CHILI_STRING =
+                CommonClass.modCBWLocation("curved_chili_string");
+        public static final ResourceLocation DRIED_CURVED_CHILI =
+                CommonClass.modCBWLocation("dried_curved_chili");
         public static final ResourceLocation CURVED_CHILI_SACK = CommonClass.modCBWLocation("curved_chili_sack");
+        public static final ResourceLocation POTTED_CHILI_PEPPER_FLOWERING =
+                CommonClass.modCBWLocation("potted_chili_pepper_flowering");
+        public static final ResourceLocation POTTED_CHILI_PEPPER_GREEN =
+                CommonClass.modCBWLocation("potted_chili_pepper_green");
+        public static final ResourceLocation POTTED_CHILI_PEPPER_RED =
+                CommonClass.modCBWLocation("potted_chili_pepper_red");
 
         // Fuel
         public static final ResourceLocation CHILI_BIOFUEL = CommonClass.modCBWLocation("chili_biofuel");
@@ -34,32 +51,53 @@ public class Constants {
         public static final ResourceLocation HOT_SAUCE = CommonClass.modCBWLocation("hot_sauce");
         public static final ResourceLocation HOT_SAUCE_BARREL = CommonClass.modCBWLocation("hot_sauce_barrel");
         public static final ResourceLocation GREEN_HOT_SAUCE = CommonClass.modCBWLocation("green_hot_sauce");
-        public static final ResourceLocation PICKLED_GREEN_CHILI = CommonClass.modCBWLocation("pickled_green_chili");
-        public static final ResourceLocation CHILI_CHICKEN_SANDWICH = CommonClass.modCBWLocation("chili_chicken_sandwich");
-        public static final ResourceLocation CHILI_FISH_SANDWICH = CommonClass.modCBWLocation("chili_fish_sandwich");
-        public static final ResourceLocation CHILI_MEAT_SANDWICH = CommonClass.modCBWLocation("chili_meat_sandwich");
-        public static final ResourceLocation CHILI_POTATO_SANDWICH = CommonClass.modCBWLocation("chili_potato_sandwich");
-        public static final ResourceLocation HALF_CHILI_CHICKEN_SANDWICH = CommonClass.modCBWLocation("half_chili_chicken_sandwich");
-        public static final ResourceLocation HALF_CHILI_FISH_SANDWICH = CommonClass.modCBWLocation("half_chili_fish_sandwich");
-        public static final ResourceLocation HALF_CHILI_MEAT_SANDWICH = CommonClass.modCBWLocation("half_chili_meat_sandwich");
-        public static final ResourceLocation HALF_CHILI_POTATO_SANDWICH = CommonClass.modCBWLocation("half_chili_potato_sandwich");
-        public static final ResourceLocation PASTA_OIL_AND_CHILI = CommonClass.modCBWLocation("pasta_oil_and_chili");
-        public static final ResourceLocation FRIED_CHILI_PEPPER = CommonClass.modCBWLocation("fried_chili_pepper");
+        public static final ResourceLocation PICKLED_GREEN_CHILI =
+                CommonClass.modCBWLocation("pickled_green_chili");
+        public static final ResourceLocation CHILI_CHICKEN_SANDWICH =
+                CommonClass.modCBWLocation("chili_chicken_sandwich");
+        public static final ResourceLocation CHILI_FISH_SANDWICH =
+                CommonClass.modCBWLocation("chili_fish_sandwich");
+        public static final ResourceLocation CHILI_MEAT_SANDWICH =
+                CommonClass.modCBWLocation("chili_meat_sandwich");
+        public static final ResourceLocation CHILI_POTATO_SANDWICH =
+                CommonClass.modCBWLocation("chili_potato_sandwich");
+        public static final ResourceLocation HALF_CHILI_CHICKEN_SANDWICH =
+                CommonClass.modCBWLocation("half_chili_chicken_sandwich");
+        public static final ResourceLocation HALF_CHILI_FISH_SANDWICH =
+                CommonClass.modCBWLocation("half_chili_fish_sandwich");
+        public static final ResourceLocation HALF_CHILI_MEAT_SANDWICH =
+                CommonClass.modCBWLocation("half_chili_meat_sandwich");
+        public static final ResourceLocation HALF_CHILI_POTATO_SANDWICH =
+                CommonClass.modCBWLocation("half_chili_potato_sandwich");
+        public static final ResourceLocation PASTA_OIL_AND_CHILI =
+                CommonClass.modCBWLocation("pasta_oil_and_chili");
+        public static final ResourceLocation FRIED_CHILI_PEPPER =
+                CommonClass.modCBWLocation("fried_chili_pepper");
         public static final ResourceLocation CHILI_CHOCOLATE = CommonClass.modCBWLocation("chili_chocolate");
-        public static final ResourceLocation CHILI_CHOCOLATE_CHICKEN = CommonClass.modCBWLocation("chili_chocolate_chicken");
+        public static final ResourceLocation CHILI_CHOCOLATE_CHICKEN =
+                CommonClass.modCBWLocation("chili_chocolate_chicken");
 
         // Materials
-        public static final ResourceLocation CAPSICUM_CRYSTAL = CommonClass.modCBWLocation("capsicum_crystal");
-        public static final ResourceLocation CAPSICUM_CRYSTAL_BOTTLE = CommonClass.modCBWLocation("capsicum_crystal_bottle");
-        public static final ResourceLocation FERROCAPSICUMIUM_NUGGET = CommonClass.modCBWLocation("ferrocapsicumium_nugget");
-        public static final ResourceLocation FERROCAPSICUMIUM_INGOT = CommonClass.modCBWLocation("ferrocapsicumium_ingot");
-        public static final ResourceLocation FERROCAPSICUMIUM_BLOCK = CommonClass.modCBWLocation("ferrocapsicumium_block");
+        public static final ResourceLocation CAPSICUM_CRYSTAL =
+                CommonClass.modCBWLocation("capsicum_crystal");
+        public static final ResourceLocation CAPSICUM_CRYSTAL_BOTTLE =
+                CommonClass.modCBWLocation("capsicum_crystal_bottle");
+        public static final ResourceLocation FERROCAPSICUMIUM_NUGGET =
+                CommonClass.modCBWLocation("ferrocapsicumium_nugget");
+        public static final ResourceLocation FERROCAPSICUMIUM_INGOT =
+                CommonClass.modCBWLocation("ferrocapsicumium_ingot");
+        public static final ResourceLocation FERROCAPSICUMIUM_BLOCK =
+                CommonClass.modCBWLocation("ferrocapsicumium_block");
 
         // Tools
-        public static final ResourceLocation FERROCAPSICUMIUM_SHOVEL = CommonClass.modCBWLocation("ferrocapsicumium_shovel");
-        public static final ResourceLocation FERROCAPSICUMIUM_AXE = CommonClass.modCBWLocation("ferrocapsicumium_axe");
-        public static final ResourceLocation FERROCAPSICUMIUM_HOE = CommonClass.modCBWLocation("ferrocapsicumium_hoe");
-        public static final ResourceLocation FERROCAPSICUMIUM_SHEARS = CommonClass.modCBWLocation("ferrocapsicumium_shears");
+        public static final ResourceLocation FERROCAPSICUMIUM_SHOVEL =
+                CommonClass.modCBWLocation("ferrocapsicumium_shovel");
+        public static final ResourceLocation FERROCAPSICUMIUM_AXE =
+                CommonClass.modCBWLocation("ferrocapsicumium_axe");
+        public static final ResourceLocation FERROCAPSICUMIUM_HOE =
+                CommonClass.modCBWLocation("ferrocapsicumium_hoe");
+        public static final ResourceLocation FERROCAPSICUMIUM_SHEARS =
+                CommonClass.modCBWLocation("ferrocapsicumium_shears");
 
         // Misc.
         public static final ResourceLocation CAPSAICIN_POWDER = CommonClass.modCBWLocation("capsaicin_powder");
@@ -69,11 +107,13 @@ public class Constants {
     }
 
     public static class SoundEvents {
-        public static final ResourceLocation CHILI_PEPPER_PICK_CHILI_PEPPERS = CommonClass.modCBWLocation("block_chili_pepper_pick_chili_peppers");
+        public static final ResourceLocation CHILI_PEPPER_PICK_CHILI_PEPPERS =
+                CommonClass.modCBWLocation("block_chili_pepper_pick_chili_peppers");
     }
 
     public static class CriterionTriggers {
-        public static final ResourceLocation HARVESTED_CHILI_PEPPER_WITH_SHEARS = CommonClass.modCBWLocation("harvested_chili_pepper_with_shears");
+        public static final ResourceLocation HARVESTED_CHILI_PEPPER_WITH_SHEARS =
+                CommonClass.modCBWLocation("harvested_chili_pepper_with_shears");
         public static final ResourceLocation THREW_HOT_SAUCE = CommonClass.modCBWLocation("threw_hot_sauce");
     }
 

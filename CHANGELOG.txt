@@ -2,6 +2,10 @@
 [CBW Chili Peppers and Foods](https://github.com/Iunius118/CBWChiliPeppersAndFoods).
 
 ## [Unreleased]
+### Added
+- Add potted chili pepper blocks.
+- Add block tags and item tags for mod materials.
+- Add translations for mod tags.
 
 ## [1.2.1]
 ### Changed

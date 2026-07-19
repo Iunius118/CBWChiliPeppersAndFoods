@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-15T09:44:45.7185004	Item Models: chilibulletweapons
+// 1.21.1	2026-07-20T02:37:02.5910245	Item Models: chilibulletweapons
 35b369159dd386d62423ab5935dafca84908a4aa assets/chilibulletweapons/models/item/capsaicin_powder.json
 91169828f3163e405d965c2ddbd831998f3c067b assets/chilibulletweapons/models/item/capsicum_crystal.json
 c5a67b2058f65ed95ebb560c82ed701e0e0cc0c9 assets/chilibulletweapons/models/item/capsicum_crystal_bottle.json
@@ -32,3 +32,6 @@ fb66fdb3215770cad08ed62bab800ee62fd5c2d6 assets/chilibulletweapons/models/item/h
 8b524af850062d81bc4608ff2dccaf90ba872f74 assets/chilibulletweapons/models/item/icon_main.json
 a351d1b134afb3d6c0990f154fb6803c4f9a59b0 assets/chilibulletweapons/models/item/pasta_oil_and_chili.json
 c280df9418b31cfb882e9a815978c992e2f5e5bd assets/chilibulletweapons/models/item/pickled_green_chili.json
+ab786819c2b0d20326bc13b397b33c7a62e36e64 assets/chilibulletweapons/models/item/potted_chili_pepper_flowering.json
+bd221c5c5ccf829c8da2b49da84e9fc8665b88e6 assets/chilibulletweapons/models/item/potted_chili_pepper_green.json
+9d859e9460cbac0069cf28efb33361f29de8f8e8 assets/chilibulletweapons/models/item/potted_chili_pepper_red.json
