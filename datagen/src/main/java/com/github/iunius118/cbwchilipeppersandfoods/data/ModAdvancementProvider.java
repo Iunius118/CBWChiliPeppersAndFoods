@@ -38,7 +38,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
 
             // Main root
             AdvancementHolder root = Advancement.Builder.recipeAdvancement()
-                    .display(getItem(Constants.Items.ICON_MAIN),
+                    .display(getItem(Constants.Items.ICON_MAIN.identifier()),
                             createTitle("main", "root"),
                             createDescription("main", "root"),
                             Identifier.withDefaultNamespace("block/orange_concrete_powder"),

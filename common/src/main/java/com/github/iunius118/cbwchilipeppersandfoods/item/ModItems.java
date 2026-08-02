@@ -4,8 +4,6 @@ import com.github.iunius118.cbwchilipeppersandfoods.Constants;
 import com.github.iunius118.cbwchilipeppersandfoods.block.ModBlocks;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.dispenser.ShearsDispenseItemBehavior;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -167,8 +165,8 @@ public class ModItems {
         return item;
     }
 
-    private static Item.Properties createProperties(Identifier id) {
-        return new Item.Properties().setId(ResourceKey.create(Registries.ITEM, id));
+    private static Item.Properties createProperties(ResourceKey<Item> key) {
+        return new Item.Properties().setId(key);
     }
 
     private static void registerBlockItem(Item item) {
